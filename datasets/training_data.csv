@@ -1,0 +1,221 @@
+sentence,label
+Napastnik pobił ochroniarza przed klubem.,PRZESTĘPSTWO
+Złodziej ukradł samochód z parkingu.,PRZESTĘPSTWO
+Bandyta zaatakował przypadkową osobę na ulicy.,PRZESTĘPSTWO
+Włamywacz wszedł do domu przez okno.,PRZESTĘPSTWO
+Rabuś napadł na sklep z bronią.,PRZESTĘPSTWO
+Policja zatrzymała podejrzanego o kradzież.,PRZESTĘPSTWO
+Mężczyzna pobił swoją żonę w domu.,PRZESTĘPSTWO
+Sprawca uprowadził dziecko z przedszkola.,PRZESTĘPSTWO
+Gang okradł bank w centrum miasta.,PRZESTĘPSTWO
+Terrorysta zdetonował bombę w budynku.,PRZESTĘPSTWO
+Przestępca zastrzelił policjanta.,PRZESTĘPSTWO
+Hakerzy włamali się do systemu bankowego.,PRZESTĘPSTWO
+Oszust wyłudził pieniądze od starszej osoby.,PRZESTĘPSTWO
+Wandal zniszczył mienie publiczne.,PRZESTĘPSTWO
+Pirat drogowy spowodował kolizję.,PRZESTĘPSTWO
+Samochód uderzył w drzewo.,WYPADEK
+Dwa pojazdy zderzyły się na skrzyżowaniu.,WYPADEK
+Motocyklista stracił panowanie nad pojazdem.,WYPADEK
+Ciężarówka przewróciła się na autostradzie.,WYPADEK
+Kierowca potrącił pieszego na przejściu.,WYPADEK
+Pociąg wykoleił się w tunelu.,WYPADEK
+Samolot rozbił się podczas lądowania.,WYPADEK
+Łódź zatonęła na jeziorze.,WYPADEK
+Rowerzysta spadł z roweru na śliskiej drodze.,WYPADEK
+Autobus zjechał z drogi do rowu.,WYPADEK
+Statek uderzył w rafę koralową.,WYPADEK
+Spadający konar drzewa uszkodził samochód.,WYPADEK
+Kierowca stracił przytomność za kierownicą.,WYPADEK
+Samochód wpadł do rzeki.,WYPADEK
+Karetka zderzyła się z samochodem osobowym.,WYPADEK
+Pożar strawił budynek mieszkalny.,POŻAR
+Ogień wybuchł w fabryce chemicznej.,POŻAR
+Płomienie zniszczyły las.,POŻAR
+Pożar wybuchł w mieszkaniu na trzecim piętrze.,POŻAR
+Podpalacz wzniecił ogień w szkole.,PRZESTĘPSTWO
+Ogień objął całe piętro biurowca.,POŻAR
+Pożar zniszczył magazyn z towarami.,POŻAR
+Płomienie strawiły zabytkowy kościół.,POŻAR
+Ogień rozprzestrzenił się na sąsiednie budynki.,POŻAR
+Pożar gasiło 10 zastępów strażackich.,POŻAR
+Premier ogłosił nowe przepisy.,POLITYKA
+Sejm uchwalił nową ustawę.,POLITYKA
+Prezydent zawetował projekt ustawy.,POLITYKA
+Minister podał się do dymisji.,POLITYKA
+Partia wygrała wybory parlamentarne.,POLITYKA
+Kandydat rozpoczął kampanię wyborczą.,POLITYKA
+Rząd przyjął budżet na przyszły rok.,POLITYKA
+Opozycja skrytykowała działania rządu.,POLITYKA
+Posłowie debatowali nad reformą sądownictwa.,POLITYKA
+Prezydent spotkał się z liderami UE.,POLITYKA
+Sportowiec zdobył złoty medal.,SPORT
+Drużyna wygrała mecz w ostatniej minucie.,SPORT
+Piłkarz strzelił hat-tricka.,SPORT
+Tenisista wygrał turniej wielkoszlemowy.,SPORT
+Rekord świata został pobity.,SPORT
+Trener został zwolniony po słabych wynikach.,SPORT
+Sędzia odgwizdał kontrowersyjny faul.,SPORT
+Zawodnik doznał kontuzji podczas treningu.,SPORT
+Kibice wtargnęli na boisko.,PRZESTĘPSTWO
+Reprezentacja zakwalifikowała się do finału.,SPORT
+Giełda zanotowała spadki.,EKONOMIA
+Firma ogłosiła bankructwo.,EKONOMIA
+Bank podwyższył stopy procentowe.,EKONOMIA
+Inwestorzy wycofali kapitał z rynku.,EKONOMIA
+Bezrobocie wzrosło o dwa procent.,EKONOMIA
+Przedsiębiorstwo podpisało kontrakt wart miliony.,EKONOMIA
+Ceny paliw osiągnęły rekordowy poziom.,EKONOMIA
+Spółka wypuściła nowe akcje na giełdę.,EKONOMIA
+Ekonomiści przewidują recesję.,EKONOMIA
+Inflacja przekroczyła dziesięć procent.,EKONOMIA
+Naukowcy odkryli nowy gatunek.,NAUKA
+Badacze opracowali szczepionkę.,NAUKA
+Teleskop wykrył nową planetę.,NAUKA
+Eksperymenty potwierdziły teorię.,NAUKA
+Wynalazca opatentował nowe urządzenie.,NAUKA
+Uniwersytet otrzymał grant na badania.,NAUKA
+Laboratorium opublikowało przełomowe wyniki.,NAUKA
+Fizyk otrzymał Nagrodę Nobla.,NAUKA
+Archeolodzy odnaleźli starożytne grobowce.,NAUKA
+Chemicy syntezowali nowy materiał.,NAUKA
+Tornado zniszczyło miasteczko.,KLĘSKA_ŻYWIOŁOWA
+Trzęsienie ziemi nawiedziło region.,KLĘSKA_ŻYWIOŁOWA
+Powódź zalała okoliczne wioski.,KLĘSKA_ŻYWIOŁOWA
+Huragan uderzył w wybrzeże.,KLĘSKA_ŻYWIOŁOWA
+Lawina zasypała schronisko górskie.,KLĘSKA_ŻYWIOŁOWA
+Susza zniszczyła plony.,KLĘSKA_ŻYWIOŁOWA
+Burza piaskowa zatrzymała ruch.,KLĘSKA_ŻYWIOŁOWA
+Tsunami zalało wyspę.,KLĘSKA_ŻYWIOŁOWA
+Grad zniszczył uprawy.,KLĘSKA_ŻYWIOŁOWA
+Wulkan wybuchł po latach uśpienia.,KLĘSKA_ŻYWIOŁOWA
+Lekarz przeprowadził skomplikowaną operację.,MEDYCYNA
+Szpital przyjął ofiary wypadku.,MEDYCYNA
+Pacjent odzyskał przytomność po operacji.,MEDYCYNA
+Epidemia grypy objęła całe województwo.,MEDYCYNA
+Minister zdrowia zapowiedział reformę.,POLITYKA
+Chirurg przeszczepił serce pacjentowi.,MEDYCYNA
+Badania wykryły nowotwór w wczesnym stadium.,MEDYCYNA
+Lekarze uratowali życie dziecka.,MEDYCYNA
+Personel medyczny rozpoczął strajk.,PROTESTY
+Szczepienia przeciwko COVID-19 ruszyły.,MEDYCYNA
+Manifestanci zablokowali ulicę.,PROTESTY
+Demonstracja przerodziła się w zamieszki.,PROTESTY
+Protestujący obrzucili policję kamieniami.,PRZESTĘPSTWO
+Strajk sparaliżował transport publiczny.,PROTESTY
+Związkowcy negocjują z pracodawcą.,PROTESTY
+Protest ekologów zablokował kopalnię.,PROTESTY
+Tłum domagał się dymisji ministra.,PROTESTY
+Policja rozpędziła nielegalną demonstrację.,PROTESTY
+Aktywiści zorganizowali sit-in przed parlamentem.,PROTESTY
+Pikieta trwała przez całą noc.,PROTESTY
+Aktor otrzymał prestiżową nagrodę.,KULTURA
+Film zdobył Oscara.,KULTURA
+Koncert zgromadził tysiące fanów.,KULTURA
+Muzeum otworzyło nową wystawę.,KULTURA
+Pisarz wydał bestseller.,KULTURA
+Festiwal filmowy rozpoczął się w Cannes.,KULTURA
+Opera wystawiła premierę.,KULTURA
+Galeria kupiła obraz za miliony.,KULTURA
+Rzeźba została zniszczona przez wandali.,PRZESTĘPSTWO
+Teatr odwołał przedstawienie.,KULTURA
+Technologiczny gigant wydał nowy produkt.,TECHNOLOGIA
+Hakerzy zaatakowali serwery rządowe.,PRZESTĘPSTWO
+Startup pozyskał miliony w finansowaniu.,EKONOMIA
+Aplikacja przekroczyła milion pobrań.,TECHNOLOGIA
+Firma tech zwolniła tysiące pracowników.,EKONOMIA
+Sieć społecznościowa zmieniła algorytm.,TECHNOLOGIA
+Smartfon otrzymał przełomową funkcję.,TECHNOLOGIA
+Dron dostarczył pierwszą przesyłkę.,TECHNOLOGIA
+Sztuczna inteligencja przewyższyła człowieka.,NAUKA
+Robot przejął pracę na linii produkcyjnej.,TECHNOLOGIA
+Sąd skazał oskarżonego na 10 lat więzienia.,PRAWO
+Prokuratura postawiła zarzuty podejrzanemu.,PRAWO
+Adwokat wniósł apelację od wyroku.,PRAWO
+Świadek zeznawał przed sądem.,PRAWO
+Ława przysięgłych ogłosiła werdykt.,PRAWO
+Sędzia uniewinnił oskarżonego.,PRAWO
+Trybunał orzekł niekonstytucyjność ustawy.,PRAWO
+Prawnik bronił swojego klienta.,PRAWO
+Proces sądowy trwał trzy lata.,PRAWO
+Wyrok został uprawomocniony.,PRAWO
+Turystę ugryzł dziki pies.,WYPADEK
+Niedźwiedź zaatakował turystę w lesie.,WYPADEK
+Pszczoły użądliły dziecko.,WYPADEK
+Wąż jadowity ukąsił wędkarza.,WYPADEK
+Pies pogryzł przechodnia.,WYPADEK
+Dzik wybiegł na drogę.,WYPADEK
+Krokodyl zaatakował pływaka.,WYPADEK
+Rekina zauważono przy plaży.,BEZPIECZEŃSTWO
+Wilk pojawił się w pobliżu wioski.,BEZPIECZEŃSTWO
+Nietoperze zaatakowały mieszkańców.,WYPADEK
+Komitet przyznał dotację.,ADMINISTRACJA
+Urzędnik wydał pozwolenie na budowę.,ADMINISTRACJA
+Rada miejska przyjęła uchwałę.,POLITYKA
+Inspekcja wykryła nieprawidłowości.,ADMINISTRACJA
+Biurokracja opóźniła projekt.,ADMINISTRACJA
+Urząd zamknięto z powodu remontu.,ADMINISTRACJA
+Formularz został nieprawidłowo wypełniony.,ADMINISTRACJA
+Dokumenty zostały skierowane do archiwum.,ADMINISTRACJA
+Procedura wymaga zgody komitetu.,ADMINISTRACJA
+Wniosek został odrzucony.,ADMINISTRACJA
+Wolontariusze zebrali fundusze dla potrzebujących.,SPOŁECZEŃSTWO
+Organizacja charytatywna pomogła bezdomnym.,SPOŁECZEŃSTWO
+Fundacja przekazała dary szpitalowi.,SPOŁECZEŃSTWO
+Akcja społeczna zgromadziła tysiące uczestników.,SPOŁECZEŃSTWO
+Zbiórka przekroczyła cel.,SPOŁECZEŃSTWO
+Kampania społeczna zwiększyła świadomość.,SPOŁECZEŃSTWO
+Darczyńcy wsparli projekt.,SPOŁECZEŃSTWO
+Wydarzenie charytatywne odbyło się w parku.,SPOŁECZEŃSTWO
+Społeczność lokalną zorganizowała festyn.,SPOŁECZEŃSTWO
+Ochotnicy posprzątali plażę.,SPOŁECZEŃSTWO
+Firma wycofała wadliwy produkt.,EKONOMIA
+Konsument złożył reklamację.,PRAWO
+Producent przeprosił za błąd.,EKONOMIA
+Klient pozwał firmę za szkody.,PRAWO
+Gwarancja nie obejmowała uszkodzenia.,PRAWO
+Sprzedawca oszukał kupującego.,PRZESTĘPSTWO
+Towar był niezgodny z opisem.,PRAWO
+Zwrot pieniędzy został zrealizowany.,EKONOMIA
+Produkt został wycofany z rynku.,EKONOMIA
+Kontrola jakości wykryła defekt.,EKONOMIA
+Burmistrz inaugurował nową inwestycję.,POLITYKA
+Most został otwarty dla ruchu.,INFRASTRUKTURA
+Droga została zamknięta z powodu robót.,INFRASTRUKTURA
+Tunel przeszedł testy bezpieczeństwa.,INFRASTRUKTURA
+Autostrada łączy dwa miasta.,INFRASTRUKTURA
+Linia metra została przedłużona.,INFRASTRUKTURA
+Lotnisko rozbudowuje terminal.,INFRASTRUKTURA
+Port obsługuje więcej statków.,INFRASTRUKTURA
+Wiadukt został wyburzony.,INFRASTRUKTURA
+Infrastruktura wymaga modernizacji.,INFRASTRUKTURA
+Elektrownia zwiększyła produkcję energii.,EKONOMIA
+Panel solarny zasilił budynek.,TECHNOLOGIA
+Wiatrak generuje czystą energię.,EKOLOGIA
+Kopalnia węgla zostanie zamknięta.,EKONOMIA
+Rafineria przetwarza ropę naftową.,EKONOMIA
+Linia wysokiego napięcia została uszkodzona.,INFRASTRUKTURA
+Prąd został przywrócony po awarii.,INFRASTRUKTURA
+Elektryk naprawił instalację.,ADMINISTRACJA
+Faktura za energię wzrosła.,EKONOMIA
+Odnawialne źródła energii zyskują popularność.,EKOLOGIA
+Ekologowie protestują przeciw wycince drzew.,PROTESTY
+Recykling zmniejszył ilość odpadów.,EKOLOGIA
+Zanieczyszczenie powietrza przekroczyło normy.,EKOLOGIA
+Fabryka wypuszcza toksyczne opary.,EKOLOGIA
+Rzeka została zanieczyszczona chemikaliami.,EKOLOGIA
+Park narodowy chroni rzadkie gatunki.,EKOLOGIA
+Zwierzęta zagrożone wyginięciem.,EKOLOGIA
+Plastik zanieczyszcza oceany.,EKOLOGIA
+Firma naruszyła przepisy środowiskowe.,PRAWO
+Śmieci zalegają na ulicach.,ADMINISTRACJA
+Nauczyciel rozpoczął strajk.,PROTESTY
+Szkoła zamknięta z powodu remontu.,ADMINISTRACJA
+Uczeń zdobył pierwszą nagrodę w olimpiadzie.,EDUKACJA
+Egzamin maturalny został zdany.,EDUKACJA
+Uniwersytet otworzył nowy wydział.,EDUKACJA
+Stypendium przyznano najlepszym studentom.,EDUKACJA
+Reforma edukacji wywołała kontrowersje.,POLITYKA
+Dzieci rozpoczęły rok szkolny.,EDUKACJA
+Biblioteka uzupełniła zbiory.,KULTURA
+Zajęcia zostały odwołane.,EDUKACJA
