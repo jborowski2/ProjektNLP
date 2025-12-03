@@ -367,7 +367,7 @@ add_examples('BEZPIECZEŃSTWO', [
 # ADMINISTRACJA
 add_examples('ADMINISTRACJA', [
     "Urząd wprowadził nowe procedury.",
-    "Gmina zatwierdzone plan inwestycyjny.",
+    "Gmina zatwierdziła plan inwestycyjny.",
     "Burmistrz podpisał umowę z wykonawcą.",
     "Rada miejska przyjęła uchwałę budżetową.",
     "Urząd wojewódzki wydał pozwolenie.",

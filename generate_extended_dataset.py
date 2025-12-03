@@ -449,7 +449,7 @@ def generate_event_sentences():
         "Nauczyciel otrzymał nagrodę za osiągnięcia.",
         "Szkoła zorganizowała konkurs dla uczniów.",
         "Uniwersytet otworzył nowy kierunek studiów.",
-        "Uczen wygrał olimpiadę przedmiotową.",
+        "Uczeń wygrał olimpiadę przedmiotową.",
         "Szkoła zmodernizowała sale lekcyjne.",
         "Uniwersytet podpisał umowę z zagranicą.",
         "Nauczyciele zorganizowali wycieczkę edukacyjną.",
