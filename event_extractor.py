@@ -133,17 +133,18 @@ class EventExtractor:
         
         for _, row in df.iterrows():
             sentence = row['sentence']
-            expected_who = str(row['who']).lower().strip()
-            expected_trigger = str(row['trigger']).lower().strip()
-            expected_what = str(row['what']).lower().strip()
+            # Handle NaN values properly
+            expected_who = str(row['who']).lower().strip() if pd.notna(row['who']) else ""
+            expected_trigger = str(row['trigger']).lower().strip() if pd.notna(row['trigger']) else ""
+            expected_what = str(row['what']).lower().strip() if pd.notna(row['what']) else ""
             
             who, trigger, what = self.relation_extractor.extract_who_what(sentence)
             
-            if who and expected_who in who.lower():
+            if who and expected_who and expected_who in who.lower():
                 correct_who += 1
-            if trigger and expected_trigger in trigger.lower():
+            if trigger and expected_trigger and expected_trigger in trigger.lower():
                 correct_trigger += 1
-            if what and expected_what in what.lower():
+            if what and expected_what and expected_what in what.lower():
                 correct_what += 1
         
         metrics = {
