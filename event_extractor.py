@@ -7,9 +7,7 @@ from relation_extractor import RelationExtractor
 
 class EventExtractor:
     def __init__(self):
-        self.classifier = EventClassifier(
-            "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
-        )
+        self.classifier = EventClassifier()
         self.relations = RelationExtractor()
 
     def train(self, csv_path: str):
