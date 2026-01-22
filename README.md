@@ -34,7 +34,7 @@ System składa się z dwóch głównych komponentów:
 - Wykorzystuje wektorową reprezentację zdań (sentence embeddings)
 - Model: `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`
 - Klasyfikator: Logistic Regression
-- **Zbiór uczący: 220+ przykładów** (gotowy do rozszerzenia do 1000+)
+- **Zbiór uczący: 1042 przykłady** (rozszerzony zbiór z kategorią BRAK_ZDARZENIA)
 
 ### 2. Wykrywanie relacji (podmiot-orzeczenie-dopełnienie)
 - Wykorzystuje Universal Dependencies parsing
@@ -155,8 +155,30 @@ ProjektNLP/
 
 ### Zbiór treningowy (`training_data.csv`)
 - **Format**: CSV z kolumnami `sentence`, `label`
-- **Rozmiar**: 220+ przykładów
-- **Kategorie**: PRZESTĘPSTWO, WYPADEK, POŻAR, POLITYKA, SPORT, EKONOMIA, NAUKA, KLĘSKA_ŻYWIOŁOWA, MEDYCYNA, PROTESTY, KULTURA, TECHNOLOGIA, PRAWO, BEZPIECZEŃSTWO, ADMINISTRACJA, SPOŁECZEŃSTWO, INFRASTRUKTURA, EKOLOGIA, EDUKACJA
+- **Rozmiar**: 1042 przykłady
+- **Kategorie**: PRZESTĘPSTWO, WYPADEK, POŻAR, POLITYKA, SPORT, EKONOMIA, NAUKA, KLĘSKA_ŻYWIOŁOWA, MEDYCYNA, PROTESTY, KULTURA, TECHNOLOGIA, PRAWO, BEZPIECZEŃSTWO, ADMINISTRACJA, SPOŁECZEŃSTWO, INFRASTRUKTURA, EKOLOGIA, EDUKACJA, **BRAK_ZDARZENIA** (nowa kategoria)
+
+#### Rozkład przykładów w zbiorze treningowym:
+- ADMINISTRACJA: 52 przykłady
+- BEZPIECZEŃSTWO: 42 przykłady
+- **BRAK_ZDARZENIA: 90 przykładów** (zdania neutralne/opisowe bez wydarzeń)
+- EDUKACJA: 46 przykładów
+- EKOLOGIA: 49 przykładów
+- EKONOMIA: 61 przykładów
+- INFRASTRUKTURA: 51 przykładów
+- KLĘSKA_ŻYWIOŁOWA: 49 przykładów
+- KULTURA: 49 przykładów
+- MEDYCYNA: 47 przykładów
+- NAUKA: 51 przykładów
+- POLITYKA: 53 przykłady
+- POŻAR: 47 przykładów
+- PRAWO: 55 przykładów
+- PROTESTY: 52 przykłady
+- PRZESTĘPSTWO: 46 przykładów
+- SPORT: 48 przykładów
+- SPOŁECZEŃSTWO: 50 przykładów
+- TECHNOLOGIA: 47 przykładów
+- WYPADEK: 57 przykładów
 
 ### Zbiór testowy (`test_relations.csv`)
 - **Format**: CSV z kolumnami `sentence`, `who`, `trigger`, `what`

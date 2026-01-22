@@ -53,7 +53,7 @@ python event_extractor.py
 ```
 
 To uruchomi:
-1. Trenowanie klasyfikatora na 220+ przykładach
+1. Trenowanie klasyfikatora na 1042 przykładach (zawiera kategorię BRAK_ZDARZENIA)
 2. Ewaluację ekstrakcji relacji na 106+ przykładach
 3. Demonstrację ekstrakcji na przykładowych zdaniach
 4. Zapisanie wytrenowanego modelu
@@ -187,12 +187,52 @@ System zwraca obiekty `EventRecord` z następującymi polami:
 - `confidence`: Pewność klasyfikacji 0-1 (float)
 - `raw_sentence`: Oryginalne zdanie (str)
 
+## Kategoria BRAK_ZDARZENIA
+
+Nowość! Dataset zawiera teraz specjalną kategorię **BRAK_ZDARZENIA** (90 przykładów) dla zdań neutralnych/opisowych, które nie zawierają konkretnych wydarzeń:
+
+```python
+# Przykłady BRAK_ZDARZENIA
+classifier.predict("Dzisiaj jest piękna pogoda.")
+# -> BRAK_ZDARZENIA
+
+classifier.predict("W parku rosną duże drzewa.")
+# -> BRAK_ZDARZENIA
+
+# Przykłady rzeczywistych wydarzeń
+classifier.predict("Pożar zniszczył budynek.")
+# -> POŻAR
+
+classifier.predict("Policja zatrzymała podejrzanego.")
+# -> PRZESTĘPSTWO
+```
+
+Ta kategoria pozwala systemowi odróżnić:
+- Zdania informacyjne od opisowych
+- Wydarzenia od statycznych opisów
+- Akcje od stanów
+
+## Weryfikacja datasetu
+
+Możesz zweryfikować integralność datasetu za pomocą:
+
+```bash
+python verify_dataset.py
+```
+
+Ten skrypt sprawdzi:
+- Liczbę przykładów (powinno być 1000+)
+- Obecność kategorii BRAK_ZDARZENIA
+- Rozkład przykładów na kategorie
+- Duplikaty i brakujące wartości
+
 ## Dalsze kroki
 
 1. **Rozbuduj zbiór treningowy**: Dodaj więcej przykładów do `datasets/training_data.csv`
 2. **Dodaj więcej kategorii**: Edytuj istniejące kategorie lub dodaj nowe
 3. **Popraw ekstrakcję lokalizacji i czasu**: Rozszerz `RelationExtractor` o wykrywanie WHERE/WHEN
 4. **Zintegruj z realnym źródłem danych**: Podłącz RSS/API z newsami
+5. **Dostosuj BRAK_ZDARZENIA**: Dodaj więcej przykładów zdań neutralnych specyficznych dla Twojego przypadku użycia
 
 ## Dodatkowe zasoby
 
