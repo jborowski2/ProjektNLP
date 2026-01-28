@@ -159,6 +159,12 @@ def main() -> int:
     parser.add_argument("--headlines", default="datasets/id_and_headline_first_sentence (1).csv")
     parser.add_argument("--tagged", default="datasets/tagged.csv")
     parser.add_argument("--limit", type=int, default=0, help="Optional: limit number of examples for faster runs.")
+    parser.add_argument(
+        "--sample",
+        action="store_true",
+        help="If used with --limit, sample instead of taking head (for 1:1 comparability with evaluate_ollama.py).",
+    )
+    parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--out-dir", default="results")
     parser.add_argument(
         "--proxy-ner",
@@ -193,7 +199,10 @@ def main() -> int:
 
     df = load_relation_extraction_frame(headlines_csv_path=args.headlines, tagged_csv_path=args.tagged)
     if args.limit and args.limit > 0 and args.limit < len(df):
-        df = df.sample(n=int(args.limit), random_state=42).reset_index(drop=True)
+        if args.sample:
+            df = df.sample(n=int(args.limit), random_state=int(args.seed)).reset_index(drop=True)
+        else:
+            df = df.head(int(args.limit)).reset_index(drop=True)
 
     rel = RelationExtractor()
 

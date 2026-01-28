@@ -213,6 +213,8 @@ class MainWindow(QMainWindow):
         self.setWindowTitle("ProjektNLP – Klasyfikacja zdarzeń")
 
         self.extractor = EventExtractor()
+        self._use_ollama = False
+        self._ollama_model = "qwen2.5:7b-instruct"
         self.model_path = DEFAULT_MODEL_PATH
         self.models_dir = DEFAULT_MODELS_DIR
         self._leaderboard = _load_leaderboard_rows()
@@ -297,6 +299,16 @@ class MainWindow(QMainWindow):
         self.refresh_models()
         self.on_model_changed()
 
+    def _activate_ollama_classifier(self) -> None:
+        from ollama_event_classifier import OllamaEventClassifier
+        from ollama_relation_extractor import OllamaRelationExtractor
+
+        self.extractor = EventExtractor(
+            classifier=OllamaEventClassifier(model=self._ollama_model, host=""),
+            relations=OllamaRelationExtractor(model=self._ollama_model, host=""),
+        )
+        self.statusBar().showMessage(f"Ollama aktywna: {self._ollama_model}")
+
     def _apply_styles(self) -> None:
         # Lightweight styling to make the UI feel less default.
         self.setStyleSheet(
@@ -305,7 +317,7 @@ class MainWindow(QMainWindow):
             QLabel { color: #e2e8f0; }
             QGroupBox { color: #e2e8f0; border: 1px solid #334155; border-radius: 8px; margin-top: 10px; }
             QGroupBox::title { subcontrol-origin: margin; left: 10px; padding: 0 6px 0 6px; }
-            QTextEdit, QLineEdit, QComboBox {
+            QTextEdit, QComboBox {
                 background: #0b1220; color: #e2e8f0; border: 1px solid #334155; border-radius: 8px;
                 padding: 8px;
             }
@@ -327,19 +339,22 @@ class MainWindow(QMainWindow):
         Uwaga: w comboboxie pokazujemy tylko nazwy przyjazne; szczegóły są po prawej.
         """
         self.model_combo.clear()
+
+        # Ollama option(s) at the top.
+        self.model_combo.addItem(f"Ollama – {self._ollama_model}", f"ollama:{self._ollama_model}")
         if not self.models_dir.exists():
             self.model_combo.addItem("(brak katalogu models/)")
-            self.model_count.setText("Modele: 0")
+            self.model_count.setText("Modele: 1")
             return
 
         paths = sorted(self.models_dir.glob("**/*.joblib"))
         if not paths:
             self.model_combo.addItem("(brak zapisanych modeli .joblib)")
-            self.model_count.setText("Modele: 0")
+            self.model_count.setText("Modele: 1")
             return
 
         self._model_paths = paths
-        shown = 0
+        shown = 1  # includes Ollama entry
 
         # Keep combo labels clean (no metrics, no filenames); disambiguate duplicates.
         name_counts: dict[str, int] = {}
@@ -386,6 +401,31 @@ class MainWindow(QMainWindow):
             self.model_stats.setPlainText("(brak wybranego modelu)")
             return
 
+        # Ollama selected
+        if isinstance(data, str) and data.startswith("ollama:"):
+            self._use_ollama = True
+            model = data.split(":", 1)[1].strip()
+            if model:
+                self._ollama_model = model
+            try:
+                self._activate_ollama_classifier()
+            except Exception as exc:
+                QMessageBox.critical(
+                    self,
+                    "Błąd",
+                    "Nie udało się uruchomić Ollamy. Upewnij się, że Ollama działa i model jest pobrany.\n\n"
+                    f"Szczegóły: {exc}",
+                )
+            self._update_model_stats_panel()
+            return
+
+        self._use_ollama = False
+
+        # Jeśli wcześniej był wybrany tryb Ollama, musimy wrócić do standardowego
+        # EventExtractor (sklearn + .joblib). W przeciwnym razie load_classifier
+        # trafi na klasyfikator Ollamy, który nie obsługuje load().
+        self.extractor = EventExtractor()
+
         selected = Path(str(data))
         if not selected.exists():
             self.model_stats.setPlainText(f"(nie znaleziono pliku modelu: {selected})")
@@ -401,15 +441,30 @@ class MainWindow(QMainWindow):
         self._update_model_stats_panel()
 
     def _ensure_model_loaded(self) -> bool:
+        if getattr(self, "_use_ollama", False):
+            return True
+
         try:
-            # A cheap check: predict() will raise if not trained
-            if not self.extractor.classifier.is_trained:
+            # A cheap check: sklearn classifier wrapper has `is_trained`.
+            is_trained = getattr(self.extractor.classifier, "is_trained", None)
+            if isinstance(is_trained, bool) and not is_trained:
                 raise RuntimeError("Model nie jest wczytany")
             return True
         except Exception:
             return False
 
     def _update_model_stats_panel(self) -> None:
+        if getattr(self, "_use_ollama", False):
+            model = self._ollama_model or "(nie ustawiono)"
+            self.model_stats.setPlainText(
+                "Tryb: Ollama (lokalny LLM)\n"
+                f"Model: {model}\n"
+                "Host: http://localhost:11434 (domyślnie)\n\n"
+                "Uwaga: leaderboard i pliki .joblib nie dotyczą tego trybu.\n"
+                "Typ zdarzenia + relacje KTO/CO/TRIGGER/GDZIE/KIEDY są wyciągane przez model (Ollama)."
+            )
+            return
+
         data = self.model_combo.currentData() if hasattr(self, "model_combo") else None
         if not data:
             self.model_stats.setPlainText("(brak wybranego modelu)")
@@ -489,7 +544,15 @@ class MainWindow(QMainWindow):
             label, prob = self.extractor.classifier.predict(sentence)
             self.output.setPlainText(f"Typ zdarzenia: {label}\nPewność: {prob:.2f}\n\nZdanie:\n{sentence}")
         except Exception as exc:
-            QMessageBox.critical(self, "Błąd", f"Klasyfikacja nie powiodła się: {exc}")
+            if getattr(self, "_use_ollama", False):
+                QMessageBox.critical(
+                    self,
+                    "Błąd",
+                    "Klasyfikacja przez Ollama nie powiodła się. Upewnij się, że Ollama działa i model jest pobrany.\n\n"
+                    f"Szczegóły: {exc}",
+                )
+            else:
+                QMessageBox.critical(self, "Błąd", f"Klasyfikacja nie powiodła się: {exc}")
 
     def on_extract(self) -> None:
         sentence = self._get_sentence()
@@ -508,12 +571,20 @@ class MainWindow(QMainWindow):
             event = self.extractor.extract_event(sentence)
             self.output.setPlainText(str(event))
         except Exception as exc:
-            QMessageBox.critical(
-                self,
-                "Błąd",
-                "Ekstrakcja nie powiodła się. Upewnij się, że masz pobrany model spaCy 'pl_core_news_lg'.\n\n"
-                f"Szczegóły: {exc}",
-            )
+            if getattr(self, "_use_ollama", False):
+                QMessageBox.critical(
+                    self,
+                    "Błąd",
+                    "Ekstrakcja przez Ollama nie powiodła się. Upewnij się, że Ollama działa i model jest pobrany.\n\n"
+                    f"Szczegóły: {exc}",
+                )
+            else:
+                QMessageBox.critical(
+                    self,
+                    "Błąd",
+                    "Ekstrakcja nie powiodła się. Upewnij się, że masz pobrany model spaCy 'pl_core_news_lg'.\n\n"
+                    f"Szczegóły: {exc}",
+                )
 
     def on_analyze(self) -> None:
         sentence = self._get_sentence()
@@ -532,12 +603,20 @@ class MainWindow(QMainWindow):
             event = self.extractor.extract_event(sentence)
             self.output.setPlainText(str(event))
         except Exception as exc:
-            QMessageBox.critical(
-                self,
-                "Błąd",
-                "Analiza nie powiodła się. Upewnij się, że masz pobrany model spaCy 'pl_core_news_lg'.\n\n"
-                f"Szczegóły: {exc}",
-            )
+            if getattr(self, "_use_ollama", False):
+                QMessageBox.critical(
+                    self,
+                    "Błąd",
+                    "Analiza przez Ollama nie powiodła się. Upewnij się, że Ollama działa i model jest pobrany.\n\n"
+                    f"Szczegóły: {exc}",
+                )
+            else:
+                QMessageBox.critical(
+                    self,
+                    "Błąd",
+                    "Analiza nie powiodła się. Upewnij się, że masz pobrany model spaCy 'pl_core_news_lg'.\n\n"
+                    f"Szczegóły: {exc}",
+                )
 
 
 def main() -> int:

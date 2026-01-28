@@ -167,3 +167,26 @@ def load_relation_extraction_frame(
 
     df = df.reset_index(drop=True)
     return df
+
+
+def load_event_type_labels(
+    *,
+    tagged_csv_path: str = DatasetPaths.tagged_csv_path,
+) -> list[str]:
+    """Zwróć listę unikalnych etykiet typu zdarzenia z `tagged.csv`.
+
+    Użyteczne przy integracji z LLM (np. Ollama), żeby model wybierał z
+    zamkniętego słownika klas.
+    """
+
+    tagged = _read_csv_with_fallback(tagged_csv_path, sep=";")
+    if "kategoria" not in tagged.columns:
+        raise ValueError(
+            f"Expected column 'kategoria' in {tagged_csv_path}, got: {list(tagged.columns)}"
+        )
+
+    labels = tagged["kategoria"].astype(str).map(_normalize_label)
+    labels = labels[labels != ""]
+    # Zachowaj deterministyczną kolejność.
+    uniq = sorted(set(labels.tolist()))
+    return uniq

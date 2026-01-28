@@ -116,6 +116,29 @@ print(event)
 python event_extractor.py
 ```
 
+### Opcjonalnie: lokalny LLM przez Ollama (bez trenowania klasyfikatora)
+
+Jeśli chcesz użyć lokalnego LLM do klasyfikacji typu zdarzenia (szczególnie gdy zależy Ci na jakości języka PL), możesz skorzystać z Ollamy.
+
+1. Zainstaluj Ollamę (Windows): https://ollama.com/download/windows
+2. Pobierz model (polecany start):
+  - `ollama pull qwen2.5:7b-instruct`
+3. Uruchom demo w trybie Ollama (klasyfikacja typu jest z LLM, relacje dalej liczy spaCy):
+  - `python main.py --ollama --ollama-model qwen2.5:7b-instruct`
+
+Domyślnie Ollama działa na `http://localhost:11434`. Jeśli masz inny host, ustaw `OLLAMA_HOST` albo podaj `--ollama-host`.
+
+### Ewaluacja / eksperymenty: Ollama (Qwen) na naszym zbiorze
+
+Możesz policzyć metryki Qwen/Ollama na danych z `datasets/tagged.csv` (typ zdarzenia + relacje):
+
+- szybki test na próbce 50 zdań:
+  - `python evaluate_ollama.py --model qwen2.5:7b-instruct --limit 50 --sample`
+- pełny przebieg (może trwać długo, bo każde zdanie to wywołanie LLM):
+  - `python evaluate_ollama.py --model qwen2.5:7b-instruct`
+
+Wyniki zapisują się do `results/` jako `ollama_eval_*.json` i `ollama_predictions_*.csv`.
+
 ## Aplikacja okienkowa (Python + Qt)
 
 Aplikacja GUI ładuje wytrenowany model i pozwala klasyfikować zdania oraz (opcjonalnie) wyciągać KTO/CO/TRIGGER/GDZIE/KIEDY.

@@ -8,19 +8,48 @@ W UI i skryptach to jest główny punkt wejścia do analizy pojedynczego zdania.
 """
 
 import pandas as pd
-from typing import Optional
+from typing import Optional, Protocol, runtime_checkable
 from event_record import EventRecord
 from event_classifier import EventClassifier
 from relation_extractor import RelationExtractor
 from data_loading import load_event_type_training_frame
 
 
+@runtime_checkable
+class EventTypeClassifier(Protocol):
+    def predict(self, sentence: str) -> tuple[str, float]:
+        ...
+
+
+@runtime_checkable
+class TrainableEventTypeClassifier(EventTypeClassifier, Protocol):
+    def train(self, sentences, labels, *args, **kwargs):
+        ...
+
+
+@runtime_checkable
+class RelationExtractionModel(Protocol):
+    def extract_relations(self, sentence: str) -> tuple[
+        Optional[str],
+        Optional[str],
+        Optional[str],
+        Optional[str],
+        Optional[str],
+    ]:
+        ...
+
+
 class EventExtractor:
     """Wysokopoziomowa analiza zdania (typ + relacje)."""
 
-    def __init__(self):
-        self.classifier = EventClassifier()
-        self.relations = RelationExtractor()
+    def __init__(
+        self,
+        *,
+        classifier: EventTypeClassifier | None = None,
+        relations: RelationExtractionModel | None = None,
+    ):
+        self.classifier = classifier or EventClassifier()
+        self.relations = relations or RelationExtractor()
 
     def train(
         self,
@@ -49,7 +78,11 @@ class EventExtractor:
         print("Najczęstsze etykiety:")
         print(df["label"].value_counts().head(10))
 
-        self.classifier.train(
+        if not isinstance(self.classifier, TrainableEventTypeClassifier) and not hasattr(self.classifier, "train"):
+            raise TypeError("Aktualny klasyfikator nie obsługuje trenowania (np. tryb Ollama).")
+
+        # Typowanie: train jest dostępne dla sklearnowego klasyfikatora.
+        self.classifier.train(  # type: ignore[attr-defined]
             df["sentence"].tolist(),
             df["label"].tolist(),
             test_size=test_size,
@@ -94,8 +127,14 @@ class EventExtractor:
 
     def save_classifier(self, path: str) -> None:
         """Zapisz wytrenowany klasyfikator typu zdarzenia."""
-        self.classifier.save(path)
+        if hasattr(self.classifier, "save"):
+            self.classifier.save(path)  # type: ignore[attr-defined]
+            return
+        raise TypeError("Aktualny klasyfikator nie obsługuje zapisu (np. tryb Ollama).")
 
     def load_classifier(self, path: str) -> None:
         """Wczytaj zapisany klasyfikator typu zdarzenia."""
-        self.classifier.load(path)
+        if hasattr(self.classifier, "load"):
+            self.classifier.load(path)  # type: ignore[attr-defined]
+            return
+        raise TypeError("Aktualny klasyfikator nie obsługuje wczytywania (np. tryb Ollama).")
