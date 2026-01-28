@@ -98,4 +98,1404 @@ id;kategoria;KTO;CO;TRIGGER;GDZIE;KIEDY
 97;BIZNES;Bank Pekao SA;zysk;wyższy;Polska;pierwsza połowa roku
 98;BIZNES;;umowa o budowie Baltic Pipe;podpisana;Polska;przełom grudnia i listopada
 99;POLITYKA;Hu Chunhua;rozmowy handlowe;odwołał;Wielka Brytania;niedziela
-100;BIZNES;UE;importu gazu;zmniejszyć;UE;2023 r.
+100;BIZNES;LPP;salon;zamknięciu;Rosja;
+101;BIZNES;RPP;stopy procentowe;pozostawiła;Polska;
+102;BIZNES;Gaz-System;układanie gazociągu;zakończył;;czwartek
+103;POLITYKA;fiskus;sekrety doradców;chce;Polska;
+104;BIZNES;RPP;stopy procentowe;nie zmieniła;Polska;środa
+105;BIZNES;Eurostat;stopa bezrobocia;poinformował;Polska;sierpień
+106;BIZNES;ZUS;informacje z numerem konta;wysłał;Polska;październik
+107;BIZNES;Mikołaj Wild;Centralny Port Komunikacyjny;ocenił;Polska;
+108;BIZNES;Polska Agencja Kosmiczna;szkolenia urzędników;rozpoczną się;Polska;2019 r.
+109;BRAK_ZDARZENIA;;pierogi;hit;;
+110;KATASTROFA;Dunaj;stan wody;spadł;Dunaj;
+111;BIZNES;Stałe Przedstawicielstwo RP;bezrobocie;poinformowało;Polska;marzec 2021
+112;BIZNES;brytyjska monarchia;1,5 mld funtów;przynosi;Wielka Brytania;rocznie
+113;BIZNES;ministerstwo Korei Płd.;rezerwy ropy;rozważymy;Korea Południowa;poniedziałek
+114;BIZNES;Donald Trump;wydobycie ropy;zmniejszyć;;
+115;BIZNES;Steven Mnuchin;cła;utrzymają;USA;
+116;BIZNES;;bezrobocie;najniższe;Polska;lipiec
+117;KATASTROFA;rosyjska inwazja;zatrudnienie;straciło;Ukraina;
+118;BIZNES;;liczba działalności gospodarczych;wzrosła;Polska;siódmy miesiąc z rzędu
+119;BIZNES;KOWR;produkcja malin;informuje;Polska;
+120;BIZNES;fundacja Billa Gatesa;setki milionów dolarów;przeznaczyła;;
+121;BIZNES;spółki Skarbu Państwa;170 mln zł;wynika z raportu;Polska;
+122;BIZNES;Centrum Projektów Polska Cyfrowa;konkurs;zwyciężył;UE;
+123;BIZNES;GUS;stopa bezrobocia;podał;Polska;listopad 2018 r.
+124;BIZNES;Didier Guillaume;pracy na roli;apel;Francja;
+125;BIZNES;naukowcy UW;zawodów;zniknie;Polska;w ciągu 25 lat
+126;BIZNES;;sklepów internetowych;powstało;Polska;pierwsze półrocze
+127;POLITYKA;Hanower;oszczędzanie energii;podeszło;Niemcy;
+128;BRAK_ZDARZENIA;;strategię 3xP;stawiamy;;
+129;BIZNES;PGNiG;złożu Duva;zakupu;Norwegia;poniedziałek
+130;BIZNES;Tesco;sklepy;zamknie;Polska;
+131;BIZNES;NBP;wartość banknotów;wzrosła;Polska;drugi kwartał
+132;PRZESTEPSTWO;UODO;2,8 mln zł kary;nałożył;Polska;
+133;KATASTROFA;organizacje rolnicze;zbiory zbóż;mniejsze;Mołdawia;sobota
+134;BIZNES;LOT;połączenia;uruchomią;Bydgoszcz-Warszawa;27 października
+135;BIZNES;Belgia;Ryanair;pozwać;Belgia;
+136;BIZNES;Fundacja CASE;raporty;dobre;Polska;
+137;BIZNES;UE;stawki za rozmowy;zaczną obowiązywać;UE;środa
+138;BIZNES;;niedziele handlowe;będą;Polska;przed Bożym Narodzeniem
+139;POLITYKA;TSUE;dyrektywa;orzekł;Luksemburg;wtorek
+140;BIZNES;PKP Cargo;tarcza antykryzysowa;planuje skorzystać;Polska;czwartek
+141;BIZNES;sklepy internetowe;podatek;uiszczą;;
+142;PRZESTEPSTWO;KGHM;fałszywe strony;ostrzega;Polska;
+143;BIZNES;IPAG;PKB;zwiększy się;Polska;2021 r.
+144;BIZNES;amerykańskie indeksy;sesję;zakończyły na minusie;USA;piątek
+145;BIZNES;analitycy Euler Hermes;liczba upadłości;prognozują;Polska;
+146;BIZNES;gdańskie lotnisko;system multilateracyjny;zaczął działać;Polska;
+147;PRZESTEPSTWO;PKN Orlen;zobowiązania Lotosu;zapłacić;Polska;
+148;BIZNES;Fitch;rating;potwierdza;Polska;piątek
+149;BIZNES;NBP;wzrost PKB;przewiduje;Polska;2017 r.
+150;BIZNES;PGNiG;dostawy gazu;zawarł;Polska;od stycznia 2023 r.
+151;POLITYKA;Mateusz Morawiecki;spotkanie;spotkał się;USA;drugi dzień wizyty
+152;BIZNES;kredyty hipoteczne;popyt;rośnie;;od kilku miesięcy
+153;BIZNES;Bayer;Monsanto;przejęcie;USA/Niemcy;środa
+154;POLITYKA;holenderski rząd;kontakty dyplomatyczne;wznowił;Rosja;2017 r.
+155;BIZNES;Komisja Europejska;decyzja ws. fuzji;wydłużyła czas;;wtorek
+156;BIZNES;Fiat;nowy model;będzie produkowany;Tychy;
+157;POLITYKA;politycy PO;uniezależnienie od gazu;przekonują;Polska;
+158;BIZNES;Polacy;towary kupowane online;odsyłają;Polska;
+159;BIZNES;Deloitte;raport o przychodach;opublikowała;;sezon 2018/19
+160;BIZNES;GUS;przeciętne wynagrodzenie;wzrosło;Polska;III kwartał
+161;POLITYKA;Ukraina;embargo;wprowadza;Ukraina;
+162;POLITYKA;Krzysztof Tchórzewski;budowa energetyki jądrowej;oceniamy;Polska;
+163;BIZNES;Komisja Europejska;program wsparcia;zatwierdziła;Polska;
+164;BIZNES;PKN Orlen;umowa kredytu;podpisał;;
+165;BIZNES;PGNiG Obrót Detaliczny;ceny gazu;są niższe;Polska;środa 1 lipca
+166;BIZNES;trzy ministerstwa;pakiet pomocowy;przygotowują;Polska;
+167;BIZNES;Euler Hermes;niewypłacalne firmy;raport;Polska;2020 r.
+168;BIZNES;transakcja bitcoinem;;zawarto;;2010 r.
+169;POLITYKA;Heiko Maas;stanowisko ws. Nord Stream 2;nie zmieni;Niemcy;
+170;BIZNES;Orlen;kontrakt na ropę;nie przedłużymy;Polska;styczeń
+171;BIZNES;prezes Orlenu;ceny paliwa;przekonywał;;
+172;POLITYKA;Litwa;zakaz tranzytu;zaczął obowiązywać;Litwa;niedziela
+173;BIZNES;budżet państwa;deficyt;miał;Polska;po listopadzie
+174;POLITYKA;Najwyższa Izba Kontroli;raport ws. umów gazowych;ujawniła;Polska;
+175;PROTEST;piloci i personel Ryanair;strajk;strajkują;Niemcy;
+176;POLITYKA;Andrzej Duda;kupowanie polskich produktów;zaapelował;;
+177;POLITYKA;Andrzej Adamczyk i Arpad Erseka;umowy o połączeniu dróg;podpisali;granica PL-SK;
+178;POLITYKA;Unia Europejska;sankcje;doprecyzuje;Białoruś;
+179;BIZNES;wykwalifikowany pracownik fizyczny;marzenie pracodawców;wynika z danych;Pomorze;
+180;BRAK_ZDARZENIA;;47,4 proc.;;;
+181;BIZNES;lombardy;zniknięcie;mogą zniknąć;Polska;
+182;BIZNES;polska waluta;słabnięcie;słabnie;;
+183;BIZNES;Lotos Kolej;wagony i lokomotywa;kupiła;;
+184;BIZNES;Umicore;inwestycja w elektrownię;zainwestuje;Nysa;
+185;BIZNES;Tesco Polska;przejęcie;grozi;Polska;
+186;BIZNES;GDDKiA;przetarg na S7;ogłosiła;Miechów-Szczepanowice;
+187;BIZNES;pub Ye Olde Fighting Cocks;działalność;zakończyć;St Albans;
+188;BIZNES;ZUS;wyrównanie nadpłat;rusza;Polska;
+189;BIZNES;Baltic Pipe;skrzyżowanie z Nord Stream 2;skrzyżował się;;
+190;BIZNES;Amazon;logo aplikacji;zmieniła;;
+191;BIZNES;Maria Fajger (ARiMR);środki dla rolników;poinformowała;Polska;
+192;BIZNES;Niemcy i Włosi;wprowadzenie euro;zyskali/stracili;Europa;
+193;POLITYKA;Mateusz Morawiecki;sektor motoryzacji;ocenił;Polska Wieś;
+194;BIZNES;Jan Sarnowski;odliczenie od dochodu;informuje;Polska;najbliższe trzy miesiące
+195;POLITYKA;Aleksander Stępkowski;integracja z Rosją;ocenił;Berlin;wtorek
+196;POLITYKA;Władimir Putin;wojna energetyczna;zaatakuje/wypowie;Ukraina;jesień ubiegłego roku
+197;BIZNES;spółka CPK;liczba pasażerów;poinformowała;Polska;
+198;BIZNES;polski eksport;towary rolno-spożywcze;osiągnął poziom;Polska;I kwartał
+199;BIZNES;Cezary Przybylski;Forum Ekonomiczne;poinformował;Karpacz;
+200;BIZNES;obroty handlowe;88,5 mld euro;wyniosły;Polska-Niemcy;2015 r.
+201;BIZNES;produkcja przemysłowa;wzrost;wzrosła;;wrzesień
+202;BIZNES;PLL LOT;nowe samoloty;wzbogaci się;Polska;przyszły rok
+203;KATASTROFA;susza rolnicza;;obserwujemy;Polska;co roku od 1981 r.
+204;BIZNES;Bank Pekao i Microsoft;umowa o partnerstwie;zawarły;Krynica;
+205;BIZNES;Amazon;dostawy produktów;może dostarczać;Francja;przez miesiąc
+206;PRZESTEPSTWO (zatrzymać);KAS;handel częściami;przeprowadzi kontrole;Polska;
+207;POLITYKA;Andrzej Duda;wypowiedź;wypowiedział się;Davos;
+208;BIZNES;Morgan Stanley;wzrost PKB;wyniesie;Polska;ten rok
+209;KATASTROFA;pogoda;wegetacja;nie pomagają;;
+210;POLITYKA;Beata Szydło;deklaracje z Chinami;powiedziała;Chiny;
+211;POLITYKA;Jan Sarnowski;podatki korporacji;uważa;;
+212;BIZNES;S&P Global Ratings;prognozy PKB;utrzymała;Polska;16 lipca
+213;BIZNES;Nyerthus Kft;produkty polskich firm;zadeklarowała;Węgry;
+214;BIZNES;rząd Bangladeszu;produkcja odzieżowa;zezwolił na wznowienie;Bangladesz;
+215;POLITYKA;Ministerstwo Finansów;zmiany w ustawie STIR;szykuje;Polska;
+216;BIZNES;ceny na stacjach;korekta;stabilne;;
+217;BIZNES;złoty;wartość;umacnia się;;czwartek 28 lipca
+218;POLITYKA;Andrzej Adamczyk;regulamin płacowy PAŻP;poinformował;Polska;
+219;BRAK_ZDARZENIA;Niemiecka Federalna Agencja ds.;;;Niemcy;
+220;BIZNES;Chiny;fundusz inwestycyjny;rozpocznie działalność;Europa Środkowa;
+221;POLITYKA;Anna Moskwa;uniezależnienie od gazu;powiedziała;Europa;
+222;POLITYKA;prezes ZUS;wnioski o wsparcie;apelujemy;Polska;
+223;POLITYKA;Donald Trump;układ NAFTA;oświadczył;USA;poniedziałek
+224;BIZNES;NBP;wartość banknotów;wzrosła;Polska;koniec trzeciego kwartału
+225;POLITYKA;Jan Krzysztof Ardanowski;ustawa o obrocie ziemią;zapowiedział;Polska;
+226;BIZNES;niemieckie firmy;potencjał gospodarki;chcą wykorzystać;Polska;
+227;BIZNES;Lords LB Asset Management;operator parkingów;przeszedł w ręce;Polska;
+228;BIZNES;CEO World Magazine;atrakcyjność inwestycyjna;uznana;Polska;
+229;BIZNES;moc paneli fotowoltaicznych;granica 1 tys. MW;przebije;Polska;
+230;BIZNES;PGNiG Obrót Detaliczny;ceny gazu;obniża;Polska;od piątku
+231;BIZNES;urzędy skarbowe;numer konta;koniec z szukaniem;Polska;
+232;BIZNES;opłaty za gaz;;wzrastają;Polska;od soboty
+233;POLITYKA;Szymon Hołownia;pieniądz cyfrowy;stwierdził;Polska;
+234;BIZNES;Polacy;emigracja;spada;Norwegia;
+235;POLITYKA;Andrzej Adamczyk;inwestycja autostrada D11;powiedział;Czechy;
+236;POLITYKA;Departament Stanu USA;sankcje Nord Stream 2;ostrzegł;;
+237;POLITYKA;Kancelaria Premiera;dokonania rządu;poinformowała;Polska;sobota
+238;BIZNES;Marek Gróbarczyk;przekop Mierzei;zapewnił;Mierzeja Wiślana;sobota
+239;BRAK_ZDARZENIA;efektywność transportu;rozwój gospodarek;decyduje;;
+240;BIZNES;Amerykanie;zadłużenie na kartach;rośnie;USA;
+241;PRZESTEPSTWO;rządy Hollande'a i Macrona;dostawy broni do Rosji;były sprzeczne;Francja;
+242;POLITYKA;Mikołaj Wild;dokapitalizowanie CPK;ocenił;Polska;
+243;BIZNES;Meta;centrum danych;zrezygnował;Zeewolde;
+244;BIZNES;rada nadzorcza JSW;wiceprezesi;odwołała;Polska;czwartek
+245;BRAK_ZDARZENIA;gospodarka;rok 2018;był udany;Polska;2018 r.
+246;POLITYKA;Piotr Naimski;węgiel;powiedział;Polska;
+247;KATASTROFA;opady śniegu i mróz;komunikacja kolejowa;sparaliżowały;Włochy;
+248;POLITYKA;Mike Pompeo;chińskie aplikacje;oświadczył;USA;
+249;BIZNES;Kleszczów;wpływy podatkowe;pozostaje najbogatszą;Kleszczów;
+250;POLITYKA;Niemcy;pomoc Ukrainie;są hamulcowym;Niemcy;
+251;BIZNES;Belgijski urząd ds. konkurencji;połączenie portów;zatwierdził;Belgia;
+252;POLITYKA;USA;sankcje wobec Nord Stream 2;wprowadzą;Nord Stream 2;
+253;BIZNES;mieszkańcy Brandenburgii;zakup paliwa;opłaca się jeździć;Polska;
+254;BIZNES;firmy;składki ZUS;mogą nie płacić;Polska;od początku roku
+255;PROTEST;podwykonawcy Astaldi;rozmowy z PKP PLK;zakończyły się porozumieniem;;
+256;POLITYKA;Loro Piana;Władimir Putin;dystansuje się;Moskwa/Włochy;
+257;POLITYKA;Premier;fabrykę Hydro-Vacum;odwiedził;Grudziądz;
+258;BIZNES;Lotnisko Chopina;pasażerów;obsłużyło;Warszawa;maj br.
+259;BIZNES;ceny energii;unijne podatki;stanowią koszty;UE;
+260;BIZNES;wykonawca;gazociąg Baltic Pipe;wybór nastąpi;;przełom roku
+261;POLITYKA;Paweł Gruza;walkę z oszustwami podatkowymi;zapowiadając;Polska;
+262;BIZNES;ZUS;zatrudnienie obcokrajowców;ubyło zmian;Polska;wtorek
+263;POLITYKA;program Nowego Ładu;kwotę wolną od podatku;może zawierać;Polska;
+264;BIZNES;GUS;produkcja sprzedana przemysłu;była niższa;Polska;lipiec
+265;BIZNES;recesja;najbogatszych;nie dotknęła;Rosja;
+266;BIZNES;GUS;ceny lokali mieszkalnych;wzrost;Polska;pierwszy kwartał
+267;BIZNES;przedsiębiorcy;załogi;wiążą ze sobą;;
+268;BIZNES;Auchan, Carrefour, Orlen;współpracę na stacjach;testuje/zwiększa/rozwija;Polska;
+269;POLITYKA;kraje członkowskie;nowelizację dyrektywy gazowej;zatwierdziły;UE;poniedziałek
+270;BIZNES;Koleje Południowo-Wschodnie;impulsy z Newagu;odebrał;Włochy;
+271;BIZNES;sklepy;handel;będą zamknięte;Polska;21 marca
+272;BIZNES;Wall Street;główne indeksy;zakończyła się spadkami;USA;piątek
+273;POLITYKA;Szwecja;budowę Nord Stream;wydała zgodę;Szwecja;
+274;POLITYKA;Merkel, Tusk, Timmermans;obóz dla uchodźców;odwiedzili;Turcja;sobota
+275;BIZNES;urząd statystyczny;PKB Kanady;spadł;Kanada;kwiecień
+276;BIZNES;Polski Instytut Ekonomiczny;czas pracy;skraca się;Polska;
+277;BIZNES;PKN Orlen;dostawy płynu do dezynfekcji;wstrzymaniu;Polska;
+278;BIZNES;ZUS;utrzymaniem systemu informatycznego;zajmie się;Polska;
+279;BIZNES;Shell;projekt Sachalin 2;nie będzie uczestniczyć;Rosja;
+280;BIZNES;akcjonariusze PKN Orlen;połączenie z Grupą Lotos;poparli;Polska;
+281;BIZNES;hotele;straty;opiewają na miliardy;Polska;
+282;BIZNES;CD Projekt;podium giełdy;wskoczyła;Polska;
+283;BIZNES;Pesa Bydgoszcz;wagony pasażerskie;zmodernizuje;Polska;wtorek
+284;POLITYKA;Sejm;ustawę o OFE i IKE;uchwalił;Polska;czwartek
+285;BIZNES;Politechnika Łódzka;sieć badawczą 5G;uruchomiono;Łódź;
+286;BIZNES;Służba Więzienna;liczbę pracujących więźniów;zwiększenie;Polska;czwartek
+287;BIZNES;ZUS Opole;emerytury łączone;wypłaca;Polska/Niemcy;
+288;BIZNES;Dziennik Gazeta Prawna;skargi na komorników;spadła ilość;Polska;pierwsze sześć miesięcy
+289;BIZNES;Sąd;kredyt frankowy;zmienił na złotowy;Polska;
+290;BIZNES;;gospodarka;nie stanęła;Polska;
+291;BIZNES;Ministerstwo Finansów;budżet;rozpoczyna prace;Polska;
+292;POLITYKA;TSUE;wydobycie w Turowie;nakazał wstrzymanie;Turów;
+293;BIZNES;Sąd w Ostrawie;upadłość OKD;ogłosił;Czechy;
+294;BIZNES;przedsiębiorcy;Mały ZUS Plus;mogą zgłosić;Polska;do 1 lutego
+295;BIZNES;prezydent;osiągnięcia polskich firm;powiedział;Polska;czwartek
+296;POLITYKA;duże koncerny;strajki klimatyczne;stoją za;;
+297;BIZNES;Standard & Poor's;rating Polski;pozostawiła;Polska;
+298;BIZNES;rodzinna firma;samochód elektryczny;zaprojektowała;Częstochowa;
+299;POLITYKA;Tadeusz Kościński;unijny fundusz odbudowy;powiedział;Polska;
+300;BIZNES;PKP Intercity;pasażerów;skorzystało;Polska;2022 r.
+301;POLITYKA;projekt rozporządzenia;zakaz lotów;znajdą się;świat;28 października - 10 listopada
+302;POLITYKA;farmaceuci;prawo otwierania aptek;mają;Polska;niedziela
+303;BIZNES;Standard&Poors;rating Węgier;obniżyła;Węgry;po 10 latach
+304;BRAK_ZDARZENIA;Marek Zuber;program Minęła 20;byli gośćmi;TVP Info;
+305;BIZNES;Komisja Europejska;terminal LNG;dofinansowaniu;Świnoujście;piątek
+306;PRZESTEPSTWO;Korea Południowa;emisji spalin Volkswagena;prowadzi śledztwo;Korea Południowa;
+307;BIZNES;resort funduszy;dofinansowanie dla firm;podał;Polska;
+308;BIZNES;władze Florydy;łowców pytonów;chcą zatrudnić;Floryda;
+309;KATASTROFA;pszczoły;działanie insektycydów;narażone;;
+310;POLITYKA;Magdalena Rzeczkowska;korekty w PIT i CIT;pracujemy;Polska;
+311;BIZNES;ropa;ceny;tanieje;USA;
+312;BIZNES;konsumenci;zakupy na Alibaba;wydali 30 mld dolarów;Chiny;11 listopada
+313;BIZNES;PKN Orlen i Alstom;pociągi wodorowe;podpisał porozumienie;;
+314;PRZESTEPSTWO;Anne Longfield;TikTok;pozwała;Wielka Brytania/UE;
+315;BIZNES;Paweł Majewski;ceny gazu;nie spowoduje zmiany;Polska;
+316;BIZNES;Polacy;prezenty online;planują zakup;Polska;sezon bożonarodzeniowy
+317;BIZNES;Elżbieta Rafalska;bezrobocie;spadło;Polska;maj
+318;KATASTROFA;gminy w Polsce;zbożem jarym;zagrożonych suszą;Polska;
+319;BIZNES;Fitch;wiarygodność Wielkiej Brytanii;obniżyła;Wielka Brytania;poniedziałek
+320;BIZNES;Elżbieta Rafalska;zatrudnienie cudzoziemców;poinformowała;Polska;koniec 2017 r.
+321;BIZNES;rynek apteczny;sprzedaż;zanotował wzrost;Polska;2020 r.
+322;KATASTROFA;rolnicy;plaga szarańczy;doskwiera;Hiszpania;od kilku dni
+323;BIZNES;Polska;ranking atrakcyjności inwestycyjnej;zajmuje trzecie miejsce;Europa Środkowo-Wschodnia;
+324;BIZNES;FAO;indeks cen żywności;zyskał;świat;sierpień
+325;PRZESTEPSTWO;Mars;batony;zostanie wycofana;świat;
+326;BIZNES;Terminal Naftowy Gdańsk;zbiornik ropy naftowej;trafił do eksploatacji;Gdańsk;
+327;BIZNES;Lotnisko Chopina;pasażerów;obsłużyło;Warszawa;lipiec
+328;BIZNES;Gdańsk;farma fotowoltaiczna;powstała;Gdańsk;
+329;POLITYKA;Artur Soboń;składkę zdrowotną;zostały przegłosowane;Polska;
+330;PROTEST;personel naziemny KLM;akcję strajkową;wyznaczył;Holandia;środa
+331;BIZNES;ceny ubezpieczeń OC;ceny;unormowały się;Polska;
+332;BIZNES;Krajowy Rejestr Długów;zadłużenie firm;wzrosło;Polska;od lutego do września
+333;BIZNES;Piotr Bujak;dostawy do Niemiec;poinformował;Niemcy;wtorek
+334;BIZNES;Włochy;monety 1 i 2 centowe;zaprzestają bicia;Włochy;
+335;BIZNES;Agencja Mienia Wojskowego;pomoc przedsiębiorcom;włączyła się;Polska;
+336;BIZNES;mleczarski eksport;rekordy;bije;Polska;
+337;POLITYKA;KBA;testy samochodów diesel;przeprowadziła;Niemcy;
+338;POLITYKA;rząd;Tarcza Finansowa 2.0;ma zająć się;Polska;wtorek
+339;POLITYKA;Sueddeutsche Zeitung;zależność od Rosji;pisze;Niemcy;
+340;POLITYKA;rząd w Berlinie;opłaty dla ciężarówek;postanowił;Niemcy;od 1 lipca 2018 r.
+341;BIZNES;Centrum Monitorowania Rynku;sprzedaż sklepów;wzrosła;Polska;styczeń
+342;BIZNES;UOKiK;wysokość kary;poinformował;Polska;
+343;BIZNES;Grupa Azoty;pieniądze na projekt;szuka;Police;piątek
+344;BIZNES;Zygmunt Solorz i Adam Góral;kapitałowy sojusz;wchodzą w;Polska;
+345;POLITYKA;Henryk Kowalczyk;podatku od sklepów;powiedział o zmianach;Polska;
+346;BIZNES;klienci;towar;kupują wszystko;;
+347;BIZNES;urzędy pracy;ogłoszenia;miały wyjątkowo dużo;Polska;2015 r.
+348;BIZNES;Puls Biznesu;system poboru opłat;informuje;Polska;
+349;POLITYKA;Tadeusz Kościński;prognozy makroekonomiczne;będziemy aktualizować;Polska;kwiecień
+350;BIZNES;Komisja Europejska;koszty emisji CO2;poinformowała;;
+351;PRZESTEPSTWO;UOKiK;zarzuty dwóm bankom;postawieniu;Polska;poniedziałek
+352;BIZNES;Włochy;wino Novello;przygotowano;Włochy;
+353;BIZNES;Zarząd Morskiego Portu Gdynia;przeładunki kontenerów;podał;Gdynia;styczeń-luty 2021
+354;BIZNES;PGNiG;wydobycie ropy;spodziewa się;Norwegia;ten rok
+355;POLITYKA;;podatku VAT;nie będzie rewolucji;Polska;
+356;PRZESTEPSTWO;Komisja Europejska;system korzyści podatkowych;ogłosiła nielegalność;Belgia;poniedziałek
+357;BIZNES;Sephora;perfumerie;zawieszą działalność;Rosja;8 marca
+358;BIZNES;tunel kolejowy;tunel;oddany do użytku;świat;niedziela
+359;BIZNES;Volvo;stowarzyszenie ACEA;opuści;Europa;do końca 2022 r.
+360;BIZNES;Stocznia Gdańska;stocznia;wróci w polskie ręce;Gdańsk;
+361;BIZNES;Polacy;whisky;kupują i spożywają;Polska;
+362;BIZNES;Huta Stalowa Wola;kontrakt;podaje Rzeczpospolita;Podkarpacie;środa
+363;BRAK_ZDARZENIA;brokuł;warzywo;nazywany;;
+364;PRZESTEPSTWO;spółka zależna PGNiG;pozew przeciwko KE;złożyła;UE (TSUE);
+365;POLITYKA;goście Forum w Davos;wystawę zdjęć;mogą zwiedzać;Davos;
+366;BIZNES;Marek Zagórski;sieć 5G;obstawiam;Warszawa;przyszły rok
+367;POLITYKA;MF;deficyt budżetowy;podało;Polska;2015 r.
+368;BRAK_ZDARZENIA;;;;;
+369;PRZESTEPSTWO;prezes UOKiK;postępowanie przeciwko T-Mobile;wszczął;Polska;
+370;BIZNES;konsumenci;wyprzedaże posezonowe;ruszają na łowy;Polska;
+371;BIZNES;Polska;umowę kredytową z EBI;podpisała;;
+372;BIZNES;;zarząd spółki CPK;przedstawiono;Polska;
+373;POLITYKA;pełnomocnik rządu;projekt nowelizacji ustawy o CPK;zapowiedział;Polska;połowa sierpnia
+374;BIZNES;Urząd Transportu Kolejowego;liczba pasażerów kolei;wynika z prognozy;Polska;koniec tego roku
+375;POLITYKA;Donald Trump;General Motors;skrytykował;Meksyk / USA;wtorek
+376;BIZNES;Ministerstwo Finansów;kalkulator wynagrodzeń;uruchomiło;Polska;
+377;BIZNES;ING, mBank, BZ WBK;modernizację systemów;zamierzają przeprowadzić;Polska;ten weekend
+378;POLITYKA;;zakaz handlu;obejmie;Polska;ten miesiąc
+379;POLITYKA;;nowe Prawo budowlane;weszło w życie;Polska;
+380;BIZNES;ekonomiści;zmiany w łańcuchach dostaw;uważają;świat;
+381;BIZNES;Janusz Cieszyński;SMS-y i połączenia wyłudzające dane;blokować;Polska;
+382;POLITYKA;Jarosław Kaczyński;pomysł na wykorzystanie 140 mld zł z OFE;przedstawił;Polska;
+383;BIZNES;produkty spożywcze;podbój rynków;kontynuują;świat;
+384;BRAK_ZDARZENIA;Jacek Sasin;;poinformował;;pierwsze półrocze 2021 r.
+385;BIZNES;Grzegorz Puda i Helene Budliger Artidea;umowę ws. funduszy szwajcarskich;podpisali;Warszawa;
+386;BIZNES;VNG;płatności za gaz;przekaże;Rosja;
+387;POLITYKA;Adam Glapiński;misja Donalda Tuska;według szefa NBP;Polska;
+388;BIZNES;świat;gorączka złota;ogarnęła;świat;
+389;BIZNES;Krzysztof Klicki;funkcji prezesa Kolporter;rezygnuje;Polska;
+390;BIZNES;kontrakty na gaz;notowania;wzrosły;Holandia (TTF);piątek
+391;BIZNES;ceny ropy i gazu;ceny;spadają;;od 1 września
+392;BIZNES;GUS;liczba podmiotów w REGON;podał;Polska;grudzień 2021 r.
+393;BIZNES;Ministerstwo Rozwoju;wartość pomocy z tarczy;podało;Polska;16 października 2020 r.
+394;POLITYKA;resort handlu USA;sankcje wobec Huawei;złagodził;USA / Chiny;wtorek
+395;BIZNES;;struktura długu Skarbu Państwa;jest bezpieczna;Polska;
+396;PRZESTEPSTWO;Orange Polska;decyzją UOKiK (kara 30 mln zł);nie zgadza się;Polska;
+397;POLITYKA;Unia Europejska;zakaz rejestrowania aut spalinowych;decydowała;UE;po 2035 roku
+398;BIZNES;DBRS Morningstar;ratingi Polski;potwierdziła;Polska;
+399;BIZNES;;Strategiczne Studium Lokalizacyjne CPK;przyjęto;Polska;
+400;BIZNES;finansowanie społecznościowe;popularność;bije rekordy;;
+401;BIZNES;sklepy;oblężenie;przeżywają;USA;
+402;BIZNES;polscy deweloperzy;kamienice i fabryki;rewitalizują;Polska;
+403;BIZNES;Radosław Sikorski;liczba pasażerów na lotniskach;poinformował o spadku;Polska;
+404;BIZNES;pociągi;czas przejazdu;mają jeździć;Łódź - Warszawa;weekendy
+405;BIZNES;Wall Street;Dow Jones;stracił;USA;piątek
+406;POLITYKA;Ministerstwo Gospodarki Morskiej;plan zagospodarowania morza;chce przedstawić;Polska;do końca roku
+407;POLITYKA;sejmowa komisja finansów;poprawki do tarczy 4.0;zaproponowała;Polska;
+408;BIZNES;Polskie Radio;współpracę z Leroy Merlin;zerwanie;Polska;
+409;PRZESTEPSTWO;złośliwe oprogramowanie;telefony z Androidem;zainfekowanych;świat;
+410;BIZNES;Havila Kystruten;zakaz przyjmowania aut EV i wodorowych;zdecydowała;Norwegia;
+411;BIZNES;Novak Djokovic;akcje QuantBioRes;jest właścicielem;Dania;
+412;BIZNES;NBP;oficjalne aktywa rezerwowe;poinformował;Polska;koniec sierpnia 2021 r.
+413;BIZNES;GUS;dane o bezrobociu;poda;Polska;dziś
+414;BIZNES;;produkcja przemysłowa;wzrosła;Polska;luty br.
+415;KATASTROFA;grypa ptaków;epidemia;rozprzestrzenia się;Europa;
+416;BIZNES;Międzynarodowy Fundusz Walutowy;wzrost gospodarczy Polski;ocenia (zwolnienie);Polska;kilka lat
+417;BIZNES;Rzeczpospolita / Deloitte;lista Europa 500;przygotowała;Europa Środkowo-Wschodnia;
+418;BIZNES;Saudi Aramco;wycena rynkowa;prześcignęło Apple;świat;
+419;BIZNES;Polska;produkcja wiśni;znalazła się w gronie liderów;świat;2020 rok
+420;BRAK_ZDARZENIA;;;;;2019 r.
+421;BRAK_ZDARZENIA;;;;;
+422;BIZNES;ARP / Stocznia Gdańsk;rewitalizacja terenów;rozpoczynają projekt;Gdańsk (wyspa Ostrów);
+423;BIZNES;Nasz Dziennik;firmy w SSE;informuje;Polska;
+424;BIZNES;Rzeczpospolita;Orlen (przejęcie Lotosu);ma szanse na zgodę KE;Polska / UE;
+425;BIZNES;Andrzej Duda;100. dostawa LNG;wyładunek;Świnoujście;
+426;BIZNES;Henryk Kowalczyk / Jacek Sasin;holding spożywczy;na ostatniej prostej;Polska;piątek
+427;BIZNES;PKN Orlen;ranking najbardziej etycznych firm;znalazł się;świat;
+428;BIZNES;;10 nowych umów PL-KAZ;podpisanie;Astana;
+429;BIZNES;Tomasz Frąckowiak (PKO BP);popyt na kredyt hipoteczny;załamanie;Polska;
+430;BIZNES;Puls Biznesu;rynek motoryzacyjny;informuje o rekordzie;Polska;ten rok
+431;BIZNES;Howard Schultz (Starbucks);kawiarnie;zamknąć wiele;USA;
+432;BIZNES;Polacy;Grecja i Turcja;wybierają chętniej;Grecja / Turcja;
+433;BIZNES;Dziennik Gazeta Prawna;uszczelnienie VAT;podaje;Polska;ten rok
+434;KATASTROFA;UkrAgroConsult;zbiory zbóż;spadną;Ukraina;piątek
+435;POLITYKA;rząd Ukrainy;memorandum ws. dostaw LNG;zaakceptował;Ukraina / USA;
+436;POLITYKA;Janusz Wojciechowski;bezpieczeństwo żywnościowe;zaznaczył;UE;
+437;BIZNES;Rzeczpospolita;rekompensatę za wzrok;czytamy o możliwości;Polska;poniedziałek
+438;BIZNES;Krzysztof Pietraszkiewicz (ZBP);ustawy o frankowiczach;postulaty zmian;Polska;
+439;POLITYKA;Biały Dom;sprzedaż ropy z rezerw;ogłosił;USA;wtorek
+440;BIZNES;dostawcy jedzenia;sieć kurierów;rozwijają;Polska;
+441;BIZNES;Airbus;kolejne zlecenia;przyznaje;Polska;
+442;BIZNES;Bartosz Marczuk (PFR);subwencje z Tarczy 2.0;powiedział o terminach;Polska;
+443;POLITYKA;politycy PO;pytania o finansowanie;unikają odpowiedzi;Polska;
+444;POLITYKA;Piotr Müller;dopłaty dla rolników;wyrównanie;UE / Polska;
+445;BIZNES;Marlena Maląg;stopa bezrobocia;poinformowała;Polska;grudzień 2019 r.
+446;BIZNES;12 osób;grono milionerów;dołączyło;Polska;
+447;POLITYKA;rząd Kuby;lista działalności prywatnej;rozszerzenie;Kuba;
+448;BIZNES;Binladen Group;pracowników;zwolnił;Arabia Saudyjska;
+449;BIZNES;OPEC i Rosja;produkcja ropy;uzgodniły redukcję;Wiedeń;
+450;POLITYKA;Rada Ministrów;dodatkowy zasiłek opiekuńczy;rozporządzenie;Polska;do 25 kwietnia
+451;BRAK_ZDARZENIA;;flamaster;przypomina;;
+452;BIZNES;Amazon Polska;pensje pracowników;ma podnieść;Polska;
+453;BIZNES;norweska ropa;partia surowca;dotarła;Białoruś;niedziela rano
+454;BIZNES;GPW;zakup akcji Armenia Securities Exchange;zamknięcie transakcji;Armenia / Polska;wtorek
+455;BIZNES;Mariusz Błaszczak;zysk netto PGZ;poinformował;Polska;wtorek
+456;BIZNES;;płaca minimalna;jest bardzo ważna;Polska;
+457;BIZNES;Poczta Polska;dystrybucję kart SIM Orange;uruchomiła;Polska;piątek
+458;POLITYKA;Kałasznikow;dron-kamikadze Kub;zaprezentował;Rosja;
+459;BIZNES;Puls Biznesu;sklepy bez kas;podał wyniki badań;Polska;czwartek
+460;BIZNES;;wakacje kredytowe i tarcza;interesują Polaków;Polska;
+461;POLITYKA;Jadwiga Emilewicz;projekt małego ZUS-u;powiedziała;Polska;
+462;BIZNES;trzy czwarte Polaków;wzrostu cen;boi się;Polska;
+463;BIZNES;Czesław Warsewicz;udział na rynku;chce mieć;Polska;2022 rok
+464;BRAK_ZDARZENIA;;;;;28 lipca br.
+465;BIZNES;Adam Glapiński (NBP);inflacja;może wynieść;Polska;czwartek
+466;BIZNES;polskie firmy;absolwentów;zabiegają;Wielka Brytania;
+467;BIZNES;Rada Polityki Pieniężnej;stopy procentowe;podniosła;Polska;wtorek
+468;PRZESTEPSTWO;UOKiK;kara na Polkomtel;nałożył;Polska;
+469;BIZNES;;koszt frachtu i nawozów;wzrósł;świat;rok do roku
+470;POLITYKA;Ministerstwo Rozwoju;wytyczne dla urzędników;szykuje;Polska;
+471;POLITYKA;Komisja Europejska;termin wniosków o dopłaty;pozwala na wydłużenie;UE;2018 r.
+472;BIZNES;segment piw bezalkoholowych;rynek;urósł;Polska;ostatni rok
+473;POLITYKA;Beata Szydło;Narodowe Forum Przedsiębiorców;powoła;Polska;
+474;BIZNES;klienci banków;wnioski o wakacje kredytowe;złożyli;Polska;
+475;BIZNES;Adam Glapiński;wzrost gospodarczy;utrzymanie;Polska;2019 r.
+476;BIZNES;polskie górnictwo;zysk netto;wypracowało;Polska;trzy kwartały
+477;POLITYKA;liderka Frontu Narodowego;ton wypowiedzi;łagodzi;Francja;
+478;BRAK_ZDARZENIA;koka;element kultury;jest;Boliwia;
+479;BIZNES;Anna-Kaisa Itkonen (KE);gazociąg Baltic Pipe;powiedziała;UE;
+480;BIZNES;Enerhoatom;umowę na paliwo jądrowe;podpisał;Ukraina;piątek
+481;BIZNES;Eurostat;bezrobocie;wyniosło;Polska;luty
+482;BIZNES;osoby z działalnością;preferencyjne stawki ZUS;będą płaciły;Polska;do końca 2018 r.
+483;POLITYKA;Mateusz Morawiecki;fundusz Polski Ład;ogłaszam start;Borcz;
+484;PRZESTEPSTWO;podziemny bank;działalność;działał;Chiny;
+485;BIZNES;niemieckie władze;procedura parasola dla Condor;nie została sfinalizowana;Niemcy;
+486;BIZNES;Zygmunt Solorz i Michał Sołowow;elektrownię jądrową;chcą zbudować;Polska;
+487;POLITYKA;władze Chin;obostrzenia dla inwestorów;zamierzają wprowadzić;Chiny;
+488;PROTEST;listonosze i pracownicy logistyki;strajk;ma trwać;Finlandia;od poniedziałka
+489;POLITYKA;Turcja;budowę gazociągu;zgadza się;Turcja;poniedziałek
+490;BIZNES;PLL LOT;Boeing 787-9 Dreamliner;przyleciał;Warszawa;środa
+491;POLITYKA;francuski rząd;Jose Manuel Barroso;wezwał (do rezygnacji);Francja;
+492;POLITYKA;Mateusz Morawiecki;studenci;przekonywał;Londyn;sobota
+493;BIZNES;;diament;zapłacono;Belgia;
+494;BIZNES;;Europejski Kongres Gospodarczy;rozpoczął się;Katowice;poniedziałek
+495;BIZNES;Karolina Załuska (BNP Paribas);koszyk wielkanocny;będzie kosztował;Polska;2021 r.
+496;BIZNES;Komisja Europejska;przejęcie Lotosu;zatwierdziła;UE;
+497;BRAK_ZDARZENIA;widzowie TVP Info;człowieka biznesu;wskażą;Polska;
+498;POLITYKA;MF Polski i Estonii;deklarację o współpracy;podpisali;Tallin;
+499;BRAK_ZDARZENIA;;szczęście materialne;można kupić;;
+500;BIZNES;szycie maseczek;miejsca pracy;uratowało;Polska;
+501;PRZESTEPSTWO;Konrad Kąkolewski (GetBack);pieniądze;nie spocznę;Polska;
+502;BIZNES;CEO World Magazine;ranking inwestycyjny;wynika;Polska;
+503;POLITYKA;Paweł Szałamacha;obniżek stawek VAT;zapowiada brak;Polska;przyszły rok
+504;BIZNES;PSA;Opel i Vauxhall;kupił;Paryż;poniedziałek
+505;BIZNES;Tadeusz Kościński;gospodarka;poradziła sobie;Polska;
+506;BIZNES;profesor;elastyczność gospodarki;ocenia;Polska;
+507;BIZNES;American Airlines;Boeing 737 MAX;przedłużyły wycofanie;USA;piątek
+508;BRAK_ZDARZENIA;Krzysztof Mamiński;;;;
+509;BIZNES;e-petrol.pl;ceny autogazu;zaczęło drożeć;Polska;
+510;BIZNES;Deutsche Welle;zakończenie budowy Nord Stream 2;planowane;Niemcy / Rosja;23 sierpnia
+511;BIZNES;;cena baryłki ropy;spadła;Londyn;
+512;BIZNES;Marcin Chludziński;kupno Stoczni Gdańsk;powiedział o ofercie;Polska;
+513;PRZESTEPSTWO;komornik;wynagrodzenie;ochrona;Polska;
+514;KATASTROFA;Ministerstwo Rolnictwa Francji;zbiory winogron;będą niskie;Francja;
+515;PRZESTEPSTWO;Volkswagen;testy spalin;manipulował;Niemcy;
+516;BIZNES;Palikot i Wojewódzki;sprzedaż akcji;fiasko;Polska;
+517;BRAK_ZDARZENIA;protekcjonizm;zamknięcie w pokoju;jest;;
+518;BIZNES;złoty;wartość;traci;Polska;poniedziałek 29 sierpnia
+519;BIZNES;Grupa TUI;działalność operacyjną;zawiesza;świat;
+520;BIZNES;Ministerstwo Energii;tłoczenie ropy;przywrócenie;Moskwa;od 10 czerwca
+521;POLITYKA;Ministerstwo Finansów;bramki opłat;nie będą potrzebne;Polska;od 1 grudnia 2021 r.
+522;BIZNES;prezes UOKiK;przejęcie PGNiG;zgodził się;Polska;
+523;POLITYKA;Andrzej Adamczyk;droga S19;zapowiada otwarcia;Polska;grudzień
+524;BIZNES;kolekcjonerzy;banknot;zachwyceni;;
+525;BIZNES;AstraZeneca;umowę na szczepionki;zgodziła się opublikować;UE;
+526;BIZNES;światowe giełdy;spadki;notują;świat;
+527;POLITYKA;Beata Szydło;podatków;nie będziemy podnosić;Polska;
+528;BIZNES;IndiGo;samoloty A320neo;kupią;Indie / UE;
+529;POLITYKA;;reforma skarbówki;rusza;Polska;
+530;BRAK_ZDARZENIA;;;;;
+531;BIZNES;Deutsche Welle;polska gospodarka;okazuje się prymusem;Polska;pierwszy kwartał
+532;BIZNES;Adam Glapiński;100 ton złota;zamierzam kupić;Polska;środa
+533;POLITYKA;Facebook i Google;rosyjskie media;zablokowanie;świat;wtorek
+534;BIZNES;;gospodarka;wyszła z kryzysu;Polska;
+535;KATASTROFA;KRIR;susza rolnicza;wystąpiła;Polska;
+536;BIZNES;Microsoft;sprzedaż produktów;wstrzymuje;Rosja;piątek
+537;POLITYKA;resort finansów;Twój e-PIT;będzie niedostępna;Polska;sobota-niedziela
+538;BIZNES;Ringier Axel Springer;współpracę z Tomaszem Lisem;zakończeniu;Polska;
+539;BIZNES;BIG InfoMonitor;zadłużenie hotelarzy;podaje;Polska;
+540;BIZNES;Rada Polityki Pieniężnej;stóp procentowych;nie zmieniła;Polska;środa
+541;BIZNES;Zoltan Varga;potentata w regionie;chce stworzyć;Budapeszt;
+542;BIZNES;Federalny Urząd Statystyczny;inflacja;poinformował;Niemcy;wrzesień
+543;BIZNES;Sebastian Chwałek;likwidację Bumaru;nie zamierza;Polska;
+544;POLITYKA;Komisja Europejska;kary ws. Turowa;nie otrzymała;UE;środa
+545;PRZESTEPSTWO;Cristiano Ronaldo;14,7 mln euro;zataić;Hiszpania;
+546;POLITYKA;UE;port USB typu C;będą musiały być wyposażone;UE;do końca 2024 r.
+547;BIZNES;Bartosz Turek;hotele i pensjonaty;czeka oblężenie;Polska;piątek
+548;BIZNES;Jadwiga Emilewicz;tempo wzrostu obrotów;zaskoczyło;Polska;
+549;POLITYKA;Senat;nowelizację akcyzy;odrzucił;Polska;środa
+550;BIZNES;GUS;stopa bezrobocia;podał;Polska;wrzesień 2018 r.
+551;BIZNES;zagraniczne firmy;laboratoria;przejęte;Polska;
+552;POLITYKA;Mateusz Morawiecki;CIT estoński i środki UE;będą impulsami;Polska;przyszły rok
+553;POLITYKA;Andrzej Adamczyk;obwodnica Warszawy;zapowiedział oddanie;Warszawa;środa
+554;POLITYKA;Der Spiegel;gazociąg Nord Stream 2;pisze o szkodliwości;Niemcy;sobota
+555;BIZNES;banki;zadłużenie JSW;ultimatum;Polska;
+556;POLITYKA;rząd federalny;plan zamykania elektrowni;osiągnęły porozumienie;Niemcy;
+557;BIZNES;Puls Biznesu;instalacje fotowoltaiczne;informuje;Polska;do końca roku
+558;POLITYKA;Donald Trump;ustawę Dodda-Franka;nakazuje przegląd;USA;
+559;POLITYKA;Mateusz Morawiecki;sesji MFW i BŚ;ma reprezentować;Waszyngton;piątek
+560;BIZNES;;inwestycji z Chin;nie widać;Polska;
+561;BIZNES;Sąd Unii Europejskiej;skargę Autostrady Wielkopolskiej;oddalił;UE;
+562;BIZNES;Niemiecki Urząd Statystyczny;liczba zamówień;zmalała;Niemcy;wrzesień
+563;BIZNES;Witold Słowik;zarząd PGZ;odwołani;Polska;
+564;BIZNES;Moody's;Portoryko;niewypłacalne;Portoryko;poniedziałek
+565;BIZNES;;produkcja przemysłowa;była wyższa;Polska;listopad
+566;BIZNES;Polacy;zakupy spożywcze;pandemia wpłynęła;Polska;
+567;BIZNES;Paweł Majewski;zużycie gazu;poinformował;Polska;
+568;BRAK_ZDARZENIA;złoty;sytuacja;wygląda;rynek międzynarodowy;
+569;BIZNES;BIG InfoMonitor;opóźnienia płatności;wynika z badania;Polska;
+570;BIZNES;Fed;stopę procentową;obniżył;USA;
+571;BIZNES;Rada Nadzorcza PAIiIZ;Sławomira Majmana;odwołała;Polska;poniedziałek
+572;BIZNES;GUS;ceny mieszkań;wyższe;Polska;pierwszy kwartał br.
+573;POLITYKA;;związki między Rosją a Białorusią;zacieśnienie;Rosja/Białoruś;
+574;BIZNES;;inwestycji w branżę gier;lista;Polska;
+575;BIZNES;Puls Biznesu;używanych samochodów;sprowadzono mniej;Polska;styczeń
+576;BIZNES;czarna herbata;zwolenników;traci;Polska;
+577;POLITYKA;Berliner Zeitung;polityka PiS;przekonuje;Niemcy;
+578;BIZNES;Ministerstwo Funduszy;400 mln złotych;poinformowało;Polska;2020 r.
+579;BRAK_ZDARZENIA;;polityką środków unijnych;;;
+580;BIZNES;Elon Musk;Starlink;jest siecią;;
+581;BIZNES;Polacy;obligacjach rządowych;ulokowali 14 mld zł;Polska;czerwiec
+582;BIZNES;PESA Bydgoszcz;przetarg na tramwaje;wpłynęła oferta;Gdańsk;wtorek
+583;POLITYKA;Mateusz Morawiecki;ceny węgla;zapewnił o pomocy;Stalowa Wola;
+584;BIZNES;niemieckie firmy;działalność w Rosji;działają;Rosja;
+585;BIZNES;Zarząd PGE;spółki PGE Paliwa;sprzedaży;Polska;
+586;BIZNES;LOT;inwestora;ma;Polska;
+587;BIZNES;Eurostat;stopa bezrobocia;poinformował;UE;sierpień
+588;BIZNES;GUS;sprzedaż detaliczna;wzrosła;Polska;maj
+589;POLITYKA;Nasz Dziennik;pakiet energetyczny;informuje o blokadzie;Bruksela;
+590;BIZNES;dziesięć największych banków;podatku bankowego;zapłaci;Polska;
+591;BRAK_ZDARZENIA;Terminal LNG;;;;
+592;BIZNES;Volkswagen;rozwój aut hybrydowych i elektrycznych;ogłosił;Niemcy;
+593;BIZNES;;konkurs dla inicjatyw pracowniczych;rusza;;
+594;BIZNES;Gertruda Uścińska;prezesem ZUS;ma być;Polska;
+595;BIZNES;Moskwa;kupno okrętów mistral;okazało się interesem;Rosja;
+596;BIZNES;myTaxi;współdzielenie taksówek;ruszy;Warszawa;
+597;BIZNES;Eurostat;zatrudnienie imigrantów;wynika z danych;Polska;
+598;POLITYKA;Jacek Bogucki;produkcja nalewek i destylatów;pracuje nad zmianą;Polska;
+599;BIZNES;pracownicy z zagranicy;płace;są gorzej opłacani;Niemcy;
+600;BIZNES;deweloperzy morscy;budowa farm wiatrowych;chce budować;Bałtyk;
+601;PRZESTEPSTWO;Komisja Europejska;zmowę technologiczną;zarzuciła;UE;
+602;POLITYKA;Bruksela;ograniczenie funduszy;pojawiły się pomysły;UE;po 2020 roku
+603;BIZNES;Ministerstwo Finansów;dane podatników CIT;wywołały burzę;Polska;
+604;POLITYKA;Alaksandr Łukaszenka;eksport kaszy i soli;twierdził;Białoruś;miesiąc temu
+605;BIZNES;Polacy;polisy turystyczne;chętniej kupujemy;Polska;
+606;BIZNES;ministerstwo finansów USA;deficyt budżetowy;poinformowało;USA;rok podatkowy 2019
+607;BIZNES;bankier.pl;limit dochodu PIT;warto zwrócić uwagę;Polska;2020
+608;POLITYKA;Łukasz Szumowski;podatek cukrowy;powiedział;Polska;niedziela
+609;POLITYKA;;plan udrożnienia rzek;zostanie zrealizowany;Polska;
+610;BRAK_ZDARZENIA;;śmigłowce szkoleniowe;nie ma potrzeby;;
+611;BIZNES;;polskie truskawki;pojawiają się;Polska;od kilku dni
+612;BIZNES;lokalni przedsiębiorcy;platforma Zakupy u swoich;mogą się rejestrować;Polska;
+613;POLITYKA;PGZ;remonty czołgów T-72;tematem rozmów;Polska/Irak;czwartek
+614;BIZNES;Jan Krzysztof Ardanowski;zbiory;są dobre;Bralin;
+615;BIZNES;;lodówkomaty;zostały rozstawione;Polska;
+616;PRZESTEPSTWO;UOKiK;karę 2 mln zł;nałożył;Polska;
+617;BIZNES;Adam Glapiński;dane o inflacji;nie są niepokojące;Polska;
+618;BIZNES;branża fitness;otwarcie po lockdownie;otwiera się;Polska;najbliższy weekend
+619;BIZNES;niemieckie krematoria;oszczędzanie gazu;planują;Niemcy;
+620;POLITYKA;grecki rząd;porozumienie z kredytodawcami;jest;Grecja;
+621;BIZNES;;dane gospodarcze;są poniżej oczekiwań;;
+622;BIZNES;Wizz Air;loty do Włoch;zawiesza;Włochy;od dziś
+623;BIZNES;Chiny;import wołowiny;wstrzymały;Chiny/Litwa;
+624;POLITYKA;;działania protekcjonistyczne;nasilił;UE;
+625;BIZNES;Deutsche Welle;pociągi EuroCity;zaczną kursować;Berlin/Wrocław/Kraków;od końca 2020 r.
+626;BIZNES;Altus;odszkodowanie od RASP;wezwał do zapłaty;Polska;
+627;BIZNES;Brandenburska Agencja Środowiska;budowa fabryki Tesli;wstrzymane;Niemcy;
+628;BIZNES;PST (PGNiG);dostawy gazu;podpisała umowę;Norwegia;piątek
+629;POLITYKA;Henryk Kowalczyk;podatek od marketów;powiedział;Polska;przyszły rok
+630;BIZNES;koncern MAN;restrukturyzacja zakładów;szansa dla fabryk;Niepołomice/Starachowice;
+631;PRZESTEPSTWO;CBA;nieprawidłowości przy Ciech;działania;Polska;
+632;POLITYKA;Marcin Horała;zakazy w ruchu lotniczym;nie pracuje nad;Polska;
+633;BIZNES;sektor bankowy;ubóstwo o 22 mld zł;będzie;;
+634;BIZNES;bankowcy;kryteria kredytów hipotecznych;łagodzą;;
+635;PRZESTEPSTWO;prezes UOKiK;karę 140 mln zł;nałożył;Polska;
+636;POLITYKA;Bank Światowy;inwestycje w dzieci;zaapelował;świat;
+637;BIZNES;;praca zdalna;ma być rozwiązaniem;;
+638;POLITYKA;TSUE;podatek od sprzedaży detalicznej;orzekł o braku naruszenia;UE/Polska;
+639;BRAK_ZDARZENIA;Super Express;raport;dotarł;;
+640;POLITYKA;Janis Warufakis;działania struktur;nazwał terroryzmem;Grecja;
+641;BIZNES;PKO BP;przekształcenie w instytucję tech;powinien;Polska;
+642;POLITYKA;Jerzy Szmit;problemy w transporcie do Rosji;poinformował;Rosja;poniedziałek
+643;BIZNES;PZU i PFR;akcje Banku Pekao;przejmą;Polska;
+644;PRZESTEPSTWO (zatrzymać);Izba Administracji Skarbowej;nielegalne automaty;zatrzymano;Mazowsze;styczeń
+645;PRZESTEPSTWO;Sąd;kartel Royal Canin;orzekł;Polska;
+646;BIZNES;;projekty w strefach ekonomicznych;zdecydowało się najwięcej firm;Polska;2020 r.
+647;BIZNES;koronawirus;gospodarka USA;uderza;USA;
+648;BIZNES;;opłata za brak parkowania;podwyższyć;;
+649;BIZNES;;porozumienie w Kompanii Węglowej;jest szansa;Polska;
+650;BIZNES;Moody's;prognozę wzrostu PKB;podwyższyła;Polska;ten rok
+651;KATASTROFA;strażacy;pożar transformatora;ugasili;Warszawa;
+652;POLITYKA;Jarosław Gowin;plan deglomeracji;zaprezentuje;Warszawa;13 stycznia
+653;BIZNES;Dell;zakup EMC;ogłosiła plany;USA;
+654;BIZNES;turyści;odpoczynek;wybierają;Polska;
+655;BIZNES;ministerstwo rolnictwa;eksport jabłek;poinformowało;Tajwan;piątek
+656;POLITYKA;Xi Jinping;walka z protekcjonizmem;wezwał;Szanghaj;wtorek
+657;POLITYKA;;przepisy podatkowe dla twórców;zostaną poprawione;Polska;
+658;PRZESTEPSTWO;Sądy;sankcje UOKiK;utrzymały;Polska;
+659;BRAK_ZDARZENIA;Leszek Balcerowicz;idol opozycji;jest;;
+660;BIZNES;ARiMR;wnioski o dopłaty;złożyło ponad 90 tys. osób;Polska;
+661;POLITYKA;Siłuanow i Jaresko;spotkanie;fiaskiem zakończyło się;Peru;piątek
+662;POLITYKA;Konrad Szymański;postępowanie przeciw Gazpromowi;rozczarowani;UE/Rosja;czwartek
+663;BIZNES;Thomas O'Donnell;zastąpienie importu z Rosji;ocenia;UE;w ciągu 4-6 lat
+664;POLITYKA;Ministerstwo Finansów;podatek katastralny;nie planuje;Polska;środa
+665;BRAK_ZDARZENIA;;szansa dla dzieci z SMA;;;
+666;POLITYKA;Czechy;stosowanie glifosatu;zakażą;Czechy;
+667;BIZNES;Tewolde Gebremariam;budowa nowego lotniska;zapowiedział;Addis Abeba;koniec roku
+668;POLITYKA;KAS;walka z wyłudzeniami VAT;zyska narzędzie;Polska;
+669;BIZNES;;niemiecki eksport;przyhamował;Niemcy;lipiec
+670;BIZNES;Polska;PKB na mieszkańca;zaczęła wyprzedzać;Polska;od 2015 r.
+671;BIZNES;;stopa bezrobocia;wyniosła 9,6 proc.;Polska;kwiecień
+672;BIZNES;Poczta Polska i Energa;list intencyjny ws. stacji ładowania;podpisały;Polska;czwartek
+673;BIZNES;fDi Intelligence;ranking inwestycji;zajęły pierwsze miejsce;Katowice;poniedziałek
+674;BIZNES;Kamil Pastor (PKO BP);inflacja;wyniosła 15,6 proc.;Polska;czerwiec
+675;BIZNES;parlamentarzyści PO;zwrot 15 mld zł z kont uśpionych;poinformowali;Polska;piątek
+676;POLITYKA;Sejm Litwy;poprawki do kodeksu pracy;przyjął;Litwa;czwartek
+677;BIZNES;Nirmala Sitharaman;szczyt inwestorów;ogłosiła plany;Indie;
+678;BRAK_ZDARZENIA;;podatek od transakcji;;Polska;
+679;POLITYKA;Centrum Informacyjne Rządu;projekt ustawy Kolej Plus;przyjęła;Polska;
+680;POLITYKA;kluby opozycyjne;projekt ustawy o podatku handlowym;przeciw;Polska;wtorek
+681;BIZNES;Beata Daszyńska-Muzyczka;finansowanie inwestycji Trójmorza;poinformowała;kraje Trójmorza;
+682;BRAK_ZDARZENIA;złoty;sytuacja;wygląda;rynek międzynarodowy;
+683;BIZNES;Puls Biznesu;liczba apartamentów;czytamy;Polska;
+684;BIZNES;PARP;konkurs dla MŚP;uruchomiła;Polska Wschodnia;
+685;BRAK_ZDARZENIA;TVN;cena benzyny;;Polska;
+686;BIZNES;IAR;lokalizacja CPK;dowiedziała się;Baranów;
+687;PRZESTEPSTWO;UOKiK;ostrzeżenie przed wekslami Yanok;wydał;Kraków;
+688;POLITYKA;;kongres Polska Wielki Projekt;rozpocznie się;Warszawa;piątek
+689;BIZNES;;negocjacje o wolnym handlu;rozpoczęły;USA/Wielka Brytania;
+690;BIZNES;PAIH;chińscy inwestorzy;zdobyli pozycję lidera;Polska;wtorek
+691;BIZNES;przedsiębiorcy;wyższe składki ZUS;zapłacą;Polska;2016 rok
+692;BIZNES;piłkarz;restaurację;planuje postawić;Giżycko;
+693;BIZNES;;opłaty za video;rosną;świat;za pięć lat
+694;BIZNES;;ceny ropy;spadają;świat;
+695;POLITYKA;niemieccy politycy;budowa portu w Świnoujściu;wyrażają sprzeciw;Świnoujście;
+696;BIZNES;Castorone;układanie Baltic Pipe;rozpoczął;Morze Bałtyckie;
+697;BIZNES;;polski drób;trafi;Chiny;
+698;BIZNES;Mateusz Morawiecki;europejski poziom życia;powiedział;Polska;
+699;BIZNES;ARiMR;Interwencje w sektorze pszczelarskim;będzie realizować;Polska;przyszły rok
+700;BIZNES;mieszkańcy Zimbabwe;gotówka;nie będą musieli chodzić;Zimbabwe;
+701;BIZNES;Mateusz Morawiecki;wsparcie gospodarki;napisał;Polska;noc z soboty na niedzielę
+702;BIZNES;PKP Intercity;sprzedaż biletów;wstrzymały;Polska;po 18 kwietnia i 1 maja
+703;BIZNES;polska gospodarka;odporność na pandemię;wykazały się;Polska;
+704;BIZNES;Polski Instytut Ekonomiczny;produkcja energii z węgla;wskazał wzrost;Polska;2021 r.
+705;POLITYKA;Rosja;przesył gazu;przerwała;Polska;
+706;BIZNES;Mateusz Morawiecki;produkcja samochodów Opla;poinformował;Polska;
+707;BIZNES;Piotr Bartkiewicz (Pekao);stopy procentowe;nie podwyższy;Polska;wtorek
+708;BIZNES;S&P Global Ratings;prognozę wzrostu PKB;podwyższyła;Polska;2019 r.
+709;BIZNES;Daniel Obajtek;produkcja płynu do dezynfekcji;oświadczył;Polska;
+710;BIZNES;branża hotelowa;zamknięcie hoteli;mówi o końcu;Polska;
+711;BIZNES;PwC i UBS;liczba miliarderów;wynika z raportu;świat;
+712;BIZNES;pełnomocnik rządu;Centralny Port Komunikacyjny;mówił;Polska;
+713;BIZNES;Marek Zagórski;dowód z warstwą elektroniczną;powiedział o wydawaniu;Polska;marzec 2019
+714;BIZNES;Puls Biznesu;inwestycje w hotele;wskazuje;Polska;ubiegły rok
+715;BIZNES;;recesja;sugerują uniknięcie;Wielka Brytania;ten rok
+716;BIZNES;Sąd Okręgowy w Szczecinie;pozew akcjonariuszy;oddalił;Szczecin;piątek
+717;BIZNES;niemiecka gospodarka;rozkręcanie się;rozkręca się;Niemcy;
+718;BRAK_ZDARZENIA;;zmiany w zarządach;nie wykluczam;;
+719;BIZNES;GUS;stopa bezrobocia;podał;Polska;lipiec 2021 r.
+720;BIZNES;PAŻP;strefy opłat terminalowych;chce utrzymać;Polska;
+721;BIZNES;;ceny i inflacja;wzrost;;
+722;POLITYKA;Andrzej Duda;projekt ustawy o restrukturyzacji;skieruje;Polska;
+723;BRAK_ZDARZENIA;Kondrat i Lewandowski;twarze do reklam;wyceniane;;
+724;POLITYKA;rosyjskie ministerstwo;aktywa Renault;stały się własnością państwa;Rosja;
+725;BIZNES;;transport drogą wodną;pierwszy taki;;
+726;POLITYKA;Portugalia;dostawy gazu;negocjuje;Polska/Niemcy;piątek
+727;BIZNES;supermarket;warzywa i owoce;sprzedaje;Bruksela;
+728;POLITYKA;politycy opozycji;CPK;uderzają;Polska;
+729;POLITYKA;Martin Puta;decyzję ws. Turowa;odwołali się;Czechy/Polska;
+730;PRZESTEPSTWO;hiszpańska prokuratura;Shakirę;oskarżyła;Hiszpania;
+731;BIZNES;Marian Banaś;lukę w VAT;powiedział;Polska;wtorek
+732;BIZNES;użytkownik Twittera;wzrost PKB;zwrócił uwagę;Polska;
+733;PRZESTEPSTWO;;ruble;wyparowują;Rosja;co roku
+734;BIZNES;;pociąg IC Rejewski;wyruszył;Bydgoszcz-Warszawa;niedziela
+735;BIZNES;PGNiG;gaz ziemny;dostarczyło;Mołdawia;wtorek
+736;BIZNES;Maskpol (PGZ);148 tys. mundurów;dostarczy;Polska;wtorek
+737;BRAK_ZDARZENIA;poszkodowany;odszkodowanie;należy się;;
+738;BRAK_ZDARZENIA;;normy emisji;;;
+739;BIZNES;;obraz Modiglianiego;sprzedany;Nowy Jork;
+740;BIZNES;GUS;produkcja przemysłowa;spadła;Polska;październik
+741;BIZNES;Sąd UE;wniosek Polski i PGNiG;oddalił;UE;piątek
+742;POLITYKA;;podwójne standardy produktów;zostanie uwzględniona;UE;kwiecień
+743;POLITYKA;rząd Niemiec;Huawei;skłania się ku dopuszczeniu;Niemcy;
+744;BRAK_ZDARZENIA;złoty;sytuacja;wygląda;rynek międzynarodowy;
+745;BIZNES;Mateusz Morawiecki;elektromobilność;podkreśla;Polska;
+746;BIZNES;Komisja Europejska;plan działań gospodarczych;przyjęła;UE;
+747;POLITYKA;Jerzy Kwieciński;fundusze emerytalne;oddajemy;Polska;
+748;POLITYKA;Sebastian Kurz;Nord Stream 2;wspiera;Austria;
+749;BIZNES;Ireneusz Zyska;liczba prosumentów;oznajmił;Polska;
+750;PRZESTEPSTWO (zatrzymać);;umowy z dziewięcioma stacjami;rozwiązujemy;Polska;
+751;BIZNES;Agencja Nieruchomości Rolnych;konkurs na prezesa;ogłosiła;Janów Podlaski;
+752;POLITYKA;Piotr Müller;transport do Rosji;powiedział;UE;sobota
+753;BIZNES;PGNiG;rozbudowy kopalni Lubiatów;wybrało wykonawców;Polska;
+754;BIZNES;;wideo w internecie;wzrośnie sprzedaż;Polska;do 2021 r.
+755;BIZNES;Rafał Milczarski;wynik finansowy LOT;poinformował;Polska;2019 r.
+756;POLITYKA;Marlena Maląg;304 projekty dla seniorów;poinformowała;Polska;
+757;BIZNES;GetBack;portfele wierzytelności;nabywała;Polska;
+758;BIZNES;Ministerstwo Rozwoju;inflacja;prognozuje;Polska;wrzesień
+759;POLITYKA;Die Weltwoche;dostawy gazu;pisze;Polska;
+760;BIZNES;Agencja Fitch;rating Polski;potwierdziła;Polska;piątek
+761;POLITYKA;Piotr Müller;system rozliczania umów zleceń;powiedział;Polska;
+762;BIZNES;węgierskie Ministerstwo Rolnictwa;import wina;powiedzieli;Węgry/Polska;
+763;POLITYKA;grecki parlament;kolejne reformy;zaakceptował;Grecja;niedziela wieczorem
+764;BIZNES;;pasażerowie kolei;trudne dni;Niemcy;
+765;BRAK_ZDARZENIA;;nadzór nad ochroną konsumenta;nie jest wystarczający;;
+766;BRAK_ZDARZENIA;;afera spalinowa;zatacza kręgi;;
+767;BIZNES;urzędnicy ZUS;nowe uprawnienia;chcą zdobyć;Polska;
+768;BIZNES;analitycy PKO BP i Pekao;złoty;ocenili stabilizację;Polska;
+769;BIZNES;wojewoda podlaski;rekompensaty;wypłacił;Podlasie;
+770;BIZNES;przedsiębiorcy;wsparcie z ZUS;będą mogli wnioskować;Polska;od 15 października
+771;BIZNES;Sunday Times;fabrykę JLR;donosi o planach;Polska/Europa Wschodnia;
+772;BIZNES;Krajowy Rejestr Długów;dane;alarmujące;Polska;
+773;BIZNES;Tesla;kilkudziesięciu pracowników;zwolnił;USA;czwartek
+774;BIZNES;minister infrastruktury;poparcie IATA dla CPK;powiedział;Polska;sobota
+775;PRZESTEPSTWO;Litwin;sto milionów dolarów;miał wyłudzić;USA;
+776;BIZNES;Międzynarodowy Fundusz Walutowy;wzrost gospodarczy;pochwalił;Polska;
+777;BIZNES;Tadeusz Kościński;wartość handlu internetowego;uważa;Polska;ubiegły rok
+778;POLITYKA;Komisja Europejska;sankcje;zaproponowała obejście;UE/Rosja;
+779;BIZNES;Handelsblatt;import z Polski;pisze;Niemcy;pierwszy kwartał
+780;BIZNES;inwestor;Suntago Wodny Świat;poinformował o budowie;Mszczonów;
+781;POLITYKA;rząd;uprawy tytoniu;chce nadzorować;Polska;
+782;BIZNES;Włodzimierz Kocon (BGK);mieszkania dla najuboższych;poinformował;Polska;
+783;BIZNES;Walmart;karabiny;wycofa;USA;
+784;BIZNES;właściciel WFM;informacje o zwolnieniach;określił nieprawdziwymi;Polska;
+785;POLITYKA;władze Chin;program subwencjonowania lotów;ogłosiły;Chiny;
+786;BIZNES;Andrzej Duda;sztuczna inteligencja;tematami spotkania;USA (Kalisfornia);poniedziałek
+787;POLITYKA;stacja TVN;przedłużenie koncesji;zwróciła się;Polska;
+788;BIZNES;Wizz Air;bezpłatny bagaż;poinformował;świat;od 1 listopada
+789;BIZNES;Bank Światowy;tempo wzrostu gospodarki;wynika z raportu;Polska;2019 r.
+790;BIZNES;;załadunek zboża;będzie możliwy;;
+791;PRZESTEPSTWO;prezes UOKiK;influencerów;ukarania;Polska;
+792;BRAK_ZDARZENIA;;wirusy;nie przepuszcza;;
+793;BIZNES;Trybunał Arbitrażowy;przesłanka kontraktowa;orzekł;Szwecja/Polska;sobota
+794;BRAK_ZDARZENIA;automatyczny kasjer;pieniądze;wypłaci;;
+795;BIZNES;Tadeusz Kościński;termin zapłaty zaliczek;zdecydował o przedłużeniu;Polska;
+796;BIZNES;Wizz Air;pięć nowych tras;uruchomi;Polska;czerwiec
+797;BIZNES;KNF;ustawę frankową;stwierdziła zagrożenie;;
+798;BIZNES;Gertruda Uścińska (ZUS);świadczenia postojowe;przeleje;Polska;środa
+799;BIZNES;;Forum Ekonomiczne;będzie odbywać się;Karpacz;najbliższe sześć lat
+800;BIZNES;Olga Semeniuk;branżę gastronomiczną;planujemy uruchomić;Polska;
+801;BIZNES;money.pl;wakacje kredytowe;ustalił nieoficjalnie;Polska;
+802;BIZNES;Piotr Naimski;projekt;będzie dopięty;Polska;do czerwca
+803;BIZNES;;seria gier Wiedźmin;stanowi 4 proc. eksportu;USA/Polska;
+804;BRAK_ZDARZENIA;;dowody zakupów;będzie można rejestrować;;
+805;BIZNES;premier Ukrainy;zaciągnięte kredyty;deklaruje spłatę;Ukraina;
+806;BRAK_ZDARZENIA;;wzrost;;;;
+807;POLITYKA;Krzysztof Tchórzewski;neutralność klimatyczna;powiedział o koszcie;Polska;
+808;BIZNES;UKE;rynek usług pocztowych;wynika z raportu;Polska;2021 r.
+809;BIZNES;Puls Biznesu;zwolnienia grupowe w Tesco;pisze;Polska;
+810;BRAK_ZDARZENIA;;;;;;
+811;POLITYKA;Washington Post;przejęcie Twittera;podał o przeglądzie;USA;środa
+812;BRAK_ZDARZENIA;;podwykonawcami dla stoczni;byliśmy;;
+813;BIZNES;PKP PLK;dostęp kolejowy do portów;ogłosiły przetargi;Gdańsk/Gdynia;
+814;BIZNES;eksperci NBP;inflacja i PKB;spodziewają się;Polska;ten rok
+815;BIZNES;chińskie władze;import polskiego drobiu;zniosły zakaz;Chiny;wtorek
+816;POLITYKA;Economist;gospodarkę kraju;pisze o liberalizacji;Francja;
+817;BIZNES;Portugalia;czterodniowy tydzień pracy;wypróbuje;Portugalia;
+818;BIZNES;;statki przed portami;czeka;Niemcy/Holandia/Belgia;
+819;BIZNES;GUS;przeładunki w portach;poinformował;Polska;październik
+820;POLITYKA;Wysokienapiecie.pl;likwidacje kopalń;zauważa;Polska;
+821;BIZNES;Daniel Obajtek;ropa spoza Rosji;poinformował;Polska;środa
+822;BIZNES;Ministerstwo Finansów;nadwyżka w budżecie;podało;Polska;po październiku
+823;BIZNES;;Toyota Central Europe;przeniesiona;Warszawa;
+824;BIZNES;Bank Światowy;prognozę wzrostu;podniósł;Polska;
+825;POLITYKA;członkowie UE;współpracy z Chinami;widzą szansę;UE/Chiny;
+826;BIZNES;bank centralny (BCRA);wzrost cen;prognoza;Argentyna;ten rok
+827;PROTEST;frankowicze;projekt PO;ostro krytykują;Polska;
+828;BIZNES;Rzeczpospolita;import gazu;informuje;Polska;do 2022 roku
+829;BIZNES;Donald Trump;podatku;zapłacił;USA;2005 r.
+830;BIZNES;Elon Musk;najbogatszym człowiekiem;nie jest już;świat;
+831;BIZNES;PGNiG;odpady komunalne;prowadzi badania;Polska;
+832;BRAK_ZDARZENIA;;;;;
+833;BIZNES;koronawirus;włoską gospodarkę;negatywnie wpływa;Włochy;
+834;PROTEST;Dmytro Kułeba;bojkotowania Renault;wezwał;Ukraina;
+835;BIZNES;Nasz Dziennik;inwestycje geotermalne;ocenia;Polska;
+836;BIZNES;Marek Dietl;GPW;chce;Polska;
+837;BIZNES;Rzeczpospolita;portal skarbówki;informuje;Polska;
+838;POLITYKA;Fumio Kishida;rezerw ropy;ogłosił uwolnienie;Japonia;
+839;BIZNES;;latające taksówki;będą przewoziły pasażerów;Włochy;2026 rok
+840;BRAK_ZDARZENIA;;rynek pracy;dobre wieści;Polska;
+841;BIZNES;Ministerstwo Klimatu;17 kg bursztynu;poinformowało o wydobyciu;Mierzeja Wiślana;
+842;POLITYKA;władze Kalifornii;opodatkowania SMS-ów;zrezygnowały;Kalifornia;
+843;BRAK_ZDARZENIA;;umowy;negocjowane w sposób tajny;;
+844;BIZNES;;element zabezpieczenia przed powodzią;staną się;Żuławy;
+845;BIZNES;tvp.info;subskrybentów na YouTube;zyskał;Polska;miniony rok
+846;POLITYKA;Polskie Radio;Warszawa członkiem ABII;informuje;Polska/Chiny;
+847;BIZNES;;kontrakty na gaz TTF;wzrosły;Holandia;wtorek
+848;BIZNES;złoty;wartość;traci;Polska;poniedziałek rano
+849;BIZNES;PLL LOT;Boeing 787-8 Dreamliner;odebrały;USA/Polska;piątek
+850;BIZNES;Związek Banków Polskich;zaufanie do banków;wynika z badania;Polska;
+851;BIZNES;AMIC Energy Management;230 stacji Łukoil;sprzedanych;Polska/Litwa/Łotwa;
+852;BIZNES;minister infrastruktury;Centralny Port Komunikacyjny;przekonuje;Polska;
+853;PROTEST;sfera budżetowa;24-godzinny strajk;rozpoczął się;Grecja;
+854;BIZNES;;składki zdrowotne;mamy świadomość;;
+855;BIZNES;;wydatki na czynsz i media;może rozliczyć;Polska;
+856;BRAK_ZDARZENIA;;Polskę młodą;;Polska;
+857;BIZNES;dziennik Trouw;liczba pracowników;zmniejsza się;Holandia;czwartek
+858;BIZNES;;średnia cena nowego auta;wyniosła;Polska;sierpień
+859;BIZNES;Rzeczpospolita;konkurencja o pracowników;podkreśla;Ukraina;poniedziałek
+860;BIZNES;;pracowników z Azji;przyjechało;Polska;styczeń-czerwiec
+861;BIZNES;Bouchra Jarrar;dyrektorem kreatywnym;została;Francja;
+862;BRAK_ZDARZENIA;złoty;wartość;zyskuje;Polska;kolejny dzień
+863;BIZNES;kierowcy;odprawy;czekało;Zosin;piątek
+864;BIZNES;PKP Intercity;pasażerów;mamy przyrost;Polska;
+865;BIZNES;resort finansów;obligacji;przekonuje do kupowania;świat;
+866;BIZNES;Eurostat;sprzedaż detaliczna;podał;Polska;lipiec
+867;BIZNES;UKNF;ustawy o kredycie hipotecznym;cel nowej;Polska;sobota
+868;BIZNES;audytorska EY;kierunków inwestycyjnych;podała;Europa/Polska;2016 rok
+869;BIZNES;MRPiPS;badanie wstępne;wskazuje;Polska;
+870;BIZNES;Agencja Fitch;rating PKN Orlen;podwyższyła;Polska;
+871;BIZNES;władze regionów;odmrażania gospodarki;chcą;Włochy;4 maja
+872;POLITYKA;szef Newsweeka;Marcin Przydacz;zaatakował;Polska;
+873;BIZNES;agencja Reutera;grecka giełda;poinformowała;Grecja;niedziela wieczorem
+874;BIZNES;Rada Polityki Pieniężnej;decyzje Rady;stwierdzono w komunikacie;Polska;czwartek
+875;BIZNES;;Boże Narodzenie;wydajemy coraz więcej;Polska;co roku
+876;BIZNES;Puls Biznesu;akcji banków;pozbywają się;Polska;
+877;POLITYKA;Mateusz Morawiecki;propozycji unijnego budżetu;nie akceptujemy;Bruksela;czwartek
+878;BIZNES;Małgorzata Sadurska (PZU);polisy ubezpieczeniowe;oświadczyła;Polska;
+879;POLITYKA;uczestnicy Energy Summit;wspólne stanowisko;okazję wypracować;UE;
+880;BIZNES;;projekt strategii rozwoju;zostanie opublikowany;Polska;czwartek
+881;BIZNES;Moody’s;spłatą obligacji;uznała zaleganie;Białoruś;
+882;POLITYKA;Bułgarzy;myśliwce MiG-29;chcą remontować;Polska;
+883;BIZNES;stołeczny ratusz;nabór wniosków o dofinansowanie;przypomniał;Warszawa;środa
+884;BRAK_ZDARZENIA;złoty;sytuacja;wygląda;rynek międzynarodowy;
+885;BIZNES;;popyt na kredyty mieszkaniowe;wzrósł;Polska;pierwsze półrocze
+886;BIZNES;operatorzy gazu;umowę z unijną Agencją;podpisali;Kopenhaga;
+887;BIZNES;;rosyjskiego rynku;zapowiedzi opuszczenia;Rosja;
+888;BIZNES;kierowcy;drogi ekspresowej S19;mogą korzystać;Podkarpacie;
+889;BIZNES;;trufli;jest więcej;Włochy;styczeń
+890;BIZNES;;trasy kolejowej do Karpacza;budowa;Dolny Śląsk;
+891;BIZNES;portal Meduza;liczbę rejsów;ograniczają;Rosja;
+892;BIZNES;Ryanair;sześć lotów z Polski;odwołał;Polska;10 sierpnia
+893;BIZNES;Mikołaj Wild;doradcy strategicznego;szuka;Polska/Singapur;
+894;BIZNES;;produkty prozdrowotne;znakując;Polska;
+895;BRAK_ZDARZENIA;Zbigniew Jagiełło;przekonanie;stwierdził;Polska;
+896;POLITYKA;Parlament Europejski;trasę Via Carpatia;poparł nowelizację;UE;
+897;BIZNES;;pociąg z Chin;dotarł;Sławków;
+898;BIZNES;Eurostat;inflacja w strefie euro;poinformował;UE;
+899;BIZNES;Elon Musk;Manchester United;kupuje;Anglia;
+900;BIZNES;Gaz-System;raporty o oddziaływaniu;złożyła;Polska;
+901;BIZNES;PGNiG (Orlen);gazowców;poinformowało o wyruszeniu;USA-Polska;
+902;BIZNES;NBP;oficjalne aktywa rezerwowe;poinformował;Polska;koniec października 2022
+903;BIZNES;Reuters;zerowej emisji netto;informuje;świat;poniedziałek
+904;POLITYKA;Komisja Europejska;przepisy;zaproponowała;UE;
+905;BRAK_ZDARZENIA;;plan szczegółowy;prezentowany;;
+906;BIZNES;Rzeczpospolita;branża zielarska;wskazuje;UE;
+907;BIZNES;inwestorzy zagraniczni;spółki;zakładają;Polska;
+908;PRZESTEPSTWO;prokuratorzy;pozwy przeciw Google;wnieśli;USA;
+909;KATASTROFA;pandemia;ludzi (ubóstwo);może popaść;świat;
+910;POLITYKA;Komisja Europejska;wkłady aromatyzowane;chce zakazać;UE;
+911;BIZNES;Grecja;pieniędzy;brakuje;Grecja;
+912;BIZNES;Komisja Europejska;energia nuklearna i gaz;zaproponowała zaklasyfikowanie;UE;
+913;POLITYKA;Mateusz Szczurek;kwota wolna od podatku;powiedział;Polska;
+914;POLITYKA;Aleksandr Nowak;kontrakt na tranzyt;poinformował o braku planów;Ukraina;2019 rok
+915;BIZNES;;sklepy;będą zamknięte;Polska;niedziela 9 czerwca
+916;BIZNES;Ministerstwo Finansów;elektroniczne PIT-y;zanotowało;Polska;
+917;BRAK_ZDARZENIA;;szara strefa;wytworzyła;Ukraina;
+918;BIZNES;instytucje finansowe;klientów;odkryły;Polska;
+919;POLITYKA;Departament Handlu;ograniczenia na eksport;ogłosił;USA/Chiny;środa
+920;POLITYKA;Kosma Złotowski;interpelację;złożył;UE;
+921;BIZNES;Agencja Nieruchomości Rolnych;akcje KSC;kupiła;Polska;
+922;PRZESTEPSTWO;policja;śmierć analityka;wyjaśnić;San Francisco;
+923;BIZNES;;dziura w kasie;coraz mniejsza;Polska;
+924;POLITYKA;Marta Wcisło i Piotr Wawrzyk;blokadę tirów;powiedzieli/zdementowali;Polska;
+925;BIZNES;;ukaranie właściciela Biedronki;kluczowa decyzja;Polska;
+926;BIZNES;Stuart Gulliver (HSBC);zmianę banku;powiedział;świat;
+927;BIZNES;Volkswagen;decyzję o budowie fabryki;odłożył;Turcja;
+928;POLITYKA;władze Balearów;prawo użytkowania lokali;zamierzają odebrać;Hiszpania;
+929;BIZNES;DIHK;problemy finansowe;poinformował;Niemcy;najbliższe miesiące
+930;BIZNES;Twitter;awarii;uległ;świat;
+931;BIZNES;Daniel Obajtek;warunki zaradcze;poinformował;UE/Polska;wtorek
+932;BRAK_ZDARZENIA;;kłopoty Volkswagena;ciąg dalszy;;
+933;BIZNES;;ryczałt od dochodów;będzie mogła wybrać;Polska;od 2022 r.
+934;BIZNES;PKN Orlen;patronatem obchody PKOl;obejmie;Polska;ten rok
+935;BIZNES;Polacy;pieniądze w galeriach;wydali;Polska;pierwszy tydzień otwarcia
+936;BIZNES;;drugi bank w Polsce;może zmienić właściciela;Polska;
+937;BIZNES;Daniel Obajtek;umowy ze stacją;zapowiedział rozwiązanie;Polska;
+938;PRZESTEPSTWO;firmy;wycofuje się z rynku;wycofuje;Rosja;
+939;BIZNES;rząd;pakiet finansowy;przygotował;Polska;
+940;POLITYKA;rząd;projekt ustawy;przygotowuje;Polska;
+941;BIZNES;;dotacja dla ZUS;będzie mniejsza;Polska;
+942;BIZNES;Agencja Fitch;rating Grecji;obniżyła;Grecja;wtorek
+943;BIZNES;OPEC;limit wydobycia;zgodziła się;świat;
+944;BIZNES;;leki i suplementy;znikają;Polska;
+945;POLITYKA;TSUE;dyrektywę o VAT;orzekł o naruszeniu;Polska/UE;czwartek
+946;BIZNES;Daniel Obajtek;reaktory jądrowe SMR;przekazał o inwestycji;Polska;
+947;POLITYKA;Węgierski Bank Narodowy;informacje;może utajnić;Węgry;
+948;POLITYKA;Donald Tusk;propozycje ws. inflacji;przedstawił;Polska;środa
+949;BIZNES;Rzeczpospolita;wzrost obciążeń podatkowych;informuje;Polska;
+950;POLITYKA;Platforma Obywatelska;Krajowy Plan Odbudowy;odrzuca;Polska/UE;
+951;BIZNES;ceny ropy;ceny;spadły;;wtorek
+952;BIZNES;;płeć przy rekrutacji;badanie pokazało;Szwecja/USA;
+953;BIZNES;Ministerstwo Infrastruktury;połączenie dróg;poinformowało o otwarciu;Warszawa;noc z czwartku na piątek
+954;BIZNES;TeleCinco;oferty pracy czasowej;podała o zmianach;Hiszpania;lato
+955;BIZNES;Rzeczpospolita;KNF (Michał Krupiński);informuje o stanowisku;Polska;
+956;WYPADEK;strażacy;pożar magazynu;walczyli;Francja (Bordeaux);środa
+957;POLITYKA;Ministerstwo Edukacji;program gier wideo;planuje start;Polska;wrzesień
+958;BIZNES;NCBiR;ofertę Ursusa;wybrało;Polska;
+959;POLITYKA;Ministerstwo Finansów;zmian w VAT;planuje;Polska;
+960;POLITYKA;Mike Pompeo;klauzulę Nord Stream 2;zniesie;USA;
+961;BIZNES;Panasonic;współpracę;postanowił zerwać;Rosja;
+962;POLITYKA;Frankfurter Rundschau;sukces na szczycie RE;osiągnęła;Polska;
+963;BIZNES;GUS;średnia płaca;podał;Polska;kwiecień
+964;KATASTROFA;hodowcy NPA;zwierzęta (świnie);zostały zabite;Wielka Brytania;
+965;BIZNES;;stacja Włoszczowa Północ;zostanie rozbudowana;Włoszczowa;
+966;BIZNES;Polskie Koleje Linowe;400 mln zł;zainwestują;Polska;do 2025 r.
+967;BIZNES;Usain Bolt;wypożyczalnię hulajnóg;otworzył;Paryż;
+968;BIZNES;;kolejki na granicy;biurokracja wydłuża;świat;
+969;BIZNES;;7 mld zł na górnictwo;ma zabezpieczyć;Polska;do końca 2022 r.
+970;BIZNES;złoty;wartość;osłabiał się/umacniał;Polska;środa rano
+971;BIZNES;Sąd Miejski;upadłość Ceske Aerolinie;ogłosił;Praga;
+972;POLITYKA;rząd PiS;podatki;obniżył;Polska;
+973;POLITYKA;Rishi Sunak;wydatki na infrastrukturę;zapowie;Wielka Brytania;
+974;BIZNES;Gazeta Wyborcza;dolar;goni euro;;
+975;BRAK_ZDARZENIA;;niemieckiej polityce energetycznej;przewrót;Niemcy;
+976;BIZNES;PGNiG Obrót Detaliczny;opłaty za gaz;zapłacą więcej;Polska;od 1 października
+977;BRAK_ZDARZENIA;;;;;
+978;BIZNES;premier Rumunii;nadwyżkę podatkową;zapowiedział;Rumunia;pierwszy kwartał
+979;POLITYKA;senacka komisja;estoński CIT;poparła;Polska;wtorek
+980;BIZNES;;kruszec (złoto);cena;Polska;
+981;BIZNES;PGNiG;skroplonego gazu LNG;kupi więcej;USA;
+982;BIZNES;BIG InfoMonitor i BIK;zaległości Polaków;informują;Polska;
+983;POLITYKA;USA;cła na wino i sery;nałożyły;USA/UE;
+984;BIZNES;Opel;produkcję silników;rozpoczęła;Tychy;czwartek
+985;BRAK_ZDARZENIA;;;;;2018 r.
+986;BIZNES;Rzeczpospolita;nowych połączeń lotniczych;pisze;Polska;lato
+987;BIZNES;Bank Światowy;wzrost PKB;przewiduje;Polska;2019 r.
+988;BIZNES;pracodawcy;aneksy do umów;przedstawiają;Polska;
+989;POLITYKA;Grzegorz Puda;kierunek KE;powiedział;Polska/UE;
+990;BIZNES;Gaz-System;zainteresowanie Baltic Pipe;poinformował;Polska;
+991;BIZNES;Biuro Polskie w Tajpej;partia jabłek;trafiła;Tajwan;czwartek
+992;BIZNES;Muhammad ibn Salman;ceny ropy;ostrzegł;świat;
+993;BIZNES;;impulsowe zakupy;rekordy;;
+994;BIZNES;Dariusz Naworski;loty krajowe;podał o wznowieniu;Olsztyn-Mazury;15 czerwca
+995;BIZNES;;pamiątkowy banknot 0 euro;będzie można zdobyć;Warszawa;koniec listopada
+996;BIZNES;;boczek i żeberka;eksportowym hitem;USA/Polska;
+997;POLITYKA;Jim Risch;sankcje Nord Stream 2;przekazał o wpisaniu;USA;rok finansowy 2020
+998;BIZNES;władze ligawy NBA;straty;obawiają się;USA;
+999;BRAK_ZDARZENIA;;;;Niemcy;
+1000;BIZNES;BIG InfoMonitor;wydatki na sylwestra;wynika z badania;Polska;
+1001;POLITYKA;Pierre Moscovici;wyjście Grecji z euro;zapewnił o braku przygotowań;Grecja/UE;
+1002;BIZNES;przedstawiciel PIM;produkty mleczarskie;ocenił;Chiny;czwartek
+1003;BIZNES;;PKB;wyniósł;Polska/UE;II kwartał 2019
+1004;KATASTROFA;brytyjski dziennik;stężenie substancji (smog);donosi;Polska;grudzień
+1005;BIZNES;eksperci;system bankowy;obawiali się;Ukraina;
+1006;BRAK_ZDARZENIA;;;;;
+1007;PRZESTEPSTWO;sąd;Wiaczesław Platon;skazany;Kiszyniów;
+1008;BIZNES;Gazeta Polska Codziennie;spadku cen na stacjach;informuje;Polska;
+1009;BIZNES;Marek Gróbarczyk;kanał przez Mierzęję;zapewnił;Polska;
+1010;BIZNES;Małgorzata Jarosińska-Jedynak;60 mld zł;powiedziała;Polska;po 2021 r.
+1011;BIZNES;dw.com;ranking atrakcyjności inwestycyjnej;informuje;Europa Środkowa;
+1012;BIZNES;Zarząd MPK i Solaris;zakup 37 autobusów;podpisali umowę;Poznań;
+1013;POLITYKA;Rosyjska Agencja Nadzoru;sankcje;wprowadziła;Rosja;
+1014;BRAK_ZDARZENIA;;;;;
+1015;BIZNES;Deloitte;wydatki na Boże Narodzenie;wynika z badania;Polska;ten rok
+1016;POLITYKA;Ministerstwo Rozwoju;modyfikacje w obniżce składek;zapowiada;Polska;
+1017;BIZNES;przedsiębiorcy;składki ZUS;płacili;Polska;marzec-maj
+1018;BIZNES;;mosty na Mierzei;mają zakończyć się prace;Nowy Świat;do 2022 r.
+1019;POLITYKA;;słodycze i napoje;nie można sprzedawać;Polska;od 1 września
+1020;BRAK_ZDARZENIA;GUS;obywatele RP;podał dane;Polska;2021 r.
+1021;BIZNES;;inwestycja;kosztowała 16 mln zł;Polska;
+1022;BIZNES;Czesi;zakupy;przyjeżdżają;Polska;
+1023;BRAK_ZDARZENIA;;milionerzy;;;
+1024;BIZNES;GUS;wzrost gospodarczy;podał szacunek;Polska;
+1025;POLITYKA;;otwarte rynki;tematami szczytu;Hamburg;
+1026;POLITYKA;Stan Nowy Jork;sprzedaż pojazdów spalinowych;będzie wymagał zaprzestania;Nowy Jork;do 2035 r.
+1027;BIZNES;Wizz Air;trzy nowości w locie;pojawią się;Wrocław;sierpień
+1028;BIZNES;PwC;technologie;wynika z badania;Polska;
+1029;POLITYKA;rząd Ciprasa;porozumienie;może osiągnie;Grecja;sobota
+1030;BIZNES;Paweł Borys (PFR);optymizm gospodarczy;powiedział;Polska;2021 r.
+1031;POLITYKA;Peter Altmaier;gaz z Rosji;oświadczył;Niemcy;
+1032;BIZNES;Aszer Lewi;rezygnuje z funkcji;zrezygnował;Izrael;wtorek
+1033;BIZNES;Japan Tobacco;100 mln dolarów w fabrykę;zainwestuje;Stary Gostków;ten rok
+1034;BIZNES;Międzynarodowy Fundusz Walutowy;reakcję NBP;pozytywnie ocenił;Polska;
+1035;BIZNES;federalne biuro statystyczne;średnią pensję;wynika z danych;Szwajcaria;czwartek
+1036;BIZNES;KPMG i Am-Cham;wartość inwestycji USA;wynika z raportu;Polska;2017 r.
+1037;BRAK_ZDARZENIA;;kamery i czytniki w bankomatach;;;
+1038;BIZNES;PGNiG Obrót Detaliczny;ceny gazu;obniża;Polska;od 18 stycznia
+1039;BIZNES;Volkswagen;spot reklamowy;usunął;Instagram;
+1040;BIZNES;właściciele hoteli;wsparcie;apelują;Lesbos;
+1041;BRAK_ZDARZENIA;Telewizja Polska;wzrost oglądalności;;Polska;
+1042;POLITYKA;Wiesław Janczyk;nowa ustawa hazardowa;przekonywał;Polska;
+1043;BIZNES;;mechanizmy ratujące miejsca pracy;zadziałały;Polska;
+1044;BIZNES;Zbigniew Gryglas;morska energetyka wiatrowa;powiedział;Polska;
+1045;POLITYKA;Ministerstwo Sprawiedliwości;projekt ustawy o odpowiedzialności podmiotów;przygotowało;Polska;
+1046;POLITYKA;Aleksis Cipras;porozumienie;powiedział;Grecja;
+1047;BIZNES;;tunel;ma prawie kilometr;Świnoujście;
+1048;BIZNES;Ihar Laszenka;tranzyt ropy;przekazał o wznowieniu;Polska/Białoruś;piątek
+1049;BIZNES;Bank Gospodarstwa Krajowego;gwarancje de minimis;przyznawane;Polska;w ciągu 3 lat
+1050;POLITYKA;Daniel Obajtek;sprzedaż Lotosu;skomentował;Polska;
+1051;BIZNES;LOT;polski rynek;postanowiły zawalczyć;Polska;
+1052;POLITYKA;Japonia i Wielka Brytania;porozumienie o wolnym handlu;podpisały;Tokio;
+1053;BIZNES;Polska i Japonia;reaktor jądrowy HTR;zamierzają wybudować;Polska/Japonia;w ciągu kilkunastu lat
+1054;BIZNES;rząd;waloryzację emerytur;prognozuje;Polska;2017 r.
+1055;POLITYKA;Tomasz Chróstny (UOKiK);apelację od wyroku;złożył;Polska;
+1056;BIZNES;indeksy;zniżkują;;Europa;
+1057;BIZNES;Carsmile;ceny nowych samochodów;wskazała;;
+1058;BIZNES;Eurostat;godzina pracy;podał;Polska;ubiegły rok
+1059;POLITYKA;Michał Kurtyka;budowa elektrowni jądrowej;ocenia;Polska;2026 r.
+1060;BIZNES;Akcenta;eksport;uważają;Polska;zeszły rok
+1061;PROTEST;mieszkańcy;otwarcia sklepów;trwają protesty;Włochy;drugi dzień świąt
+1062;BIZNES;GUS;liczba turystów;wzrosła;Polska;I półrocze
+1063;KATASTROFA;rosyjski ostrzał;sklep Leroy Merlin;zniszczono;Kijów;
+1064;BIZNES;Barometr Imigracji Zarobkowej;pracownicy z Ukrainy;podaje;Polska;II półrocze 2018
+1065;BIZNES;PLL LOT;Boeing 787-9 Dreamliner;odbiorą;Seattle;czwartek
+1066;BRAK_ZDARZENIA;UE;wielkie projekty;lubi;;
+1067;BIZNES;;spółka Nord Stream 2;nie będzie mogła powstać;;
+1068;BIZNES;;przetasowanie rynku;doszło;;piątek
+1069;BIZNES;CBOS;wprowadzenie euro;wynika z badania;Polska;
+1070;BIZNES;Ford Motor Co;pojazdy;wycofuje;świat;
+1071;BIZNES;Platforma Independent Enterprise;wypłaty;wstrzymała;Polska;
+1072;BIZNES;Lotos;wydobycie ropy;ruszyło;Norweski Szelf;poniedziałek
+1073;BIZNES;zagraniczni pracownicy;lukę w finansach ZUS;zaczęli wypełniać;Polska;
+1074;BIZNES;Mateusz Morawiecki;dokapitalizowanie PGZ;podpisał umowę;Polska;
+1075;BIZNES;właściciele sklepu;produkty ekologiczne;oferują;Warszawa;
+1076;BIZNES;Minister Rodziny;wskaźnik waloryzacji;opublikowany;Polska;2022 r.
+1077;BIZNES;PKP Cargo;zysk netto;wzrósł;Polska;pierwszy kwartał 2018
+1078;BIZNES;Poczta Polska;wejście na giełdę;trafi;Polska;przyszły rok
+1079;BIZNES;Jerzy Kwieciński (PGNiG);przelew od Gazpromu;oświadczył;Polska;środa
+1080;BIZNES;;Stocznia Marynarki Wojennej;podpisana umowa;Gdynia;
+1081;BIZNES;Remigiusz Nowakowski (Tauron);Tauron;mówił;Krynica;
+1082;BIZNES;Agencja S&P;rating Polski;obniżając;Polska;
+1083;BIZNES;mąż ze wspólnikiem;produkcja rowerów;przenieśli;Józefów;
+1084;PROTEST;piloci British Airways;rejsy;skasowali;świat;27 września
+1085;BIZNES;PGG;osłony socjalne;podała;Polska;
+1086;BIZNES;Infopraca.pl;awans kobiet;informuje;Polska;
+1087;BIZNES;Dziennik Gazeta Prawna;lotnisko w Modlinie;informuje;Modlin;
+1088;BRAK_ZDARZENIA;;frankowicze;upłynie;;piątek
+1089;BIZNES;;termin rejestracji mały ZUS;mija;Polska;dzisiaj
+1090;POLITYKA;Mateusz Morawiecki;embargo na rosyjskie surowce;próbował przekonać;UE;
+1091;BIZNES;Walt Disney Company;nazwy studiów;zmienia;świat;
+1092;BIZNES;;ruch lotniczy;nie ustał;Europa;
+1093;POLITYKA;Mikołaj Wild;rozmowy o CPK;powiedział;Pekin;
+1094;BIZNES;S&P;wyniki finansowe PZU;uważają;świat;
+1095;BIZNES;Sebastian Skuza;wzrost eksportu;poinformował;Polska;
+1096;BIZNES;CPK;wykonawców dokumentacji;wyłoniła;Polska;
+1097;BRAK_ZDARZENIA;;innowacyjność gospodarki;musi się stać;Polska;
+1098;BIZNES;syndyk;upadła sieć;wyprzedał;;
+1099;BIZNES;Rada Polityki Pieniężnej;stopy procentowe;zdecyduje;Polska;środa
+1100;BIZNES;;fundusze na rolnictwo;przewiduje;Polska;po 2020 r.
+1101;BIZNES;Amerykanie;promocję turystyczną;chcą rozpocząć;Polska;
+1102;POLITYKA;;zamknięcie granic;spowodowała;UE;
+1103;PRZESTEPSTWO;;optymalizacja podatkowa;zamiast 19 proc.;;
+1104;PRZESTEPSTWO (aresztować);;statek Nowodwińsk;aresztowany;Szczecin;
+1105;BIZNES;Mariusz Błaszczak;szpital modułowy;uruchomiony;Warszawa;
+1106;BIZNES;;wydobycie gazu;będzie wyższe;Groningen;
+1107;POLITYKA;Janusz Śniadek (PiS);projekt zakazu handlu;powiedział;Polska;
+1108;PRZESTEPSTWO;rząd;przestępcami paliwowymi;chce walczyć;Polska;
+1109;BIZNES;;Hongkong;najdroższe miasto;Hongkong;
+1110;BRAK_ZDARZENIA;Nikołaj Storonski;synem dyrektora;jest;;
+1111;BIZNES;koncern chemiczny;prace nad grafenem;wkracza do gry;Polska;
+1112;BRAK_ZDARZENIA;złoty;sytuacja;wygląda;rynek międzynarodowy;
+1113;BIZNES;Józef Węgrecki (Orlen);stacja tankowania wodorem;poinformował;Polska;marzec/kwiecień
+1114;BIZNES;;sklepy;są otwarte;Polska;28 marca
+1115;BIZNES;klienci;monety kolekcjonerskie;ustawiła się kolejka;Opole;
+1116;BIZNES;;Wskaźnik Przyszłej Inflacji;wzrósł;;
+1117;BIZNES;;droga ekspresowa i kolej;pozwolą dojechać;Warszawa-Lublin;
+1118;BIZNES;PERN;projekt rurociągu;ogłosiła przetarg;Polska;
+1119;BIZNES;PGNiG;dostawy gazu skroplonego;podpisało umowę;Polska;
+1120;BIZNES;;fabryka Elona Muska (Tesla);wstrzymana;Niemcy;
+1121;BIZNES;maklerzy;ceny ropy;spadają;Nowy Jork;
+1122;POLITYKA;Anna Moskwa;członkostwo Ukrainy w MAE;powiedziała;Ukraina;
+1123;BRAK_ZDARZENIA;złoty;sytuacja;wygląda;rynek międzynarodowy;
+1124;POLITYKA;Marcin Horała;rząd PO-PSL;napisał;Polska;
+1125;BRAK_ZDARZENIA;mec.;osoby zatrudnione;powiedział;Polska;
+1126;BIZNES;;ceny opłat roamingowych;spadną;UE;przyszły rok
+1127;POLITYKA;Grecja;nową propozycję;z nową propozycją;Grecja;
+1128;BIZNES;PFR;przejęcie Polskich Kolei Linowych;sfinalizował;Polska;
+1129;BRAK_ZDARZENIA;;informacje dotyczące ZUS-u;krążą;Polska;
+1130;POLITYKA;rząd;urządzenia mobilne chińskich marek;rozważa rezygnację;Polska;
+1131;BIZNES;Akademik Czerski (statek);właściciela;zmienił;Bałtyk;
+1132;BIZNES;Port Północny;środki UE;dostanie;Gdańsk;
+1133;BIZNES;spółka kolejowa;ładunków z Chin;liczy na zwiększenie;Białoruś;
+1134;PRZESTEPSTWO;Marek Kubala;proces o odszkodowanie;ruszy;Polska;
+1135;BIZNES;Eurostat;produkcja przemysłowa;podał;Polska;luty 2019
+1136;POLITYKA;Thilo Sarrazin;waluty euro;uważa;Polska;
+1137;POLITYKA;Donald Trump;cła na samochody;zagroził;USA/UE;
+1138;BIZNES;Dawid Jackiewicz;członków rady nadzorczej Tauron;odwołanych;Polska;środa
+1139;BIZNES;Łukasz Dominiak;certyfikat dla drobiu;skomentował;Singapur;piątek
+1140;BIZNES;SKM;umowy z Pesą;odstąpiła;Warszawa;
+1141;PRZESTEPSTWO;władze podatkowe USA;emerytur;zabierają;USA;
+1142;BIZNES;PKN Orlen / Robert Kubica;sponsorowanie teamu;poinformowano;Trzebinia;2021 r.
+1143;BIZNES;Kongres Innowacyjnej Gospodarki;siły;łączą;;
+1144;BIZNES;Puls Biznesu;zatorów płatniczych;podaje;Polska;
+1145;BIZNES;NET4GAZ;eksploatację gazociągu;poinformowała;Czechy;
+1146;BRAK_ZDARZENIA;;blokada konta;jest legalna;Polska;
+1147;PRZESTEPSTWO;UOKiK;karę na Engie Energy;poinformował;Polska;
+1148;BIZNES;;samochodów Volkswagen;musi zniknąć;USA;
+1149;BIZNES;klienci;Energetyczne Centrum;porzucili;Polska;
+1150;BRAK_ZDARZENIA;;27 proc.;;;
+1151;BIZNES;Allegro;kurs akcji;wzrósł;GPW;debiut
+1152;BIZNES;Białoruś;remont ropociągu Przyjaźń;nie powinien wpłynąć;Białoruś;
+1153;BIZNES;Marlena Maląg;60 mld zł dla przedsiębiorców;poinformowała;Polska;
+1154;BIZNES;min. rolnictwa;system wsparcia rynku wieprzowiny;złożył wniosek;UE;
+1155;PROTEST;Adam Szłapka;bojkot tankowania na Orlenie;napisał;Twitter;
+1156;BIZNES;ministrowie finansów strefy euro;program pomocowy dla Grecji;podjęli decyzję;UE;
+1157;POLITYKA;Dmytro Kułeba;rosyjskie aktywa;przekazał o prośbie;Niemcy;piątek
+1158;BIZNES;Ministerstwo Finansów;loterię paragonową;ogłosiło przetarg;Polska;
+1159;PRZESTEPSTWO (zatrzymać);Biomed Lublin;zawiadomienie o przestępstwie;zapowiedział złożenie;Polska;
+1160;BIZNES;ElectroMobility Poland;fabryka Izera;poinformowała;Jaworzno;wtorek
+1161;BIZNES;Polska;producent mebli;jest;UE;
+1162;PRZESTEPSTWO (zatrzymać);UOKiK;karę 13,5 mln zł na Getin Bank;nałożył;Polska;poniedziałek
+1163;POLITYKA;Marek Gróbarczyk;przekop Mierzei Wiślanej;powiedział;Polska;
+1164;BIZNES;Ewa Sadowska-Cieślak;gospodarka;uważa;Polska;
+1165;PRZESTEPSTWO;Ubezpieczeniowy Fundusz Gwarancyjny;93 tys. wezwań za brak OC;wystawił;Polska;trzy kwartały 2019
+1166;BIZNES;Saudi Aramco;ropa arabska dla Lotosu;będzie podstawą;Polska;2023 r.
+1167;POLITYKA;UOKiK;nowelizację ustawy o prawach konsumenta;uchwalono;Polska;1 grudnia
+1168;BIZNES;mikro, małe i średnie firmy;spadki sprzedaży;zanotowało;Polska;
+1169;BRAK_ZDARZENIA;;;;;
+1170;KATASTROFA;globalne ocieplenie;wzrost kosztów i spadek wydajności;ostrzegają;świat;
+1171;POLITYKA;rząd;abolicję nieruchomości;informuje o planach;Polska;
+1172;POLITYKA;skarbówka;majątek dłużników;będzie mogła zajmować;Polska;
+1173;BIZNES;indyjskie władze;gospodarkę;zmusiła do otwarcia;Indie;
+1174;BIZNES;Cezary Kulesza;program wsparcia dla klubów;powiadomił;Polska;
+1175;POLITYKA;UE;embargo na produkty z ropy;wchodzi w życie;UE;niedziela
+1176;BIZNES;PGE Energia Ciepła;nieruchomość;podpisała umowę;Kielce;
+1177;BRAK_ZDARZENIA;Polacy;śluby i decyzje o dziecku;przekładają i odkładają;Polska;
+1178;BIZNES;analitycy;ceny paliw;oceniają (powrót poniżej 6 zł);Polska;piątek
+1179;POLITYKA;Mateusz Morawiecki;rozbudowę sieci gazyfikacji;poinformował;Tychowo;piątek
+1180;BRAK_ZDARZENIA;;;;;
+1181;BIZNES;Daniel Obajtek;rafinerie i dostawy;zapewnił;Polska;
+1182;BRAK_ZDARZENIA;branża ubezpieczeniowa;;posypała głowę popiołem;;
+1183;BIZNES;firmy architektoniczne i muzyczne;kredyt na rozwój;informuje;Polska;
+1184;POLITYKA;minister rolnictwa;pismo ws. wieprzowiny;wysyłam;Francja;
+1185;BIZNES;;warunki inwestowania dla USA;jest zielone światło;Polska;
+1186;BIZNES;rosyjskie statki;budowę Nord Stream 2;wznowiły;Rugia;
+1187;PROTEST;Komitet Bojkot Rosja;kampanie bojkotu firm;przygotowuje;Polska;
+1188;BIZNES;Panasonic;współpracę z Huawei;zawiesiła;Chiny;
+1189;BRAK_ZDARZENIA;pokolenie;sukces;jest głodne;;
+1190;POLITYKA;Andrzej Duda;wizyta w Chinach;w programie;Chiny;poniedziałek
+1191;BIZNES;Energa;farmę wiatrową;uruchomiła;Polska;
+1192;BIZNES;Kompania Węglowa;węgiel;zasypuje rynek;Polska;
+1193;POLITYKA;rząd;VAT na paliwa i żywność;obniżył;Polska;
+1194;BIZNES;CD Projekt RED;film z gry Cyberpunk 2077;zaprezentowało;Polska;poniedziałek
+1195;BIZNES;branża meblarska;akcja promocyjna w USA;napisała;USA;przyszły rok
+1196;BIZNES;PKN Orlen;analizy Ruchu;prowadzi;Polska;
+1197;BIZNES;Związek Banków Polskich;reformy rynku obligacji;przedstawionych;Polska;
+1198;BIZNES;PGNiG;pozew przeciwko Gazprom;złożyło;Polska;poniedziałek
+1199;BIZNES;Port w Szanghaju;transport serów;nie przyjmuje;Szanghaj;od trzech tygodni
+1200;BIZNES;Czechy;kontrole polskiego mięsa;mają znieść;Czechy;o północy
+1201;POLITYKA;Krzysztof Tchórzewski;energetyka węglowa i atom;mówi;Polska;
+1202;BIZNES;rząd Włoch;10 mld euro na skutki epidemii;poinformował;Włochy;wtorek
+1203;BIZNES;GUS;PKB;podał;Polska;wtorek
+1204;BIZNES;UOKiK;pomoc dla firm;wynika z raportu;Polska;2016 rok
+1205;BIZNES;lotnisko w Modlinie;;przełomowy;Modlin;2018 rok
+1206;BRAK_ZDARZENIA;studenci;znajomości;uważa;Polska;
+1207;BIZNES;;wartość eksportu i importu;sięgnęła;;siedem miesięcy
+1208;POLITYKA;Artur Soboń;własność gruntu pod domami;powiedział;Polska;1 stycznia 2019 r.
+1209;POLITYKA;Marek Sawicki;wsparcie dla młodych rolników;poinformował;Bruksela;
+1210;BIZNES;;spółki z obcym kapitałem;zarejestrowano;;pierwsza połowa br.
+1211;POLITYKA;rząd;minimalną cenę alkoholu;popiera;Polska;
+1212;BIZNES;Andrzej Duda;Nagrody Gospodarcze;wręczył;Polska;czwartek
+1213;BIZNES;właściciele firm;znoszenie ograniczeń;myślą;Polska;
+1214;BIZNES;Norges Bank;PGE na czarną listę;wpisał;Norwegia;
+1215;BIZNES;Ministerstwo Finansów Rosji;przychody z ropy i gazu;wynika z danych (spadek);Rosja;
+1216;POLITYKA;kraje i firmy;ustalenia ws. gazu;lekceważą;UE;
+1217;POLITYKA;Piotr Müller;zamknięciem stacji paliw;nie pracuje nad;Polska;sobota
+1218;BIZNES;GUS;PKB;poinformował;Polska;I kwartał 2018 r.
+1219;BIZNES;;zatrudnienie;zwiększyło się;Polska;lipiec
+1220;POLITYKA;Jacek Sasin;konsolidację sektora węgla;poinformował;Polska;
+1221;BIZNES;;harmonogram budowy tunelu;jest;Świnoujście;
+1222;BIZNES;Poczta Polska;strategia IT;wkrótce będzie gotowa;Polska;
+1223;BIZNES;MFW;przestrogi przed Brexitem;odbiły się echem;Wielka Brytania;
+1224;BIZNES;amerykańskie indeksy;wigilijną sesję;zakończyły spadkami;Nowy Jork;poniedziałek
+1225;BRAK_ZDARZENIA;;błąd;powodem zamieszania;Warszawa;
+1226;PRZESTEPSTWO (ukraść);hakerzy;80 mln USD;ukraść;Bangladesz;
+1227;BIZNES;Norwegowie;paliwo;rekord;Norwegia;
+1228;BIZNES;;40 Rosomaków;pojedzie;Bliski Wschód;
+1229;BIZNES;międzynarodowy koncern;porozumienie z ubezpieczycielem;zawarł;Polska;
+1230;BIZNES;PayEye;technologia płacenia tęczówką;może zawitać;Polska;
+1231;POLITYKA;Nicolas Hulot;17 reaktorów jądrowych;może zamknąć;Francja;poniedziałek
+1232;KATASTROFA;politycy;150 tysięcy krów;plan wybicia;Nowa Zelandia;
+1233;BIZNES;;rozliczenie z fiskusem;można;Polska;od piątku do niedzieli
+1234;BIZNES;Andrzej Kiński;umowy offsetowe Patriot;zoptymalizowane;Polska;
+1235;BIZNES;Władysław Kosiniak-Kamysz;stopa bezrobocia;przedstawił;Polska;kwiecień
+1236;BIZNES;ZG Janina;klatkę szybową;otrzymał;Libiąż;
+1237;BIZNES;PLL LOT;osiemnaście rejsów;odwołały;Niemcy;piątek
+1238;POLITYKA;Jacek Sasin;oferta odbudowy Ukrainy;powiedział;Ukraina;poniedziałek
+1239;BIZNES;pandemia;6 mln miejsc pracy;wpłynęła na likwidację;UE;pierwsza fala
+1240;BIZNES;RPP;stopy procentowe;nie zmieniła;Polska;środa
+1241;BIZNES;Mateusz Morawiecki;projekty greenfield;powiedział;Berlin;środa
+1242;BIZNES;;gospodarka;była większa;Polska;trzeci kwartał
+1243;POLITYKA;Iwona Sulik;Janusz Lewandowski szefem Rady;poinformowała;Polska;
+1244;POLITYKA;Biały Dom;cła na Airbusy;zapowiedział podwyższenie;USA;18 marca
+1245;POLITYKA;Ateny;plan naprawczy;nie przygotowały;Grecja;
+1246;BIZNES;Urszula Woźniakowska;firma My Sweet Revenge;mówi;Polska;
+1247;POLITYKA;600 firm;oferty budowy muru;złożyło;USA;
+1248;BIZNES;sieci handlowe;godziny pracy;wydłużają;Polska;
+1249;BIZNES;John Matze;groźby technologiczne;ujawnił;USA;
+1250;BRAK_ZDARZENIA;urząd skarbowy;konto firmy;zająć;Polska;
+1251;BIZNES;Mateusz Morawiecki;nowy terminal;ogłoszenie wyników;Gdańsk;poniedziałek
+1252;BRAK_ZDARZENIA;embargo;szansa;może okazać się;Polska;
+1253;BIZNES;Sue Shaw;zyski firm energetycznych;przekonuje;Irlandia;
+1254;POLITYKA;Komisja Europejska;zmiany w Nord Stream 2;przygotowuje;Bruksela;
+1255;BRAK_ZDARZENIA;deweloperzy;zyski;liczą;;
+1256;BIZNES;Komisja Europejska;przejęcie Normbenz i aktywów MOL;zatwierdziła;Węgry;
+1257;POLITYKA;Anna Zalewska;ekran filtracyjny;odpowiedziała;Turów;
+1258;BIZNES;GDDKiA;terminy ofert S61;przesunęła;Białystok;październik
+1259;BIZNES;Puls Biznesu;rynek elementów złącznych;informuje;Polska;
+1260;POLITYKA;Ryszard Petru;wyjście Grecji z euro;powiedział;Polska;
+1261;POLITYKA;Copa-Cogeca;likwidacji chowu klatkowego;nie popierają;UE;
+1262;BIZNES;;placówek bankowych;jest coraz mniej;;
+1263;BIZNES;Andrzej Kensbok;polskie fabryki broni;ocenił;Polska;czwartek
+1264;BIZNES;Tencent;wartość;stracił;Chiny;
+1265;POLITYKA;władze Kuby;prywatne firmy;zdecydowały o umożliwieniu;Kuba;
+1266;POLITYKA;Niemcy;euro;sugerują;Niemcy;
+1267;BIZNES;PGNiG;kontrakt na gaz;podpisało;Polska;
+1268;BIZNES;;320 mieszkań Mieszkanie Plus;ruszyła budowa;Toruń;
+1269;BIZNES;Rafał Milczarski;wyniki operacyjne LOT;powiedział;Polska;
+1270;BIZNES;Łukasz Greinke;wzrost przeładunków;powiedział;Gdańsk;
+1271;BIZNES;Krajowa Izba Producentów Drobiu;straty 675 mln zł;szacuje;Polska;siedem miesięcy
+1272;BIZNES;Elon Musk;10 proc. miejsc pracy;musi zlikwidować;USA;
+1273;BIZNES;Puls Biznesu;rachunkach oszczędnościowych;pisze;Polska;
+1274;BIZNES;Bank Millennium;akcje Euro Banku;podpisał umowę;Polska;
+1275;BIZNES;;polski przemysł odzieżowy;kwitnie;Polska;
+1276;BIZNES;GUS;stopa bezrobocia;poinformował;Polska;czerwiec
+1277;BIZNES;inwestorzy;bankami Czarneckiego;due diligence;Polska;po Nowym Roku
+1278;BIZNES;;100 tys. kremacji;wykonuje się;Polska;rocznie
+1279;BRAK_ZDARZENIA;;80 proc.;;;
+1280;POLITYKA;Niemcy;warunek ukraiński ws. Nord Stream 2;postawiły;Rosja;
+1281;BRAK_ZDARZENIA;Nicolas Maduro;gospodarka Wenezueli;rozpaczliwy stan;Wenezuela;
+1282;BIZNES;Ministerstwo Finansów;IP Boksem;kończy pracę;Polska;
+1283;BIZNES;Rolls-Royce;produkcję silników;musiał wstrzymać;Wielka Brytania;
+1284;POLITYKA;Ateny i wierzyciele;plan reform;nie mogą się dogadać;Grecja;
+1285;POLITYKA;Sejm;Jacek Oko na prezesa UKE;powołał;Polska;
+1286;POLITYKA;Jacek Sasin;decyzji o wypowiadaniu umów;oczekuje wycofania;Polska;wtorek
+1287;BRAK_ZDARZENIA;Instytut Randstad;nastroje pracowników;wynika z badań;Polska;
+1288;POLITYKA;Komisja Europejska;wyrok sądu ws. gazociągu;poinformowała;Duesseldorf;
+1289;BIZNES;;gaz w hubie TTF;zdrożał;Holandia;
+1290;PRZESTEPSTWO (zatrzymać);władze Indii;produkty Maggi;nakazały wycofanie;Indie;
+1291;PROTEST;związkowcy MZA;akcję protestacyjną;zapowiedzieli;Polska;od poniedziałka
+1292;BRAK_ZDARZENIA;Chińczycy;ambitny plan;mają;Chiny;
+1293;BIZNES;Rafał Sadoch;złoty;mówi o stabilizacji;Polska;
+1294;BRAK_ZDARZENIA;;polska sieć kolejowa;może być lepsza;Polska;
+1295;BIZNES;Owen Tudor;4 mln miejsc pracy;ocenił utratę;Wielka Brytania;
+1296;BIZNES;sprzedawcy;choinki;opuścić ceny;Polska;
+1297;BIZNES;eksperci;patentową aktywność;liczą;Polska;
+1298;PROTEST;związkowcy;strajk;zostaje zawieszony;Polska;środa
+1299;PRZESTEPSTWO;UOKiK;pięć kancelarii odszkodowawczych;prowadzi postępowania;Polska;wtorek
+1300;BIZNES;Mercedes-Benz;fabrykę aut elektrycznych;chce zainwestować;Jawor;
+1301;BIZNES;;PKB;wyniósł;Polska;czwarty kwartał
+1302;BIZNES;Fundusz Odbudowy;inwestycje;pomoże realizować;Polska;
+1303;BRAK_ZDARZENIA;Grzegorz Juszczyk;przerwy na papierosa;akcentował;Krynica-Zdrój;
+1304;BIZNES;władze Rzymu;wysyłanie odpadów;będzie kosztowało;Austria;
+1305;POLITYKA;Krzysztof Ardanowski;znakowanie ziemniaków;podpisał rozporządzenie;Polska;
+1306;BIZNES;ONS;liczba pracowników z UE;poinformował o spadku;Wielka Brytania;ostatni rok
+1307;BIZNES;ZUS;70 tys. ojców;poinformował o zasiłku;Polska;styczeń-maj
+1308;BIZNES;GUS;PKB;wynika z szacunku;Polska;II kwartał 2021 r.
+1309;BIZNES;;cena złota;przebiła 1,8 tys. dolarów;świat;
+1310;BRAK_ZDARZENIA;;nowalijki;są;Polska;
+1311;PROTEST;związkowcy PGG;rozmowy płacowe;podpisaniem protokołu rozbieżności;Polska;piątek
+1312;POLITYKA;Zbigniew Ziobro;rozporządzenie o sankcjach;podkreślił;UE;
+1313;POLITYKA;Marek Chodkiewicz;ekspertyzę lotnisk;powiedział;Polska;
+1314;BIZNES;;liczba niewypłacalnych firm;wzrosła;Polska;I kwartał 2017 r.
+1315;BIZNES;fundacja;morskie farmy wiatrowe;zabiega;Polska;
+1316;BIZNES;Szczecińska Energetyka Cieplna;dziesięć polskich ciepłowni;kupiła;Polska;
+1317;BIZNES;Puls Biznesu;inwestycje w węgiel;ocenia zmianę;Polska;
+1318;BRAK_ZDARZENIA;;patriotyzm gospodarczy;wyróżnienie osób;;
+1319;BRAK_ZDARZENIA;;program Antykryzys;;;
+1320;BIZNES;Poczta Polska;usługi online;można zgłaszać;Polska;
+1321;BIZNES;hotele i restauracje;rezerwacje;odnotowują odwołania;Paryż;po zamachach
+1322;BIZNES;BIK;liczba osób o kredyt;podało;Polska;kwiecień
+1323;BIZNES;Przewozy Regionalne;platformę Podróż bez barier;zaprezentowały;Gdańsk;piątek
+1324;POLITYKA;Komisja Europejska;projekt podatku VAT;przedstawiła;UE;
+1325;BRAK_ZDARZENIA;;auto z silnikiem V12;będzie kosztował;;
+1326;BIZNES;niemieccy kierowcy;niższa akcyza;spodobała się;Polska;
+1327;PROTEST;związkowcy LOT;strajk;zostaje zawieszony;Polska;sobota
+1328;PROTEST;związek Cockpit;negocjacje z Lufthansą;fiaskiem zakończyła się;Niemcy;piątek
+1329;BIZNES;Mateusz Morawiecki;gala Firma 100-lecia;powiedział;Polska;
+1330;BRAK_ZDARZENIA;;500 Plus dla emerytów;nie są opodatkowane;Polska;
+1331;PRZESTEPSTWO;Tomasz Chróstny;nieuczciwe praktyki GetBack;uznał;Polska;
+1332;BIZNES;Bloomberg;Polska;plasuje się na drugim miejscu;świat;
+1333;BIZNES;;emisje CO2;spadły;Polska;2019 r.
+1334;BIZNES;Andrzej Adamczyk;budowę odcinka S7;zapowiedział umowę;Małopolska;ten rok
+1335;BIZNES;PLL LOT;połączenia do Sri Lanki;inaugurują;Sri Lanka;
+1336;BIZNES;;rynek nieruchomości;ożywienie;Polska;
+1337;POLITYKA;Paweł Niemczuk;zalecenia ws. uboju bydła;poinformował;Polska;
+1338;BRAK_ZDARZENIA;internauta;członków zarządu banku;odpowiedział;;
+1339;BIZNES;samorządy;autobusy na prąd;szykują inwestycje;Polska;przyszły rok
+1340;BIZNES;;subwencje Tarczy Finansowej;otrzymało;Polska;
+1341;BIZNES;Polski Instytut Ekonomiczny;pozycja Niemiec w handlu;wskazał;Niemcy;
+1342;BIZNES;;ceny lokali;wzrosły;Polska;IV kwartał 2021 r.
+1343;POLITYKA;Bogdan Pęk;plany sprzedaży Lotosu;powiedział;Polska;poniedziałek
+1344;BIZNES;Rafał Trzaskowski;130 autobusów zeroemisyjnych;podpisał umowę;Warszawa;
+1345;BRAK_ZDARZENIA;złoty;sytuacja;wygląda;rynek międzynarodowy;
+1346;BIZNES;kurs rubla;poziom do dolara;osiągnął;Moskwa;poniedziałek
+1347;POLITYKA;Trybunał Konstytucyjny;zmiana ws. OFE;została rozpatrzona;Polska;
+1348;BRAK_ZDARZENIA;;;;;31 sierpnia 2018 r.
+1349;POLITYKA;Donieck;ruble;wprowadzono;Ukraina;
+1350;BIZNES;Rossmann;podatek CIT;zapłacił;Polska;od 1993 r.
+1351;BIZNES;;kanał żeglugowy;otwarty zostanie;Mierzeja Wiślana;17 września
+1352;BRAK_ZDARZENIA;;analiza sytuacji i język angielski;wymagania;;
+1353;BIZNES;osoby na własny rachunek;liczba (1,33 mln);przybywa;Polska;
+1354;BIZNES;MFW;pomoc i redukcja długu;wynika z raportu;Grecja;wtorek
+1355;BIZNES;ZUS;emerytury z wyrównaniem;rozpoczął wypłatę;Polska;od czerwca
+1356;BIZNES;polscy eksporterzy;konkurencja ceną;informuje;Polska;
+1357;BIZNES;ZUS;odroczenie terminu płatności;można złożyć wniosek;Polska;
+1358;POLITYKA;Mateusz Morawiecki;import LPG;rezygnacja;Polska/Rosja;do końca roku
+1359;POLITYKA;Kreml;skutki sankcji;stara się minimalizować;Rosja;
+1360;POLITYKA;chińskie MSZ;decyzja o wykluczeniu Huawei/ZTE;oświadczyło o wycofaniu;Szwecja;środa
+1361;BIZNES;Adam Glapiński;polityka pieniężna;będzie prowadzona;Polska;czwartek
+1362;PRZESTEPSTWO (zatrzymać);prezes UOKiK;praktyki biur turystycznych;wezwanie do zaniechania;Polska;
+1363;BRAK_ZDARZENIA;energia słoneczna;wady;ma;;
+1364;BIZNES;bank;opłaty za korzystanie z kapitału;żąda;Polska;
+1365;POLITYKA;PiS;wiadomości dla banków;ma;Polska;
+1366;BIZNES;;wartość cebuli;wzrosła o 100 proc.;Polska;
+1367;POLITYKA;Paweł Jabłoński;zarzuty dla TVN;napisał;Twitter;
+1368;POLITYKA;Dmitrij Pieskow;porozumienie;nie ma;Rosja;sobota
+1369;POLITYKA;Katarzyna Kalata;wizerunek ZUS;zamierza oczyścić;Polska;
+1370;BIZNES;studenci PŚ;projekt ekobudynku;wyróżnieni;Katowice;
+1371;BIZNES;Mateusz Morawiecki;zagraniczne inwestycje;przekonuje;Davos;czwartek
+1372;BIZNES;;energetyka wiatrowa na morzu;chcemy mieć;Bałtyk;
+1373;BIZNES;Orlen;przejęcie Energi;doszło;Polska;
+1374;BIZNES;obywatele Niemiec;181 mld euro na kontach;przechowywali;Jersey;2018 r.
+1375;BIZNES;;rzecz z wyprzedaży;można zareklamować;Polska;
+1376;BIZNES;firmy;usługi faktoringu;chętniej korzystają;Polska;
+1377;POLITYKA;Beata Szydło;podniesienie opłaty paliwowej;nie pracuje;Polska;
+1378;BIZNES;PLL LOT;samoloty w barwach narodowych;pomalują;Polska;
+1379;BIZNES;Tesla;praca w fabryce;chce dać Polakom;Brandenburgia;
+1380;BIZNES;pracodawca;wydatki na integrację;musi dzielić;Polska;
+1381;BIZNES;;eksport słodyczy;rekordowy;Polska;miniony rok
+1382;PRZESTEPSTWO (zatrzymać);firmy;wyprowadzanie dochodów;traci 10 mld zł;Polska;
+1383;BIZNES;Piotr Bartkiewicz (Pekao);stopy procentowe;pozostają bez zmian;Polska;
+1384;BRAK_ZDARZENIA;;Czarny piątek;nie dla Polaków;;
+1385;POLITYKA;Mateusz Morawiecki;program PolandBusinessHarbour;zakłada wsparcie;Polska/Białoruś;
+1386;BIZNES;Economist Intelligence Unit;straty w produkcji;ocenia;świat;do 2025 r.
+1387;BIZNES;;autonomiczny bus;testy;Gdańsk/A4;najbliższe dni
+1388;BIZNES;Brian May (Queen);woda perfumowana Save Me;wypuścił na rynek;świat;niedawno
+1389;BIZNES;;polskie kosmetyki;czołowi odbiorcy;świat;
+1390;BIZNES;Mercedes;fabryka silników;planuje zainwestować;Jawor;
+1391;BIZNES;Tadeusz Kościński;wpływy z VAT;poinformował o wzroście;Polska;styczeń
+1392;BIZNES;NBP;banki;ocenia skupienie na gospodarstwach;Polska;
+1393;PRZESTEPSTWO (dochodzenie);Komisja Europejska;spłata podatków Google;może stać się przedmiotem dochodzenia;Wielka Brytania;
+1394;BIZNES;rząd;badania lokalizacyjne CPK;informuje o zakończeniu;Polska;połowa maja
+1395;BIZNES;;oferty pracy;opublikowano;Polska;wrzesień
+1396;BIZNES;PKN Orlen;spekulacje Wyborczej;oświadczenie;Polska;
+1397;BIZNES;Ford;trzy fabryki;zamyka;Rosja;
+1398;BIZNES;resort przedsiębiorczości;grant na inwestycję;rozważa zobowiązanie;Polska;
+1399;BIZNES;Wojciech Arndt;rozbudowa zakładu Łucznik;powiedział;Radom;
+1400;POLITYKA;rząd Niemiec;akcyza na podgrzewacze;pracuje nad ustawą;Niemcy;
+1401;BIZNES;NBP;rok 2016;podsumował;Polska;
+1402;BIZNES;Pfizer;dochody;przebiły prognozy;świat;II kwartał 2021 r.
+1403;BIZNES;Komisja Europejska;przejęcie ZeniMax przez Microsoft;wyraziła zgodę;UE/USA;
+1404;BIZNES;Sławomir Grzyb (IGGP);wznowienie działalności gastronomicznej;ocenił;Polska;po 18 stycznia
+1405;POLITYKA;Komisja Europejska;pieniądze z kar;zagroziła;Polska;
+1406;BIZNES;;cena praw do emisji CO2;gwałtownie spada;;
+1407;PROTEST;właściciele restauracji;strajk głodowy;rozpoczęli;Portugalia;piąty dzień
+1408;POLITYKA;;etykiety z kaloriami na alkoholu;projekt nowej ustawy;Polska;
+1409;BIZNES;raport Kobiety w IT;zarobki kobiet;można się dowiedzieć;Polska;2023 r.
+1410;BIZNES;;spadek liczby urodzeń;obserwowany;Polska;od 30 lat
+1411;KATASTROFA;powódź;fala powodziowa;przeszła;Pakistan;
+1412;BIZNES;Argentyna;restrukturyzacja zadłużenia;zażądała od MFW;Argentyna;
+1413;BIZNES;Orlen Lietuva;instalacja przerobu ropy;podpisała list intencyjny;Litwa;
+1414;BIZNES;Stanisław Kluza;prezes KDPW;szykowany;Polska;
+1415;PRZESTEPSTWO (zatrzymać);Chiny;wysyłka mięsa z Kanady;poprosiły o wstrzymanie;Chiny/Kanada;środa
+1416;BIZNES;PKP Intercity;rentowność;poprawiły;Polska;
+1417;BIZNES;;liczba obywateli UE pracujących;spadła;Wielka Brytania;ostatni rok
+1418;BIZNES;PAŻP;narzędzie cyfrowe;wdrożyła;Polska;
+1419;BRAK_ZDARZENIA;;46 proc.;;;
+1420;BIZNES;Paweł Surówka;stanowisko prezesa PZU;zrezygnował;Polska;
+1421;BIZNES;spółki;giełda;wycofywanych;;
+1422;POLITYKA;gabinet Beaty Szydło;obniżka VAT;rozważa wycofanie;Polska;przyszły rok
+1423;BIZNES;PLL LOT;rejsy Warszawa-Bejrut;zainauguruje;Warszawa-Bejrut;piątek wieczorem
+1424;BIZNES;PKP Intercity;383 pociągi;uruchomi;Polska;od 9 grudnia
+1425;PRZESTEPSTWO;firmy (Visa, Mastercard, Amex);konsumenci;pada ofiarą podstępu;UE;poniedziałek
+1426;BIZNES;KGHM i PGNiG;umowy na dostawy gazu;podpisał;Polska;
+1427;BRAK_ZDARZENIA;;;;;
+1428;POLITYKA;Rosjanie;polskie jabłka;dadzą sobie radę;Rosja;
+1429;BIZNES;PKN Orlen;kompleks Olefin III;wybuduje;Płock;do 2024 r.
+1430;BIZNES;Ministerstwo Finansów;dochody z VAT;wyższe;Polska;po wrześniu
+1431;BIZNES;Polacy;praca zdalna;pracują;Polska;
+1432;BRAK_ZDARZENIA;;;;;
+1433;BIZNES;Stena Line;rejsy promami;odwołał;Gdynia/Karlskrona;
+1434;BIZNES;Andrzej Adamczyk;sieć autostradowa;zostanie ukończona;Polska;2025 r.
+1435;POLITYKA;Berlin;opinie o elektrowni atomowej;chce;Niemcy/Polska;
+1436;BIZNES;inwestorzy;wyprzedaż akcji;trwa;Wall Street;
+1437;BIZNES;Agnieszka Mikulska (CBRE);obniżki cen mieszkań;oceniła;;
+1438;BIZNES;Gemius/PBI;badanie odsłon;opublikował;Polska;
+1439;BIZNES;PZU;Iga Świątek;objął patronatem;Polska;
+1440;BIZNES;Mercedes;fabrykę silników;zbuduje;Jawor;
+1441;BIZNES;Moody's;dofinansowanie Katalonii;poinformowała;Hiszpania;czwartek
+1442;PRZESTEPSTWO (zatrzymać);Prokuratura w Genewie;bank HSBC (śledztwo);wszczęła;Genewa;
+1443;BIZNES;UEFA;przychody;przyniosły;Francja;
+1444;BIZNES;PKP Intercity;pociągi EIP Pendolino;wracają;Polska;od 31 maja
+1445;BIZNES;Daniel Obajtek;28 tankowców z ropą;zamówił;Polska;
+1446;POLITYKA;Ministerstwo Finansów;podatek od pomocy PFR;chce wydłużyć okres;Polska;do końca 2023 r.
+1447;BIZNES;Volkswagen;strata operacyjna;zanotował;Wolfsburg;trzeci kwartał
+1448;BIZNES;związkowcy i zarząd;porozumienie;zawarli;Polska;wtorek
+1449;BIZNES;MRPiPS;stopa bezrobocia;spadła;Polska;kwiecień br.
+1450;POLITYKA;Ukraina i Rosja;dostawy gazu;rozmowy zakończyły się sukcesem;Bruksela;
+1451;BIZNES;GUS;bezrobocie 6,5 proc.;poinformował;Polska;luty
+1452;POLITYKA;niemiecki rząd;sprzedaż zakładu Elmos;zakazał;Niemcy;środa
+1453;POLITYKA;Vuczić i Orban;rurociąg naftowy;uzgodnili budowę;Serbia/Węgry;poniedziałek
+1454;POLITYKA;Tadeusz Kościński;wygrane w loterii;nie będą opodatkowane;Polska;
+1455;POLITYKA;Piotr Naimski;kontrakt z Rosjanami;rezygnacji;Polska;2022 r.
+1456;BIZNES;GUS;ceny towarów i usług;wzrosły;Polska;sierpień 2022 r.
+1457;BIZNES;Moody's;prognozę deficytu;podniosła;Polska;2016 r.
+1458;BIZNES;Włosi;konsumpcja ryżu;zanotowano wzrost;Włochy;
+1459;BRAK_ZDARZENIA;;;;;
+1460;POLITYKA;rzecznik rządu;mechanizm kompensacyjny;zapowiada;Polska;przyszły rok
+1461;BIZNES;Marek Niechciał;udział domów mediowych;powiedział;Polska;
+1462;BIZNES;Polacy;wakacje zagraniczne;poleciało mniej;Polska;zeszły rok
+1463;POLITYKA;Jacek Sasin;partner budowy elektrowni (Westinghouse);powiedział o wyborze;Waszyngton;niedziela
+1464;BRAK_ZDARZENIA;;;;;
+1465;POLITYKA;Mateusz Morawiecki;2,5 mld zł dla miast;zapowiedział;Polska;
+1466;BIZNES;Francja;inflacja;wzrosła;Francja;
+1467;BIZNES;Rostiech;produkcja samolotu MC-21;opóźni się;Rosja;
+1468;POLITYKA;Sebastian Skuza;ceny mięsa;nie widzę zagrożenia;Polska;
+1469;BIZNES;świat;sprzedaż aut elektrycznych;przekroczy milion;świat;mijający rok
+1470;PRZESTEPSTWO;Mathias Doepfner;Bild / Adidas (kontrowersja);nie ujawnił;Niemcy;
+1471;BRAK_ZDARZENIA;;;;;
+1472;BIZNES;cztery konsorcja;oferty na remont mostu;złożyły;Warszawa;
+1473;BIZNES;dyrektor IfW;zamożność mieszkańców;spadku;Niemcy;
+1474;BIZNES;Gazprom Export;wniosek PGNiG;potwierdziła;Polska;czwartek
+1475;POLITYKA;unijne reguły;plany rządu ws. podatku;mogą pokrzyżować;Polska;
+1476;POLITYKA;organizacje pozarządowe;oferty do programu Aktywni Plus;mogą składać;Polska;od czwartku
+1477;PRZESTEPSTWO (zatrzymać);fiskus;fikcyjne faktury VAT;wykrył;Polska;2019 r.
+1478;PRZESTEPSTWO (zatrzymali);agenci CBA;były prezes i członek zarządu;zatrzymali;Polska;
+1479;BIZNES;pracodawcy;rekrutacje;nie hamują;Polska;
+1480;BRAK_ZDARZENIA;;;;;
+1481;PRZESTEPSTWO (zatrzymać);władze hrabstwa Harris;odszkodowanie od Volkswagena;domagają się;Teksas;
+1482;BIZNES;MAE;dochody Rosji z ropy i gazu;spadły;Rosja;styczeń
+1483;BIZNES;NCBiR;32,5 mln zł na biogaz;przeznaczyło;Polska;
+1484;POLITYKA;Wojciech Jakóbik;współpraca PL/DE/HU;ocenił;Polska;
+1485;BIZNES;federacja sektora;70 tys. ślubów (straty);przedstawiła;Włochy;środa
+1486;BRAK_ZDARZENIA;;;;;
+1487;POLITYKA;Samsung, LG;koreańscy menedżerowie;ewakuują;Ukraina;
+1488;KATASTROFA;fala pożarów;pozycja eksportera owoców;może stracić;Chile;
+1489;BIZNES;złoty;notowania;idą w górę;Polska;środa
+1490;PROTEST;piloci Lufthansy;strajk;zakończyli;Niemcy;noc z czwartku na piątek
+1491;BIZNES;rosyjski rubel;wartość;pikuje w dół;Rosja;
+1492;BIZNES;Wojciech Lipka;wniosek o rejestrację PAR;zostanie złożony;Polska;pierwsza połowa roku
+1493;BIZNES;Polska;liczba aut elektrycznych (62 tys.);zwiększyła się;Polska;do końca listopada
+1494;PRZESTEPSTWO (zatrzymany);Henryk K.;król kiełbasianego imperium;został zatrzymany;Buenos Aires;
+1495;BIZNES;konsumenci;zakupy bez ruszania się z domu;robi;Polska;
+1496;PROTEST;związkowcy;marsz milczący;organizują;Świdnik;środa
+1497;BIZNES;bułgarska turystyka;miliony euro (upadłość Thomas Cook);straci;Bułgaria;
+1498;BIZNES;skroplony gaz ze USA;dostawy;będzie przypływał;Polska;regularnie
+1499;POLITYKA;Jacek Sasin;szantaż Gazpromu;ocenił;Polska;
+1500;BIZNES;stopy procentowe;dotychczasowy poziom;pozostaną;Polska;
