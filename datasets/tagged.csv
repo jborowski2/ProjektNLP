@@ -1,0 +1,101 @@
+id;kategoria;KTO;CO;TRIGGER;GDZIE;KIEDY
+1;BIZNES;Holandia;inflacja;przekroczyła;Holandia;
+2;BIZNES;Puls Biznesu;funduszy unijnych;alarmuje;Polska;
+3;BIZNES;Skarb Państwa;Polski Holding Hotelowy;stworzy;Polska;
+4;BIZNES;Polska;wzrost PKB;prezentuje;Polska;pierwszy kwartał 2020 r.
+5;BIZNES;elektrownia Datteln 4;działalność;uruchomiona;Niemcy;30 maja 2020 r.
+6;BIZNES;Agencja Moody’s;prognozę wzrostu PKB;skorygowała;;
+7;BIZNES;Niemcy;gospodarka;zostają w tyle;Niemcy;
+8;PRZESTEPSTWO;Daniel Obajtek;majątku;wyprowadzania;Polska;
+9;BIZNES;Adam Glapiński;stóp procentowych;wzrost;Polska;
+10;BIZNES;TUIK;inflacja;wyniosła;Turcja;czerwiec
+11;BIZNES;Bartosz Marczuk;wysokości emerytur;ujawnił;Twitter;
+12;BIZNES;Christine Lagarde;MFW;będzie kierowała;;kolejne pięć lat
+13;BIZNES;LOT;regularne rejsy;uruchomiły;Warszawa - Kowno;
+14;BIZNES;najmniejsze firmy;składek emerytalnych;uniknąć;Polska;
+15;BIZNES;rodacy;sytuację finansową;oceniają;Polska;
+16;BIZNES;związek rolników;winobranie;zakończyło się;Włochy;
+17;BIZNES;Niemcy;przewozów ciężarówkami;zelektryfikować;Niemcy;w ciągu 10 lat
+18;POLITYKA;Olaf Scholz;dostaw gazu;wstrzymanie;Tokio;czwartek
+19;BIZNES;małe i średnie przedsiębiorstwa;kondycja;poprawia się;;
+20;POLITYKA;Marlena Maląg;wsparcie dla firm;ruszy;Wrocław;
+21;BIZNES;gospodarka;branża elektroniczna i motoryzacyjna;stabilnymi;Korea Południowa;
+22;POLITYKA;Tadeusz Kościński;podatku;nie podwyższamy;Polska;w przyszłym roku
+23;POLITYKA;Anna Zalewska;porozumienie;zostać podpisane;;do końca stycznia
+24;BIZNES;spółka OKD;działalność wydobywcza;zakończyć;Czechy;2023 r.
+25;PRZESTEPSTWO (zatrzymać);podkarpackie służby celno-skarbowe;papierosy i alkohol;zatrzymały;polsko-ukraińskie przejścia graniczne;od początku roku
+26;BIZNES;PGNiG;ładunek LNG;sprowadziło;Polska;niedziela
+27;BIZNES;Leszek Skiba;sumy bilansowej;wzroście;Polska;
+28;BIZNES;Komisja Europejska;pomocy publicznej;zgodziła się;Włochy;wtorek
+29;BIZNES;warszawski sąd okręgowy;termin rozprawy;wyznaczył;Warszawa;4 listopada
+30;BIZNES;ropa;ceny;tanieje;USA;
+31;POLITYKA;Marcin Roszkowski;solidarność europejską;burzyć;UE;
+32;POLITYKA;Michał Kurtyka;projekt przepisów;przygotowaliśmy;Polska;
+33;BIZNES;Rada Polityki Pieniężnej;stopy procentowe;podniesie;Polska;czwartek
+34;POLITYKA;Jarosław Gowin;ZUS;obniżenie;Polska;
+35;BIZNES;brytyjska gospodarka;wzrost;silniejszy;Wielka Brytania;
+36;BIZNES;USA i UE;metali przemysłowych;zwiększyły;Rosja;2022 r.
+37;BRAK_ZDARZENIA;idea;zmianę świata;narodzić się;Europa Środkowa;
+38;POLITYKA;Wiesław Janczyk;Polskę z przepaści deficytu;wyciąga;Polska;
+39;BIZNES;rynek roślinnych zamienników;wartość;wzrósł;Polska;ubiegły rok
+40;BIZNES;ktoś;błąd;popełnić;;
+41;BIZNES;banki;oddziałów bankowych;zamkniętych;Hiszpania;2021 rok
+42;POLITYKA;Emmanuel Macron;wykupu gruntów;zapowiedział;Francja;
+43;BIZNES;ministerstwo transportu;Volkswagen;nie manipulował;Niemcy;niedziela
+44;BRAK_ZDARZENIA;;;;;
+45;BIZNES;węgierski rząd;postępowanie konsumenckie;wszczął;Węgry;
+46;PRZESTEPSTWO;błąd w nazwie;kradzieży;zapobiec;;
+47;PROTEST;właściciele barów i restauracji;list;wysłali;Rzym;
+48;BIZNES;świat;sprzedaży broni;spadek;;piąty rok z rzędu
+49;PRZESTEPSTWO;gang;miliony;inwestował;Polska;
+50;POLITYKA;Wiesław Janczyk;opodatkowania śmieciowego jedzenia;poinformował;Polska;
+51;BIZNES;Piotr Woźniak (PGNiG);pokład gazu;odkryjemy;Polska;środa
+52;POLITYKA;Komisja Europejska;wywiad Jacka Sasina;skomentowała;;
+53;BIZNES;posłowie PiS;projekt nowelizacji (świadczenie postojowe);złożony;Polska;noc z poniedziałku na wtorek
+54;BIZNES;polski przemysł motoryzacyjny;straty i zwolnienia;czekają;Polska;
+55;BIZNES;Andrzej Adamczyk (rząd);program budowy autostrad;zakończyć;Polska;do 2025 r.
+56;BIZNES;organ rentowy;elektronizacja zwolnień lekarskich;pozwoliła;Polska;
+57;BIZNES;członkowie SBB;wyrok TSUE;poinformowali;Polska;czwartek
+58;BIZNES;Rosja;strukturę eksportu;ma;;
+59;BIZNES;Polacy w średnim wieku;wielkość długów;wzrosła;Polska;w ciągu 4 lat
+60;BIZNES;chińscy eksporterzy;wojną celną;zaniepokojeni;Chiny;
+61;BIZNES;JSW;oszczędności;przyniesie;Polska;pierwszy rok
+62;BIZNES;rynek szparagów;wzrost;rośnie;;
+63;WYPADEK;warszawski sąd;wyrok ws. salmonelli;wydał;Warszawa;
+64;BIZNES;bank centralny Szwajcarii;stopy procentowe;utrzymał;Szwajcaria;
+65;BIZNES;Daniel Obajtek;partnerzy (stacje);poszukiwani;Europa;
+66;PROTEST;Stanisław Karczewski;protesty przedsiębiorców;komentując;;
+67;BIZNES;nabrzeże terminalu DCT;uruchomione;zostanie;Gdańsk;poniedziałek
+68;BIZNES;ropa;tanieje;tanieje;Nowy Jork;
+69;BIZNES;rosyjskie koncerny;nadpodaż gazu;proszą o pozwolenie na spalanie;Rosja;od tygodni
+70;BIZNES;przywódcy państw G20;5 bln dolarów na wsparcie;przeznaczą;świat;czwartek
+71;BIZNES;MRPiPS;stopa bezrobocia;wyniosła;Polska;wrzesień
+72;BIZNES;Polacy;inflacja;mierzą się;Polska;
+73;BIZNES;część graczy;zniknąć;może;;
+74;BIZNES;Elon Musk;Twitter;przejęcie;USA;
+75;BIZNES;Warszawa;ranking miast;sklasyfikowanym;Warszawa;
+76;BIZNES;British Airways;pracowników;zwalniać;;piątek
+77;PRZESTEPSTWO;Boeing;2,5 mld dolarów;zapłaci;USA;
+78;POLITYKA;państwa UE;pakiet „Fit for 55”;przyjęty;Niemcy;lipiec
+79;BIZNES;GUS;przeciętne wynagrodzenie;wzrosło;Polska;
+80;BIZNES;UOKiK;zgoda na przejęcie PKL;wydał;Polska;
+81;PROTEST;mieszkańcy i władze gminy;protest;przyniósł skutek;;
+82;BIZNES;Rolls-Royce;pracowników;zwolnić;;
+83;BIZNES;złoty;sytuacja;wygląda;rynek międzynarodowy;
+84;BIZNES;gazowiec Clean Ocean;ładunek LNG;stoi na redzie;Świnoujście;
+85;BIZNES;prof. BCC;trend spadkowy PKB;ocenił;Polska;
+86;BIZNES;Bank Gospodarstwa Krajowego;premia technologiczna;poinformował;Polska;od 8 października
+87;POLITYKA;Rada Unii Europejskiej;rozporządzenie (magazyny gazu);przyjęła;UE;
+88;BIZNES;Tadeusz Kościński;wyniki gospodarki;ocenia;Polska;
+89;POLITYKA;nowe prawo wodne;decyzje o warunkach zabudowy;przestały obowiązywać;Polska;poniedziałek
+90;BRAK_ZDARZENIA;eksperci Centrum im.;;;;
+91;BIZNES;Rada Przedsiębiorczości;akceptację Tarczy Finansowej;apeluje;UE;
+92;BIZNES;wojsko;karabiny;kupi;Polska;
+93;POLITYKA;Ministerstwo Rozwoju;projekt ustawy;zakłada;Polska;
+94;BRAK_ZDARZENIA;dyktatury;mordowanie oponentów;praktyka;;
+95;BIZNES;dziecko;ulga na bilety;przysługuje;Polska;
+96;BRAK_ZDARZENIA;;;;;
+97;BIZNES;Bank Pekao SA;zysk;wyższy;Polska;pierwsza połowa roku
+98;BIZNES;;umowa o budowie Baltic Pipe;podpisana;Polska;przełom grudnia i listopada
+99;POLITYKA;Hu Chunhua;rozmowy handlowe;odwołał;Wielka Brytania;niedziela
+100;BIZNES;UE;importu gazu;zmniejszyć;UE;2023 r.

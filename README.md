@@ -31,8 +31,7 @@ Trigger: pobił
 System składa się z dwóch głównych komponentów:
 
 ### 1. Klasyfikacja typu wydarzenia
-- Wykorzystuje wektorową reprezentację zdań (sentence embeddings)
-- Model: `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`
+- Wykorzystuje cechy TF-IDF (unigramy + bigramy)
 - Klasyfikator: Logistic Regression
 - **Zbiór uczący: 220+ przykładów** (gotowy do rozszerzenia do 1000+)
 
@@ -47,8 +46,10 @@ System składa się z dwóch głównych komponentów:
 ## Instalacja
 
 ### Wymagania
-- Python 3.8+
+- Python 3.10–3.13 (zalecane: 3.12)
 - pip
+
+**Uwaga (Python 3.14 / Windows):** projekt opiera się o spaCy, które na Pythonie 3.14 potrafi obecnie wysypywać się przez kompatybilność z Pydantic v1. Najprościej: użyj Pythona 3.12 (albo 3.13).
 
 ### Kroki instalacji
 
@@ -63,6 +64,8 @@ cd ProjektNLP
 pip install -r requirements.txt
 ```
 
+Jeśli korzystasz z VS Code, najpierw wybierz interpreter Pythona 3.12/3.13: `Python: Select Interpreter`, a dopiero potem utwórz venv (np. `python -m venv .venv`).
+
 3. Pobierz model spaCy dla języka polskiego:
 ```bash
 python setup_models.py
@@ -72,6 +75,23 @@ Alternatywnie można pobrać model ręcznie:
 ```bash
 python -m spacy download pl_core_news_lg
 ```
+
+## Troubleshooting
+
+### Problem: błędy instalacji / importu na Python 3.14
+
+Najczęstsza przyczyna na Windows to użycie Pythona 3.14 — spaCy (i zależności wokół Pydantic v1) mogą nie być jeszcze kompatybilne i import kończy się błędem.
+
+**Rozwiązanie (zalecane):**
+1. Zainstaluj Python 3.12 x64.
+2. W VS Code wybierz interpreter Pythona 3.12: `Python: Select Interpreter`.
+3. Usuń stare środowisko: skasuj folder `.venv`.
+4. Utwórz venv i zainstaluj zależności ponownie:
+  - `python -m venv .venv`
+  - `./.venv/Scripts/python -m pip install -U pip`
+  - `./.venv/Scripts/python -m pip install -r requirements.txt`
+
+**Alternatywa (niezalecane):** próba „przepchania” Pythona 3.14 przez ręczne pinowanie zależności / kompilację — zwykle kończy się walką z kompatybilnością.
 
 ## Użycie
 
@@ -97,6 +117,38 @@ print(event)
 ```bash
 python event_extractor.py
 ```
+
+## Eksperymenty i wybór podejścia
+
+Projekt zakłada wykonywanie eksperymentów (różne modele/cechy/parametry) i wybór najlepszego podejścia na podstawie miar jakości.
+
+- Protokół i opis miar: [EXPERIMENTS.md](EXPERIMENTS.md)
+- Uruchomienie: `./.venv/Scripts/python experiments.py`
+- Wyniki: `results/experiments.csv`
+
+## Aplikacja okienkowa (Python + Qt)
+
+Aplikacja GUI ładuje wytrenowany model i pozwala klasyfikować zdania oraz (opcjonalnie) wyciągać KTO/CO/TRIGGER/GDZIE/KIEDY.
+
+1. Wytrenuj i zapisz model:
+  - `./.venv/Scripts/python train_and_save_model.py --out models/event_type_model.joblib`
+2. Uruchom GUI:
+  - `./.venv/Scripts/python qt_app.py`
+   
+Model można:
+- wczytać z pliku (przycisk "Wczytaj model…"), albo
+- wybrać z listy modeli zapisanych w katalogu `models/` (lista rozwijana + "Wczytaj wybrany").
+
+Żeby mieć kilka wytrenowanych modeli do wyboru, możesz je zapisać z `experiments.py`:
+
+`./.venv/Scripts/python experiments.py --save-all-models`
+
+albo zapisać tylko najlepszy wg macro-F1:
+
+`./.venv/Scripts/python experiments.py --save-best-model`
+
+Jeśli chcesz używać ekstrakcji relacji, upewnij się, że masz pobrany model spaCy:
+`./.venv/Scripts/python -m spacy download pl_core_news_lg`
 
 Ten skrypt:
 1. Trenuje klasyfikator na zbiorze treningowym
@@ -193,10 +245,8 @@ extractor.load_classifier("moj_model.pkl")
 ## Technologie
 
 - **spaCy** (3.7+) - NLP i Universal Dependencies parsing
-- **sentence-transformers** (2.2+) - Embeddingi zdań
 - **scikit-learn** (1.3+) - Klasyfikacja ML
 - **pandas** (2.0+) - Manipulacja danymi
-- **PyTorch** (2.0+) - Backend dla modeli transformerowych
 
 ## Wymagania systemowe
 

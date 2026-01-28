@@ -1,14 +1,27 @@
 # NLP and Universal Dependencies
+#
+# Note (Windows / Python 3.14): spaCy and other compiled deps may not ship wheels yet
+# for Python 3.14 and will try to build from source (MSVC). Use Python 3.10–3.13
+# (recommended: 3.12) for a smooth install.
 spacy>=3.7.0
-spacy-transformers>=1.3.0
 
-# For sentence embeddings and classification
-sentence-transformers>=2.2.0
+# Classification (current implementation: TF-IDF + Logistic Regression)
 scikit-learn>=1.3.0
+
+# Optional: additional experiment models
+xgboost>=2.0.0
 
 # Data handling
 pandas>=2.0.0
 numpy>=1.24.0
 
-# Optional: for better model performance
-torch>=2.0.0
+# Markdown tables for experiment summaries
+tabulate>=0.9.0
+
+# Model persistence
+joblib>=1.3.0
+
+# GUI (Qt)
+PySide6>=6.6.0
+
+# Note: transformer-based embeddings are not required by the current codebase.

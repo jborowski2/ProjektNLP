@@ -23,10 +23,8 @@ pip install -r requirements.txt
 
 To pobierze:
 - spaCy (framework NLP)
-- sentence-transformers (embeddingi)
 - scikit-learn (klasyfikacja)
 - pandas (dane)
-- torch (backend dla modeli)
 
 **Uwaga**: Instalacja może zająć kilka minut i wymaga około 2GB przestrzeni.
 
@@ -159,17 +157,11 @@ print(f"Pewność: {confidence:.2f}")  # 0.87
 python -m spacy download pl_core_news_lg
 ```
 
-### Problem: Brak pamięci podczas instalacji torch
-**Rozwiązanie:** Zainstaluj wersję CPU:
-```bash
-pip install torch --index-url https://download.pytorch.org/whl/cpu
-```
+### Problem: błędy instalacji / importu na Python 3.14
 
-### Problem: ImportError dla sentence-transformers
-**Rozwiązanie:**
-```bash
-pip install --upgrade sentence-transformers
-```
+Na Windows najczęściej dzieje się to przy Pythonie 3.14 — spaCy (i zależności wokół Pydantic v1) mogą nie być jeszcze kompatybilne i import kończy się błędem.
+
+**Rozwiązanie (zalecane):** użyj Pythona 3.12 (x64), usuń `.venv`, utwórz venv od nowa i uruchom `pip install -r requirements.txt`.
 
 ### Problem: Długie ładowanie modeli
 To normalne - pierwszy raz modele są pobierane z internetu i cachowane lokalnie. Drugie uruchomienie jest znacznie szybsze.
@@ -198,4 +190,3 @@ System zwraca obiekty `EventRecord` z następującymi polami:
 
 - [Dokumentacja spaCy](https://spacy.io/usage)
 - [Universal Dependencies](https://universaldependencies.org/)
-- [Sentence Transformers](https://www.sbert.net/)

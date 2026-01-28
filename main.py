@@ -1,11 +1,18 @@
 import pandas as pd
 
+from compat import ensure_supported_python
+
+ensure_supported_python()
+
 from event_extractor import EventExtractor
 
 
 def main():
     extractor = EventExtractor()
-    extractor.train("datasets/training_data.csv")
+    extractor.train(
+        "datasets/id_and_headline_first_sentence (1).csv",
+        "datasets/tagged.csv",
+    )
 
     sentences = [
         "Napastnik pobił ochroniarza przed klubem.",

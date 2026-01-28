@@ -1,0 +1,8 @@
+[project]
+name = "ProjektNLP"
+version = "0.1.0"
+description = "Event extraction from Polish news"
+requires-python = ">=3.10,<3.14"
+
+# This repo is used as a script/project workspace (not a published package).
+# Dependencies are managed via requirements.txt.
