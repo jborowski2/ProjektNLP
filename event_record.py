@@ -4,6 +4,14 @@ from typing import Optional
 
 @dataclass
 class EventRecord:
+    """Rekord wyniku analizy jednego zdania.
+
+    Pola odpowiadają tagom z datasetu:
+    - `event_type`: typ zdarzenia (klasa)
+    - `who`/`what`/`trigger`/`where`/`when`: relacje KTO/CO/TRIGGER/GDZIE/KIEDY
+    - `confidence`: pewność klasyfikatora typu (0..1)
+    - `sentence`: oryginalne zdanie wejściowe
+    """
     event_type: str
     who: Optional[str]
     what: Optional[str]
@@ -14,6 +22,7 @@ class EventRecord:
     sentence: str = ""
 
     def __str__(self) -> str:
+        """Czytelny wydruk do UI/CLI."""
         lines = [f"Typ zdarzenia: {self.event_type}"]
 
         if self.who:

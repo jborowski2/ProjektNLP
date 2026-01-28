@@ -1,5 +1,17 @@
 from __future__ import annotations
 
+"""Ładowanie i przygotowanie danych wejściowych.
+
+W projekcie mamy dwa główne pliki źródłowe:
+- CSV z nagłówkami: `id, headline`
+- CSV z tagami (średniki): `id; kategoria; KTO; CO; TRIGGER; GDZIE; KIEDY`
+
+Ten moduł odpowiada za:
+- bezpieczne wczytywanie CSV (różne kodowania, tolerancja na błędne linie),
+- łączenie po `id`,
+- lekką normalizację etykiet klas.
+"""
+
 from dataclasses import dataclass
 from typing import Iterable
 
@@ -18,6 +30,12 @@ def _read_csv_with_fallback(
     sep: str,
     encodings: Iterable[str] = ("utf-8", "utf-8-sig", "cp1250"),
 ) -> pd.DataFrame:
+    """Wczytaj CSV próbując kilku kodowań.
+
+    W praktyce pliki mogą być zapisane jako UTF-8/UTF-8-BOM lub CP1250.
+    Używamy `engine='python'` oraz `on_bad_lines='skip'`, żeby nie wywracać
+    całego procesu przez pojedynczą uszkodzoną linię.
+    """
     last_exc: Exception | None = None
     for enc in encodings:
         try:
@@ -35,6 +53,11 @@ def _read_csv_with_fallback(
 
 
 def _normalize_label(raw: object) -> str:
+    """Znormalizuj etykietę klasy.
+
+    W tagged.csv etykiety czasem mają dopiski w nawiasach; dla klasyfikatora
+    trzymamy tylko główną nazwę (fragment przed nawiasem).
+    """
     label = str(raw).strip()
     if "(" in label:
         label = label.split("(", 1)[0].strip()
@@ -46,11 +69,12 @@ def load_event_type_training_frame(
     headlines_csv_path: str = DatasetPaths.headlines_csv_path,
     tagged_csv_path: str = DatasetPaths.tagged_csv_path,
 ) -> pd.DataFrame:
-    """Return DataFrame with columns: id, sentence, label.
+    """Zwróć ramkę danych do uczenia klasyfikatora typu zdarzenia.
 
-    Joins:
-    - headlines_csv_path: CSV with columns (id, headline)
-    - tagged_csv_path: CSV with columns (id; kategoria; ...)
+    Wynik zawiera kolumny: `id`, `sentence`, `label`.
+    Dane są budowane przez join po `id` z dwóch plików:
+    - `headlines_csv_path`: CSV z kolumnami `id, headline`
+    - `tagged_csv_path`: CSV (średniki) z kolumnami `id; kategoria; ...`
     """
 
     headlines = _read_csv_with_fallback(headlines_csv_path, sep=",")
@@ -90,11 +114,13 @@ def load_relation_extraction_frame(
     headlines_csv_path: str = DatasetPaths.headlines_csv_path,
     tagged_csv_path: str = DatasetPaths.tagged_csv_path,
 ) -> pd.DataFrame:
-    """Return DataFrame with sentence + gold KTO/CO/TRIGGER/GDZIE/KIEDY from tagged.csv.
+    """Zwróć ramkę danych do ewaluacji ekstrakcji relacji.
 
-    Columns returned:
-    - id, sentence, label
-    - gold_who, gold_what, gold_trigger, gold_where, gold_when
+    Wynik zawiera:
+    - `id`, `sentence`, `label`
+    - gold: `gold_who`, `gold_what`, `gold_trigger`, `gold_where`, `gold_when`
+
+    To jest „prawda” (gold) z tagged.csv, używana w skryptach ewaluacyjnych.
     """
 
     headlines = _read_csv_with_fallback(headlines_csv_path, sep=",")

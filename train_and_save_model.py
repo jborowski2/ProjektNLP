@@ -1,5 +1,11 @@
 from __future__ import annotations
 
+"""Trening i zapis domyślnego modelu typu zdarzenia.
+
+Uruchomienie tego skryptu tworzy plik `.joblib` w `models/`.
+Uwaga: dotyczy tylko klasyfikatora typu zdarzenia (kategoria), a nie ekstrakcji relacji.
+"""
+
 import argparse
 from pathlib import Path
 
@@ -7,6 +13,7 @@ from event_extractor import EventExtractor
 
 
 def main() -> int:
+    """CLI: trenuje model na danych i zapisuje go do pliku."""
     parser = argparse.ArgumentParser(description="Train event type model and save it.")
     parser.add_argument("--headlines", default="datasets/id_and_headline_first_sentence (1).csv")
     parser.add_argument("--tagged", default="datasets/tagged.csv")

@@ -1,3 +1,15 @@
+"""Klasyfikator typu zdarzenia.
+
+Moduł zawiera `EventClassifier`, czyli klasyfikator tekstu (nagłówka) do jednej
+z klas zdarzeń. Domyślnie używamy cech TF-IDF na słowach i na znakach oraz
+LogisticRegression.
+
+Ważne szczegóły:
+- stopwordy: używane tylko w wektoryzatorze słów (spacy STOP_WORDS),
+- oversampling: balansowanie klas wykonywane wyłącznie na zbiorze treningowym,
+- keyword overrides: proste reguły dla rzadkich klas przy niskiej pewności modelu.
+"""
+
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
@@ -20,7 +32,18 @@ except Exception:
 
 
 class EventClassifier:
+    """Klasyfikator typu zdarzenia dla pojedynczego zdania.
+
+    API:
+    - `train(sentences, labels, ...)` trenuje i wypisuje raport.
+    - `predict(sentence)` zwraca (etykieta, pewność).
+    - `save/load(path)` zapis/odczyt modelu do `.joblib`.
+    """
+
     def __init__(self):
+        # FeatureUnion łączy dwa niezależne wektoryzatory:
+        # - "word": TF-IDF na tokenach (1-2gram), z usuwaniem stopwordów PL
+        # - "char": TF-IDF na n-gramach znakowych (3-5), odporny na odmiany/typo
         self.vectorizer = FeatureUnion(
             [
                 (
@@ -52,6 +75,7 @@ class EventClassifier:
             ]
         )
 
+        # LogisticRegression: stabilny baseline, dobrze działa na TF-IDF i wielu klasach.
         self.classifier = LogisticRegression(
             max_iter=8000,
             solver="saga",
@@ -60,8 +84,8 @@ class EventClassifier:
         self.is_trained = False
         self.meta: dict[str, object] = {}
 
-        # Light keyword overrides for very rare classes.
-        # Applied only when the ML confidence is low.
+        # Lekkie reguły słownikowe dla bardzo rzadkich klas.
+        # Stosowane tylko przy niskiej pewności ML (żeby nie psuć dobrych predykcji).
         self._keyword_overrides: list[tuple[str, list[str]]] = [
             ("PRZESTEPSTWO", ["napastnik", "pobił", "pobity", "kradzie", "właman", "złodziej", "rabun", "napad"]),
             ("WYPADEK", ["wypadek", "zderzy", "uderzy", "potrąci", "kolizj", "samochód", "kierowca", "autobus", "ciężarówk"]),
@@ -70,6 +94,7 @@ class EventClassifier:
         ]
 
     def save(self, path: str, *, meta: Optional[dict[str, object]] = None) -> None:
+        """Zapisz model (wektoryzator + klasyfikator + meta) do pliku `.joblib`."""
         payload = {
             "vectorizer": self.vectorizer,
             "classifier": self.classifier,
@@ -80,6 +105,7 @@ class EventClassifier:
         joblib.dump(payload, path)
 
     def load(self, path: str) -> None:
+        """Wczytaj model z `.joblib` zapisany metodą `save`."""
         payload = joblib.load(path)
         self.vectorizer = payload["vectorizer"]
         self.classifier = payload["classifier"]
@@ -97,6 +123,15 @@ class EventClassifier:
         stratify: bool = True,
         oversample: bool = True,
     ):
+        """Trening klasyfikatora.
+
+        Parametry:
+        - `test_size`: udział testu (domyślnie 0.2).
+        - `stratify`: czy próbować stratyfikacji po klasie.
+        - `oversample`: czy balansować klasy przez losowe dociąganie próbek.
+
+        Oversampling dotyczy TYLKO zbioru treningowego.
+        """
         stratify_labels = labels if stratify else None
 
         try:
@@ -120,6 +155,7 @@ class EventClassifier:
         X_test = self.vectorizer.transform(s_test)
 
         if oversample:
+            # Balansujemy klasy na treningu, żeby model nie ignorował rzadkich etykiet.
             X_train, y_train = self._oversample_train_set(
                 X_train,
                 y_train,
@@ -135,9 +171,10 @@ class EventClassifier:
         print(classification_report(y_test, y_pred, zero_division=0))
 
     def _oversample_train_set(self, X_train, y_train, *, random_state: int):
-        """Random oversampling to the max class count.
+        """Losowy oversampling do liczności największej klasy.
 
-        Keeps the test set untouched. Works with scipy sparse matrices.
+        - nie dotykamy zbioru testowego,
+        - działa na macierzach rzadkich (scipy sparse).
         """
 
         counts = Counter(y_train)
@@ -183,6 +220,13 @@ class EventClassifier:
         return X_res, y_res
 
     def predict(self, sentence: str) -> Tuple[str, float]:
+        """Przewidź klasę zdarzenia dla zdania.
+
+        Zwraca parę: `(label, confidence)`.
+        Confidence jest:
+        - prawdziwym `predict_proba`, jeśli estymator je wspiera,
+        - pseudo-probabilistyką (softmax na `decision_function`) w przeciwnym razie.
+        """
         if not self.is_trained:
             raise RuntimeError("Classifier is not trained. Train it first or load a saved model.")
         vec = self.vectorizer.transform([sentence])
@@ -194,7 +238,7 @@ class EventClassifier:
         elif hasattr(self.classifier, "decision_function"):
             scores = self.classifier.decision_function(vec)
             scores = np.asarray(scores).reshape(-1)
-            # softmax -> pseudo-probabilities
+            # softmax -> pseudo-probabilities (wygodne do porównania pewności)
             scores = scores - np.max(scores)
             exp = np.exp(scores)
             proba = exp / np.sum(exp)
@@ -218,6 +262,11 @@ class EventClassifier:
         current_prob: float,
         threshold: float = 0.55,
     ) -> Optional[Tuple[str, float]]:
+        """Opcjonalny override wyniku, jeśli ML jest niepewny.
+
+        Gdy `current_prob` jest mniejsze niż `threshold`, sprawdzamy proste słowa-klucze.
+        Jeśli pasują do konkretnej klasy (np. WYPADEK/PROTEST), możemy zmienić etykietę.
+        """
         if current_prob >= threshold:
             return None
 

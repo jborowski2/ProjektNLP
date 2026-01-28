@@ -1,3 +1,13 @@
+"""Ekstrakcja relacji (KTO/CO/GDZIE/KIEDY/TRIGGER) z pojedynczego zdania.
+
+To nie jest model uczony, tylko heurystyki oparte o:
+- analizę składniową (dependency parsing) ze spaCy,
+- NER (rozpoznawanie encji),
+- reguły awaryjne (prepozycje, listy lematów miejsc/czasu).
+
+Cel: wyciągnąć prosty „szkielet zdarzenia” z nagłówków newsowych.
+"""
+
 from typing import Optional, Tuple
 
 from compat import ensure_supported_python
@@ -11,14 +21,14 @@ class RelationExtractor:
     def __init__(self, model_name: str = "pl_core_news_lg"):
         self.nlp = spacy.load(model_name)
 
-        # spaCy Polish pipelines often use lowercase labels like: persName, geogName, placeName, date
-        # Keep compatibility with pipelines that use LOC/GPE/DATE/TIME.
+        # Pipeline PL w spaCy często ma etykiety lowercase typu: persName, geogName, placeName, date.
+        # Dla kompatybilności dopuszczamy też klasyczne LOC/GPE/DATE/TIME.
         self._ner_person_labels = {"persName", "PER", "PERSON"}
         self._ner_location_labels = {"geogName", "placeName", "LOC", "GPE"}
         self._ner_time_labels = {"date", "DATE", "time", "TIME"}
 
-        # Heuristics: common Polish place nouns often aren't tagged as LOC/GPE by NER
-        # (e.g., "w lesie", "na ulicy"). Using lemmas keeps it robust to inflection.
+        # Heurystyka: częste rzeczowniki-miejsca często nie są oznaczane jako LOC/GPE przez NER
+        # (np. "w lesie", "na ulicy"). Użycie lematów zwiększa odporność na odmianę.
         self._place_lemmas = {
             "las",
             "ulica",
@@ -70,8 +80,8 @@ class RelationExtractor:
             "kościół",
         }
 
-        # Common Polish prepositions that often introduce a location phrase.
-        # Used as a fallback when NER does not mark a city/town name.
+        # Typowe przyimki wprowadzające frazę miejsca.
+        # Używane w fallbackach, gdy NER nie oznaczy np. nazwy miasta.
         self._location_preps = {
             "w",
             "we",
@@ -91,8 +101,8 @@ class RelationExtractor:
             "do",
         }
 
-        # Prepositions that commonly introduce time phrases in Polish.
-        # (Keep it separate from locations; some overlap is OK.)
+        # Przyimki wprowadzające frazy czasu w języku polskim.
+        # (Trzymamy osobno od miejsca; pewne nakładanie jest OK.)
         self._time_preps = {
             "w",
             "we",
@@ -132,8 +142,8 @@ class RelationExtractor:
             "grudzień",
         }
 
-        # Verbs that often appear in reporting / attribution clauses after a dash.
-        # We prefer a more "content" trigger when available (e.g., "stworzy" over "poinformowała").
+        # Czasowniki sprawozdawcze/atrybucyjne (często po myślniku).
+        # Jeśli nagłówek ma część typu "– poinformowała X", wolimy trigger z części merytorycznej.
         self._reporting_verb_lemmas = {
             "poinformować",
             "podawać",
@@ -159,6 +169,13 @@ class RelationExtractor:
     def extract_relations_from_doc(
         self, doc
     ) -> Tuple[Optional[str], Optional[str], Optional[str], Optional[str], Optional[str]]:
+        """Wyciągnij relacje z już sparsowanego `doc`.
+
+        Zwracamy: (who, trigger, what, where, when).
+
+        Ważne założenie: najpierw wybieramy token TRIGGER (czasownik/root), a potem
+        próbujemy znaleźć jego argumenty (podmiot/dopełnienie/okoliczniki).
+        """
         who = None
         what = None
         where = None
@@ -170,7 +187,7 @@ class RelationExtractor:
 
         trigger_token = self._pick_trigger_token(doc)
         if trigger_token is None:
-            # No trigger found; still try fallbacks for location/time.
+            # Nie znaleziono TRIGGER; nadal próbujemy fallbacków dla miejsca/czasu.
             where = self._fallback_where(doc)
             when = self._fallback_when(doc)
             return who, trigger, what, where, when
@@ -185,6 +202,7 @@ class RelationExtractor:
                 subject_token = child
 
                 # Prefer named people when available (improves WHO precision)
+                # Jeśli w zdaniu jest encja osoby, często jest lepszym KTO niż goły rzeczownik.
                 person_ents = [e.text for e in doc.ents if e.label_ in self._ner_person_labels]
                 if person_ents and child.pos_ != "PROPN":
                     who = person_ents[0]
@@ -218,19 +236,19 @@ class RelationExtractor:
                 if what is None and (not self._is_time(child)) and (not self._looks_like_location(child)):
                     what = self._full_phrase(child)
 
-        # Fallbacks: if UD attachments miss a location/time, use NER + preposition.
+        # Fallbacki: jeśli analiza składni nie podała miejsca/czasu, próbujemy NER + przyimki.
         if where is None:
             where = self._fallback_where(doc)
         if when is None:
             when = self._fallback_when(doc)
 
-        # If we still don't have WHERE, but the subject itself is a location (common in tagged data), reuse it.
+        # Jeśli nadal nie ma GDZIE, ale podmiot sam wygląda jak lokalizacja (częste w danych), użyj go.
         if where is None and subject_phrase is not None:
             subj_token = next((c for c in trigger_token.children if c.dep_.split(":", 1)[0] == "nsubj"), None)
             if subj_token is not None and self._looks_like_location(subj_token):
                 where = subject_phrase
 
-        # WHAT fallback: many headlines put the "thing" as a subject (especially when WHO is a place/org).
+        # CO fallback: nagłówki często mają "co" jako podmiot (szczególnie gdy "kto" to miejsce/instytucja).
         if what is None and subject_phrase:
             subj_token = next((c for c in trigger_token.children if c.dep_.split(":", 1)[0] == "nsubj"), None)
             if subj_token is None:
@@ -239,10 +257,10 @@ class RelationExtractor:
                 if not self._looks_like_location(subj_token) and not self._is_time(subj_token):
                     what = subject_phrase
 
-        # Heuristic: economic/stat headlines often look like:
-        #   "Inflacja w Holandii przekroczyła 10 proc." where tagged: WHO=Holandia, WHAT=inflacja.
-        # If the grammatical subject is a common noun and we have a location phrase,
-        # prefer subject as WHAT and location as WHO when WHAT currently looks numeric-like.
+        # Heurystyka dla nagłówków statystycznych/ekonomicznych, np.:
+        #   "Inflacja w Holandii przekroczyła 10 proc." gdzie tagi często są: KTO=Holandia, CO=inflacja.
+        # Jeśli podmiot jest rzeczownikiem pospolitym, a mamy frazę miejsca, to czasem
+        # warto przepiąć: KTO := GDZIE, CO := podmiot (zwłaszcza gdy CO wygląda "liczbowo").
         if subject_phrase and subject_token is not None and where is not None:
             if who == subject_phrase and subject_token.pos_ == "NOUN" and subject_token.pos_ != "PROPN":
                 if what is None or self._looks_numeric_like(what):
@@ -260,14 +278,14 @@ class RelationExtractor:
     def extract_relations(
         self, sentence: str
     ) -> Tuple[Optional[str], Optional[str], Optional[str], Optional[str], Optional[str]]:
-
+        """Wygodny wrapper: parsuje zdanie i deleguje do `extract_relations_from_doc`."""
         doc = self.nlp(sentence)
         return self.extract_relations_from_doc(doc)
 
     # -------------------------------------------------
 
     def _looks_like_location(self, token) -> bool:
-        # Disambiguation: don't treat time phrases like locations.
+        # Rozróżnienie: nie traktuj fraz czasu jako miejsca.
         if self._is_time(token):
             return False
 
@@ -283,8 +301,8 @@ class RelationExtractor:
             if t.lemma_.lower() in self._place_lemmas:
                 return True
 
-        # Fallback: preposition + proper noun often means a place name
-        # e.g. "w Warszawie", "pod Poznaniem", "na Śląsku".
+        # Fallback: przyimek + nazwa własna często oznacza miejsce
+        # np. "w Warszawie", "pod Poznaniem", "na Śląsku".
         has_propn = any(t.pos_ == "PROPN" for t in token.subtree)
         has_loc_prep = any(
             (t.pos_ == "ADP" or t.dep_.split(":", 1)[0] == "case")
@@ -318,7 +336,7 @@ class RelationExtractor:
         return False
 
     def _fallback_where(self, doc) -> Optional[str]:
-        # 1) Prefer a location entity that sits in a prepositional phrase (e.g. "w Polsce").
+        # 1) Preferujemy encję lokacji w obrębie frazy przyimkowej (np. "w Polsce").
         loc_ents = [e for e in doc.ents if e.label_ in self._ner_location_labels]
         if loc_ents:
             best = None
@@ -328,7 +346,7 @@ class RelationExtractor:
                 score = 0
                 if start < ent.start:
                     score += 2
-                # Slight preference for later entities (often "w X" comes after subject)
+                # Lekka preferencja dla encji później w zdaniu (często "w X" jest po podmiocie)
                 score += int(ent.start)
                 if score > best_score:
                     best_score = score
@@ -337,7 +355,7 @@ class RelationExtractor:
                 s, e = best
                 return doc[s:e].text
 
-        # 2) If NER missed it, look for preposition-led location phrases anywhere in the sentence.
+        # 2) Jeśli NER nie trafił, szukamy fraz miejsca prowadzonych przyimkiem.
         for token in doc:
             if token.pos_ in {"NOUN", "PROPN"} and self._looks_like_location(token):
                 has_loc_prep = any(
@@ -347,7 +365,7 @@ class RelationExtractor:
                 )
                 if not has_loc_prep:
                     continue
-                # Avoid time-like phrases such as "w poniedziałek".
+                # Odrzuć frazy czasu typu "w poniedziałek".
                 if self._is_time(token):
                     continue
                 return self._full_phrase(token)
@@ -355,7 +373,7 @@ class RelationExtractor:
         return None
 
     def _fallback_when(self, doc) -> Optional[str]:
-        # Prefer explicit date/time entities; otherwise common time words.
+        # Preferujemy encje DATE/TIME; jeśli brak, to proste słowa czasu.
         time_ents = [e for e in doc.ents if e.label_ in self._ner_time_labels]
         if time_ents:
             ent = time_ents[0]
@@ -368,7 +386,7 @@ class RelationExtractor:
                 start = self._expand_left_for_prep(doc, t.i, allowed_preps=self._time_preps, max_lookback=2)
                 return doc[start: t.i + 1].text
 
-            # Fallback when NER misses dates like "w poniedziałek", "w lutym".
+            # Fallback gdy NER nie złapie dat typu "w poniedziałek", "w lutym".
             if t.lemma_.lower() in self._day_lemmas or t.lemma_.lower() in self._month_lemmas:
                 start = self._expand_left_for_prep(doc, t.i, allowed_preps=self._time_preps, max_lookback=3)
                 return doc[start: t.i + 1].text
@@ -378,24 +396,24 @@ class RelationExtractor:
         return self._full_phrase(token)
 
     def _full_phrase(self, token) -> str:
-        # Preserve surface form as in the original sentence (punctuation + whitespace).
+        # Zachowujemy formę powierzchniową jak w zdaniu (interpunkcja + spacje).
         parts = [t.text_with_ws for t in sorted(token.subtree, key=lambda t: t.i)]
         return "".join(parts).strip()
 
     def _expand_left_for_prep(self, doc, start_i: int, *, allowed_preps: set[str], max_lookback: int) -> int:
-        """Try to include a nearby preceding preposition in the returned span.
+        """Spróbuj dołączyć przyimek stojący tuż przed frazą.
 
-        Examples:
-        - "w pięknej Polsce"  -> include "w"
-        - "w zeszły poniedziałek" -> include "w"
+        Przykłady:
+        - "w pięknej Polsce" -> dołącz "w"
+        - "w zeszły poniedziałek" -> dołącz "w"
 
-        We scan a small window to the left because modifiers (ADJ/NUM/DET) can sit
-        between the preposition and the entity head.
+        Skanujemy małe okno w lewo, bo między przyimkiem a głową frazy mogą być
+        wtrącone modyfikatory (ADJ/NUM/DET).
         """
         if start_i <= 0:
             return start_i
 
-        # Scan a small window to the left; stop early on punctuation or clause boundaries.
+        # Skanujemy małe okno w lewo; stop na interpunkcji lub granicy frazy/zdania.
         stop_pos = {"PUNCT", "VERB", "AUX", "SCONJ", "CCONJ"}
 
         for back in range(1, max_lookback + 1):
@@ -417,14 +435,15 @@ class RelationExtractor:
         if not tokens:
             return None
 
-        # If there's an attribution clause after a dash, tagged TRIGGER often comes from that clause.
+        # Jeśli po myślniku jest dopowiedzenie/źródło („– powiedział X”),
+        # to TRIGGER w danych bywa brany z tej części.
         dash_i = next((t.i for t in tokens if t.text in {"–", "-", "—"}), None)
         if dash_i is not None:
             for t in tokens:
                 if t.i <= dash_i:
                     continue
                 if t.pos_ in {"VERB", "AUX"} and ("Fin" in t.morph.get("VerbForm")):
-                    # Prefer complement for AUX, e.g., "został potwierdzony" -> "potwierdzić"
+                    # Dla AUX wolimy dopełnienie, np. "został potwierdzony" -> "potwierdzony".
                     if t.pos_ == "AUX":
                         for child in t.children:
                             dep = child.dep_.split(":", 1)[0]
@@ -432,7 +451,7 @@ class RelationExtractor:
                                 return child
                     return t
 
-        # Otherwise use the syntactic ROOT verb if present.
+        # W przeciwnym razie bierzemy syntaktyczny ROOT jeśli jest czasownikiem.
         root = next((t for t in tokens if t.dep_ == "ROOT"), None)
         if root is not None and root.pos_ in {"VERB", "AUX"}:
             if root.pos_ == "AUX":
@@ -442,12 +461,12 @@ class RelationExtractor:
                         return child
             return root
 
-        # Next best: first verb.
+        # Kolejny fallback: pierwszy czasownik w zdaniu.
         for t in tokens:
             if t.pos_ == "VERB":
                 return t
 
-        # If no verb exists, use ROOT NOUN (headline nominal triggers: "wstrzymanie", "wzrost").
+        # Jeśli nie ma czasownika, użyj ROOT NOUN (nagłówki nominalne: "wstrzymanie", "wzrost").
         if root is not None and root.pos_ in {"NOUN", "PROPN"}:
             return root
 

@@ -68,11 +68,6 @@ Jeśli korzystasz z VS Code, najpierw wybierz interpreter Pythona 3.12/3.13: `Py
 
 3. Pobierz model spaCy dla języka polskiego:
 ```bash
-python setup_models.py
-```
-
-Alternatywnie można pobrać model ręcznie:
-```bash
 python -m spacy download pl_core_news_lg
 ```
 
@@ -103,8 +98,11 @@ from event_extractor import EventExtractor
 # Inicjalizacja
 extractor = EventExtractor()
 
-# Trenowanie klasyfikatora
-extractor.train_classifier("datasets/training_data.csv")
+# Trenowanie klasyfikatora typu zdarzenia (join po id z dwóch plików)
+extractor.train(
+  "datasets/id_and_headline_first_sentence (1).csv",
+  "datasets/tagged.csv",
+)
 
 # Ekstrakcja wydarzenia z pojedynczego zdania
 sentence = "Napastnik pobił ochroniarza przed klubem."
@@ -118,14 +116,6 @@ print(event)
 python event_extractor.py
 ```
 
-## Eksperymenty i wybór podejścia
-
-Projekt zakłada wykonywanie eksperymentów (różne modele/cechy/parametry) i wybór najlepszego podejścia na podstawie miar jakości.
-
-- Protokół i opis miar: [EXPERIMENTS.md](EXPERIMENTS.md)
-- Uruchomienie: `./.venv/Scripts/python experiments.py`
-- Wyniki: `results/experiments.csv`
-
 ## Aplikacja okienkowa (Python + Qt)
 
 Aplikacja GUI ładuje wytrenowany model i pozwala klasyfikować zdania oraz (opcjonalnie) wyciągać KTO/CO/TRIGGER/GDZIE/KIEDY.
@@ -135,17 +125,7 @@ Aplikacja GUI ładuje wytrenowany model i pozwala klasyfikować zdania oraz (opc
 2. Uruchom GUI:
   - `./.venv/Scripts/python qt_app.py`
    
-Model można:
-- wczytać z pliku (przycisk "Wczytaj model…"), albo
-- wybrać z listy modeli zapisanych w katalogu `models/` (lista rozwijana + "Wczytaj wybrany").
-
-Żeby mieć kilka wytrenowanych modeli do wyboru, możesz je zapisać z `experiments.py`:
-
-`./.venv/Scripts/python experiments.py --save-all-models`
-
-albo zapisać tylko najlepszy wg macro-F1:
-
-`./.venv/Scripts/python experiments.py --save-best-model`
+W GUI wybierasz model z listy (katalog `models/`) — model ładuje się automatycznie po zmianie wyboru.
 
 Jeśli chcesz używać ekstrakcji relacji, upewnij się, że masz pobrany model spaCy:
 `./.venv/Scripts/python -m spacy download pl_core_news_lg`
@@ -164,23 +144,28 @@ Ten skrypt:
 from relation_extractor import RelationExtractor
 
 extractor = RelationExtractor()
-who, trigger, what = extractor.extract_who_what(
-    "Policjant zatrzymał złodzieja na ulicy."
-)
-print(f"KTO: {who}, Trigger: {trigger}, CO: {what}")
+who, trigger, what, where, when = extractor.extract_relations("Policjant zatrzymał złodzieja na ulicy.")
+print(f"KTO: {who}")
+print(f"TRIGGER: {trigger}")
+print(f"CO: {what}")
+print(f"GDZIE: {where}")
+print(f"KIEDY: {when}")
 ```
 
 #### Klasyfikacja typu wydarzenia
 
 ```python
 from event_classifier import EventClassifier
-import pandas as pd
+from data_loading import load_event_type_training_frame
 
 classifier = EventClassifier()
 
-# Trenowanie
-df = pd.read_csv("datasets/training_data.csv")
-classifier.train(df['sentence'].tolist(), df['label'].tolist())
+# Trenowanie (join po id z dwóch plików)
+df = load_event_type_training_frame(
+  headlines_csv_path="datasets/id_and_headline_first_sentence (1).csv",
+  tagged_csv_path="datasets/tagged.csv",
+)
+classifier.train(df["sentence"].tolist(), df["label"].tolist())
 
 # Predykcja
 event_type, confidence = classifier.predict("Samochód uderzył w drzewo.")
@@ -193,54 +178,55 @@ print(f"Typ: {event_type}, Pewność: {confidence:.2f}")
 ProjektNLP/
 ├── README.md                      # Ten plik
 ├── requirements.txt               # Zależności Python
-├── setup_models.py               # Skrypt do pobierania modeli
 ├── event_record.py               # Model danych EventRecord
 ├── relation_extractor.py         # Ekstrakcja relacji (UD)
 ├── event_classifier.py           # Klasyfikacja typu wydarzenia
 ├── event_extractor.py            # Główny pipeline
+├── qt_app.py                     # Proste GUI (wybór modelu + analiza zdania)
+├── evaluate_extraction.py        # Ewaluacja ekstrakcji relacji vs gold (tagged.csv)
 └── datasets/
-    ├── training_data.csv         # Zbiór treningowy (220+ przykładów)
-    └── test_relations.csv        # Zbiór testowy (105+ przykładów)
+  ├── id_and_headline_first_sentence (1).csv  # Nagłówki: id, headline
+  └── tagged.csv                # Tagi (gold): id; kategoria; KTO/CO/TRIGGER/GDZIE/KIEDY
 ```
 
 ## Zbiory danych
 
-### Zbiór treningowy (`training_data.csv`)
-- **Format**: CSV z kolumnami `sentence`, `label`
-- **Rozmiar**: 220+ przykładów
-- **Kategorie**: PRZESTĘPSTWO, WYPADEK, POŻAR, POLITYKA, SPORT, EKONOMIA, NAUKA, KLĘSKA_ŻYWIOŁOWA, MEDYCYNA, PROTESTY, KULTURA, TECHNOLOGIA, PRAWO, BEZPIECZEŃSTWO, ADMINISTRACJA, SPOŁECZEŃSTWO, INFRASTRUKTURA, EKOLOGIA, EDUKACJA
+### Dane do klasyfikacji typu (headlines + tagged)
+- **Źródła**:
+  - `datasets/id_and_headline_first_sentence (1).csv` (kolumny: `id, headline`)
+  - `datasets/tagged.csv` (kolumny: `id; kategoria; KTO; CO; TRIGGER; GDZIE; KIEDY`)
+- **Uczenie**: dane są łączone po `id`, a etykieta `label` powstaje z `kategoria` (z normalizacją nawiasów).
 
-### Zbiór testowy (`test_relations.csv`)
-- **Format**: CSV z kolumnami `sentence`, `who`, `trigger`, `what`
-- **Rozmiar**: 105+ przykładów z oznaczeniami relacji
+### Dane do ekstrakcji relacji (gold)
+- **Źródło**: `datasets/tagged.csv`
+- **Kolumny**: `KTO`, `CO`, `TRIGGER`, `GDZIE`, `KIEDY` (oraz `kategoria` dla klasyfikacji typu)
 
 ## Rozszerzanie systemu
 
 ### Dodawanie nowych przykładów treningowych
 
-Edytuj plik `datasets/training_data.csv`:
-```csv
-sentence,label
-Nowe zdanie do klasyfikacji.,KATEGORIA
-```
+Dodawaj/uzupełniaj rekordy w `datasets/tagged.csv` (kolumna `kategoria`) i upewnij się, że `id` istnieje także w pliku z nagłówkami.
 
-### Dodawanie nowych przykładów testowych
+### Dodawanie nowych przykładów do ewaluacji relacji
 
-Edytuj plik `datasets/test_relations.csv`:
-```csv
-sentence,who,trigger,what
-Nowe zdanie testowe.,podmiot,czasownik,dopełnienie
-```
+Uzupełniaj pola `KTO/CO/TRIGGER/GDZIE/KIEDY` w `datasets/tagged.csv` (dla istniejących `id`).
 
 ### Zapisywanie i wczytywanie modelu
 
 ```python
 # Zapisz wytrenowany model
-extractor.save_classifier("moj_model.pkl")
+extractor.save_classifier("moj_model.joblib")
 
 # Wczytaj model
-extractor.load_classifier("moj_model.pkl")
+extractor.load_classifier("moj_model.joblib")
 ```
+
+## Narzędzia pomocnicze (opcjonalne)
+
+Poniższe pliki nie są wymagane do samego działania ekstrakcji/GUI — to narzędzia do eksperymentów,
+ewaluacji i przygotowania danych:
+
+- `evaluate_extraction.py` – liczenie metryk ekstrakcji relacji
 
 ## Technologie
 

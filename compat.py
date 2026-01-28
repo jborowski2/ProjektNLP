@@ -1,11 +1,17 @@
+"""Kompatybilność środowiska.
+
+Ten moduł zawiera małe „bezpieczniki”, które wykrywają niekompatybilne wersje
+interpretera Pythona zanim projekt uruchomi ciężkie zależności (spaCy / sklearn).
+"""
+
 import sys
 
 
 def ensure_supported_python() -> None:
-    """Fail fast on interpreter versions known to break core deps.
+    """Sprawdź wersję Pythona i przerwij działanie, jeśli jest nieobsługiwana.
 
-    The project relies on spaCy, which (as of early 2026) depends on Pydantic v1
-    compatibility that isn't working on Python 3.14+.
+    Projekt korzysta m.in. ze spaCy, które (stan na 2026) ma problemy
+    kompatybilności na Pythonie 3.14+ (zależności wokół Pydantic v1).
     """
 
     if sys.version_info >= (3, 14):

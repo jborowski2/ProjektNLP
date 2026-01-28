@@ -1,5 +1,15 @@
 from __future__ import annotations
 
+"""Proste GUI (PySide6) do analizy pojedynczych zdań.
+
+Założenia UX:
+- użytkownik wybiera model z listy; model jest wczytywany automatycznie,
+- po lewej: pole tekstowe + przycisk analizy,
+- po prawej: szczegóły modelu i metryki (z plików leaderboard).
+
+GUI nie trenuje modeli — zakłada, że w `models/` istnieją zapisane `.joblib`.
+"""
+
 import sys
 from pathlib import Path
 from datetime import datetime
@@ -39,6 +49,7 @@ DEFAULT_LEADERBOARD_PATHS = [
 
 
 def _safe_read_csv(path: Path, *, sep: str) -> pd.DataFrame | None:
+    """Bezpiecznie wczytaj CSV (GUI nie powinno się wywracać od braku pliku)."""
     try:
         if not path.exists():
             return None
@@ -48,6 +59,11 @@ def _safe_read_csv(path: Path, *, sep: str) -> pd.DataFrame | None:
 
 
 def _model_key_from_path(p: Path) -> str:
+    """Zamień ścieżkę pliku modelu na klucz modelu (bez prefixu i timestampu).
+
+    Przykład:
+    - models/all_LogReg_L2_20260128_005432.joblib -> LogReg_L2
+    """
     name = p.stem
     if name.startswith("all_"):
         name = name[len("all_") :]
@@ -59,7 +75,7 @@ def _model_key_from_path(p: Path) -> str:
 
 
 def _friendly_model_name(model_key: str) -> str:
-    """Human-readable name for model keys from experiments.
+    """Czytelna nazwa modelu do wyświetlenia w UI.
 
     Examples:
       - lr_wordchar_balanced_over -> Regresja logistyczna (word+char, balanced, oversampling)
@@ -169,7 +185,11 @@ def _fmt_size(n: int) -> str:
 
 
 def _load_leaderboard_rows() -> dict[str, dict[str, Any]]:
-    """Return mapping: model_key -> stats dict from leaderboard CSVs."""
+    """Wczytaj metryki z plików leaderboard.
+
+    Zwraca mapę: model_key -> słownik z kolumnami (Accuracy, F1_*, ...).
+    Jeśli jest kilka plików, późniejszy może nadpisać wcześniejszy wpis tego samego modelu.
+    """
     rows: dict[str, dict[str, Any]] = {}
     for p in DEFAULT_LEADERBOARD_PATHS:
         df = _safe_read_csv(p, sep=",")
@@ -302,6 +322,10 @@ class MainWindow(QMainWindow):
         return f"Model: {self.model_path}"
 
     def refresh_models(self) -> None:
+        """Zbuduj listę modeli z katalogu models/.
+
+        Uwaga: w comboboxie pokazujemy tylko nazwy przyjazne; szczegóły są po prawej.
+        """
         self.model_combo.clear()
         if not self.models_dir.exists():
             self.model_combo.addItem("(brak katalogu models/)")
@@ -351,6 +375,12 @@ class MainWindow(QMainWindow):
                 break
 
     def on_model_changed(self) -> None:
+        """Obsługa zmiany wyboru w comboboxie.
+
+        - ustawia `self.model_path`,
+        - ładuje klasyfikator do `EventExtractor`,
+        - odświeża panel statystyk.
+        """
         data = self.model_combo.currentData() if hasattr(self, "model_combo") else None
         if not data:
             self.model_stats.setPlainText("(brak wybranego modelu)")

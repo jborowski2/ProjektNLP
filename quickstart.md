@@ -1,18 +1,8 @@
 # Quick Start Guide - ProjektNLP
 
-## Szybki Start bez instalacji modeli
+## Szybki Start
 
-Jeśli chcesz szybko zobaczyć jak działa struktura danych bez pobierania dużych modeli, uruchom:
-
-```bash
-python demo.py
-```
-
-Ten skrypt pokazuje:
-- Strukturę EventRecord
-- Przykłady ekstrakcji wydarzeń
-- Architekturę systemu
-- Przykłady użycia API
+Projekt działa na spaCy, więc do ekstrakcji relacji potrzebujesz modelu językowego. Najszybciej zacząć od instalacji zależności i pobrania modelu spaCy.
 
 ## Instalacja pełnego systemu
 
@@ -29,11 +19,6 @@ To pobierze:
 **Uwaga**: Instalacja może zająć kilka minut i wymaga około 2GB przestrzeni.
 
 ### Krok 2: Pobierz model spaCy
-```bash
-python setup_models.py
-```
-
-Lub ręcznie:
 ```bash
 python -m spacy download pl_core_news_lg
 ```
@@ -66,8 +51,11 @@ from event_extractor import EventExtractor
 # Inicjalizacja (wymaga pobranych modeli)
 extractor = EventExtractor()
 
-# Trenowanie
-extractor.train_classifier("datasets/training_data.csv")
+# Trenowanie (join po id z dwóch plików)
+extractor.train(
+    "datasets/id_and_headline_first_sentence (1).csv",
+    "datasets/tagged.csv",
+)
 
 # Ekstrakcja
 event = extractor.extract_event("Napastnik pobił ochroniarza przed klubem.")
@@ -92,8 +80,11 @@ Policja zatrzymała podejrzanego.
 Samochód uderzył w drzewo.
 """
 
-events = extractor.extract_events_from_text(text)
-for event in events:
+for line in text.strip().splitlines():
+    line = line.strip()
+    if not line:
+        continue
+    event = extractor.extract_event(line)
     print(event)
     print("-" * 40)
 ```
@@ -102,12 +93,15 @@ for event in events:
 
 ```python
 # Trenuj raz
-extractor.train_classifier("datasets/training_data.csv")
-extractor.save_classifier("moj_model.pkl")
+extractor.train(
+    "datasets/id_and_headline_first_sentence (1).csv",
+    "datasets/tagged.csv",
+)
+extractor.save_classifier("moj_model.joblib")
 
 # Potem wczytuj bez trenowania
 extractor2 = EventExtractor()
-extractor2.load_classifier("moj_model.pkl")
+extractor2.load_classifier("moj_model.joblib")
 event = extractor2.extract_event("Premier ogłosił nowe przepisy.")
 ```
 
@@ -119,9 +113,7 @@ event = extractor2.extract_event("Premier ogłosił nowe przepisy.")
 from relation_extractor import RelationExtractor
 
 extractor = RelationExtractor()
-who, trigger, what = extractor.extract_who_what(
-    "Kierowca potrącił pieszego."
-)
+who, trigger, what, where, when = extractor.extract_relations("Kierowca potrącił pieszego.")
 print(f"KTO: {who}")      # kierowca
 print(f"Trigger: {trigger}")  # potrącić
 print(f"CO: {what}")       # pieszego
@@ -131,17 +123,18 @@ print(f"CO: {what}")       # pieszego
 
 ```python
 from event_classifier import EventClassifier
-import pandas as pd
+from data_loading import load_event_type_training_frame
 
 classifier = EventClassifier()
 
-# Wczytaj dane
-df = pd.read_csv("datasets/training_data.csv")
-sentences = df['sentence'].tolist()
-labels = df['label'].tolist()
+# Wczytaj dane (join po id z dwóch plików)
+df = load_event_type_training_frame(
+    headlines_csv_path="datasets/id_and_headline_first_sentence (1).csv",
+    tagged_csv_path="datasets/tagged.csv",
+)
 
 # Trenuj
-classifier.train(sentences, labels)
+classifier.train(df["sentence"].tolist(), df["label"].tolist())
 
 # Testuj
 event_type, confidence = classifier.predict("Samochód wpadł do rzeki.")
@@ -177,11 +170,11 @@ System zwraca obiekty `EventRecord` z następującymi polami:
 - `where`: Lokalizacja - opcjonalnie (str | None)
 - `when`: Czas - opcjonalnie (str | None)
 - `confidence`: Pewność klasyfikacji 0-1 (float)
-- `raw_sentence`: Oryginalne zdanie (str)
+- `sentence`: Oryginalne zdanie (str)
 
 ## Dalsze kroki
 
-1. **Rozbuduj zbiór treningowy**: Dodaj więcej przykładów do `datasets/training_data.csv`
+1. **Rozbuduj zbiór treningowy**: Dodaj/uzupełnij oznaczenia w `datasets/tagged.csv` (oraz zadbaj o zgodne `id` w pliku z nagłówkami)
 2. **Dodaj więcej kategorii**: Edytuj istniejące kategorie lub dodaj nowe
 3. **Popraw ekstrakcję lokalizacji i czasu**: Rozszerz `RelationExtractor` o wykrywanie WHERE/WHEN
 4. **Zintegruj z realnym źródłem danych**: Podłącz RSS/API z newsami

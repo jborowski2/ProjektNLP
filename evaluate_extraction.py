@@ -1,5 +1,15 @@
 from __future__ import annotations
 
+"""Ewaluacja ekstrakcji relacji (KTO/CO/GDZIE/KIEDY/TRIGGER) na danych gold.
+
+Skrypt porównuje predykcje z `RelationExtractor` do wartości gold w tagged.csv.
+Kluczowe decyzje ewaluacji:
+- porównanie jest oparte o lematy (żeby nie karać odmiany: "w Polsce" vs "Polska"),
+- liczymy PRF oraz % zdań poprawnych dla każdego pola i łącznie,
+- `--strict-when`: jeśli gold KIEDY jest puste, predykcja musi być też pusta;
+    bez tej flagi tryb jest „lenient” (brak gold KIEDY nie karze predykcji).
+"""
+
 import argparse
 import json
 import re
@@ -25,9 +35,10 @@ def _field_ok(
     gold: str | None,
     lenient_if_gold_empty: bool,
 ) -> bool:
-    """Sentence-level correctness for one field.
+    """Poprawność na poziomie zdania dla jednego pola.
 
-    If lenient_if_gold_empty=True and gold is empty, we treat it as correct regardless of prediction.
+    Jeśli `lenient_if_gold_empty=True` i gold jest pusty, uznajemy pole za poprawne
+    niezależnie od predykcji (to odpowiada trybowi lenient dla KIEDY).
     """
     pred_empty = _is_empty(pred)
     gold_empty = _is_empty(gold)
@@ -42,7 +53,11 @@ def _field_ok(
 
 
 def _lemma_set(rel: RelationExtractor, text: str) -> set[str]:
-    """Lemmas without function words; helps compare surface vs base forms (Polsce vs Polska)."""
+    """Zbiór lematów bez słów funkcyjnych.
+
+    Dzięki temu porównujemy sens/rdzeń frazy zamiast formy powierzchniowej,
+    np. "Polsce" ~ "Polska".
+    """
     doc = rel.nlp(str(text))
     drop_pos = {"ADP", "DET", "CCONJ", "SCONJ", "PART", "PUNCT", "SPACE"}
     out: set[str] = set()
@@ -69,8 +84,8 @@ def _match_by_lemmas(rel: RelationExtractor, pred: str | None, gold: str | None)
     if not gold_set or not pred_set:
         return False
     inter = gold_set.intersection(pred_set)
-    # Require most of the gold content words to appear in prediction.
-    # Be more tolerant for very short gold phrases.
+    # Wymagamy, aby większość „treściowych” tokenów z gold pojawiła się w pred.
+    # Dla bardzo krótkich fraz jesteśmy bardziej tolerancyjni.
     threshold = 0.8 if len(gold_set) >= 3 else 0.5
     return (len(inter) / len(gold_set)) >= threshold
 

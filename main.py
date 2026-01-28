@@ -26,7 +26,6 @@ def main():
         event = extractor.extract_event(s)
         print(event)
 
-    #test_df = pd.read_csv("datasets/test_relations.csv")
 
     # print("\n=== TEST NA ZBIORZE TESTOWYM ===")
     #

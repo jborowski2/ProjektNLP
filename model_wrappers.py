@@ -9,9 +9,11 @@ from sklearn.preprocessing import LabelEncoder
 
 @dataclass
 class LabelEncodedClassifier:
-    """Wrap a classifier to train on encoded integer labels but predict original labels.
+    """Wrapper: uczy na etykietach jako liczby, a zwraca oryginalne stringi.
 
-    Useful for estimators that are picky about y dtype (some XGBoost builds).
+    Część estymatorów (np. niektóre buildy XGBoost) bywa „wybredna” co do typu `y`.
+    Ten wrapper koduje etykiety do intów przez `LabelEncoder`, ale na wyjściu
+    mapuje je z powrotem na pierwotne nazwy klas.
     """
 
     estimator: Any

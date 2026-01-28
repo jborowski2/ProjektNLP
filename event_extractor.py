@@ -1,3 +1,12 @@
+"""Orkiestrator: klasyfikacja typu + ekstrakcja relacji.
+
+`EventExtractor` scala dwa niezależne komponenty:
+- `EventClassifier`: przewiduje typ zdarzenia (kategoria),
+- `RelationExtractor`: heurystycznie wyciąga KTO/CO/TRIGGER/GDZIE/KIEDY.
+
+W UI i skryptach to jest główny punkt wejścia do analizy pojedynczego zdania.
+"""
+
 import pandas as pd
 from typing import Optional
 from event_record import EventRecord
@@ -7,6 +16,8 @@ from data_loading import load_event_type_training_frame
 
 
 class EventExtractor:
+    """Wysokopoziomowa analiza zdania (typ + relacje)."""
+
     def __init__(self):
         self.classifier = EventClassifier()
         self.relations = RelationExtractor()
@@ -47,11 +58,18 @@ class EventExtractor:
         )
 
     def extract_event(self, sentence: str) -> EventRecord:
+        """Zwróć `EventRecord` dla zdania.
+
+        Najpierw klasyfikujemy typ zdarzenia. Następnie zawsze próbujemy wyciągnąć relacje.
+        Dla klasy `BRAK_ZDARZENIA` zachowujemy relacje czasu/miejsca (jeśli model je znajdzie),
+        ale KTO/CO/TRIGGER ustawiamy na None.
+        """
         event_type, confidence = self.classifier.predict(sentence)
 
         who, trigger, what, where, when = self.relations.extract_relations(sentence)
 
         if event_type == "BRAK_ZDARZENIA":
+            # Gdy nie ma zdarzenia, WHO/WHAT/TRIGGER zwykle nie mają sensu.
             return EventRecord(
                 event_type=event_type,
                 who=None,
@@ -75,7 +93,9 @@ class EventExtractor:
         )
 
     def save_classifier(self, path: str) -> None:
+        """Zapisz wytrenowany klasyfikator typu zdarzenia."""
         self.classifier.save(path)
 
     def load_classifier(self, path: str) -> None:
+        """Wczytaj zapisany klasyfikator typu zdarzenia."""
         self.classifier.load(path)
